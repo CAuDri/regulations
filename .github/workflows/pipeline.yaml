@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: source/CAuDri-Challenge_Regulations_2023.tex
+          root_file: CAuDri-Challenge_Regulations_2023.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
