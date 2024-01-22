@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1705959315 "f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex" "CAuDri-Challenge_Regulations_2023.pdf" "CAuDri-Challenge_Regulations_2023" 1705959315
-  "CAuDri-Challenge_Regulations_2023.aux" 1705959315 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+["pdflatex"] 1705959615 "f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex" "CAuDri-Challenge_Regulations_2023.pdf" "CAuDri-Challenge_Regulations_2023" 1705959615
+  "CAuDri-Challenge_Regulations_2023.aux" 0 -1 0 "pdflatex"
   "CAuDri-Challenge_Regulations_2023.out" 0 -1 0 "pdflatex"
-  "CAuDri-Challenge_Regulations_2023.tex" 1705959312 59830 4e877ba80fb42bca66e39a5cba7617bf ""
+  "CAuDri-Challenge_Regulations_2023.tex" 1705959613 59837 ce5bca60695610085784e27b63897376 ""
   "CAuDri-Challenge_Regulations_2023.toc" 0 -1 0 "pdflatex"
-  "f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex" 1705959312 59830 4e877ba80fb42bca66e39a5cba7617bf ""
+  "f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex" 1705959613 59837 ce5bca60695610085784e27b63897376 ""
   "f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1666043432 2840 216e6e45ad352e2456e1149f28885bee ""
   "f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1666043432 2327 9d6df24f9c4f7368395224341a95523a ""
   "f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc" 1666043432 2359 de53213020575850c8f8debc35095765 ""
@@ -96,7 +96,6 @@
   "f:/Programme/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666046085 3058850 f523412029f27ab5ffe703f8046da5a6 ""
   "f:/Programme/texlive/2022/texmf.cnf" 1666046011 713 e69b156964470283e0530f5060668171 ""
   "graphics/Abb_7_speed_limit_zone.pdf" 1705946709 24277 4043c6a4dded2a17238d6c10d2777fb3 ""
-  "graphics/caudri_logo_no_border.jpg" 1705946709 144272 10f6e19e071fa3fd983fe4b839b96374 ""
   "source/graphics/Abb_10_pedestrian_island.pdf" 0 -1 0 ""
   "source/graphics/Abb_11_pedestrian_island_crosswalk.pdf" 0 -1 0 ""
   "source/graphics/Abb_12_intersection_give_way_lines.pdf" 0 -1 0 ""

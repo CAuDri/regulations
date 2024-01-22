@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.18)  22 JAN 2024 22:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.18)  22 JAN 2024 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,7 +272,8 @@ File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box54
-) (./CAuDri-Challenge_Regulations_2023.aux)
+)
+No file CAuDri-Challenge_Regulations_2023.aux.
 \openout1 = `CAuDri-Challenge_Regulations_2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -293,7 +294,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -351,14 +351,51 @@ Package hyperref Info: Link coloring ON on input line 73.
 \@outlinefile=\write3
 \openout3 = `CAuDri-Challenge_Regulations_2023.out'.
 
-<graphics/caudri_logo_no_border.jpg, id=4, 1303.87125pt x 374.90062pt>
-File: graphics/caudri_logo_no_border.jpg Graphic file (type jpg)
-<use graphics/caudri_logo_no_border.jpg>
-Package pdftex.def Info: graphics/caudri_logo_no_border.jpg  used on input line 81.
-(pdftex.def)             Requested size: 455.24411pt x 130.89684pt.
- [1
 
-{f:/Programme/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./graphics/caudri_logo_no_border.jpg>]
+
+LaTeX Warning: File `source/graphics/caudri_logo_no_border.jpg' not found on input line 81.
+
+
+f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex:81: Package pdftex.def Error: File `source/graphics/caudri_logo_no_border.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 ...source/graphics/caudri_logo_no_border.jpg}
+                                                  \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 81.
+(f:/Programme/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
+
+{f:/Programme/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: File `source/graphics/caudri_logo_no_border.jpg' not found on input line 98.
+
+
+f:/Git/regulations/source/CAuDri-Challenge_Regulations_2023.tex:98: Package pdftex.def Error: File `source/graphics/caudri_logo_no_border.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \end{titlepage}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (42.67912pt): 
+(fancyhdr)                Make it at least 90.31776pt, for example:
+(fancyhdr)                \setlength{\headheight}{90.31776pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-47.63864pt}.
+
+[2]
 No file CAuDri-Challenge_Regulations_2023.toc.
 \tf@toc=\write4
 \openout4 = `CAuDri-Challenge_Regulations_2023.toc'.
@@ -378,10 +415,6 @@ l.104 \chapter
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 104.
-(f:/Programme/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 
 Package fancyhdr Warning: \headheight is too small (42.67912pt): 
 (fancyhdr)                Make it at least 90.31776pt, for example:
@@ -443,7 +476,12 @@ Package fancyhdr Warning: \headheight is too small (42.67912pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-47.63864pt}.
 
-[2
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \chapter
+              {Competition} [2
 
 ]
 Chapter 2.
@@ -1108,7 +1146,7 @@ l.702 ...graphics/Abb_6_intersection_give_way.pdf}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<graphics/Abb_7_speed_limit_zone.pdf, id=194, 176.50024pt x 397.6888pt>
+<graphics/Abb_7_speed_limit_zone.pdf, id=196, 176.50024pt x 397.6888pt>
 File: graphics/Abb_7_speed_limit_zone.pdf Graphic file (type pdf)
 <use graphics/Abb_7_speed_limit_zone.pdf>
 Package pdftex.def Info: graphics/Abb_7_speed_limit_zone.pdf  used on input line 710.
@@ -1558,18 +1596,18 @@ Package rerunfilecheck Info: Checksums for `CAuDri-Challenge_Regulations_2023.ou
 ### simple group (level 1) entered at line 382 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10815 strings out of 475071
- 199179 string characters out of 5777917
- 517123 words of memory out of 5000000
- 31871 multiletter control sequences out of 15000+600000
+ 10807 strings out of 475071
+ 198864 string characters out of 5777917
+ 517132 words of memory out of 5000000
+ 31865 multiletter control sequences out of 15000+600000
  508181 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,15n,67p,1261b,984s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{f:/Programme/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}<f:/Programme/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb><f:/Programme/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb><f:/Programme/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><f:/Programme/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><f:/Programme/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on CAuDri-Challenge_Regulations_2023.pdf (28 pages, 331026 bytes).
+Output written on CAuDri-Challenge_Regulations_2023.pdf (29 pages, 187128 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
+ 423 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
  149 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
