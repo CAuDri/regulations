@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: source/CAuDri-Challenge_Regulations.tex
-          working-directory: ./source
+          work_in_root_file_dir: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
