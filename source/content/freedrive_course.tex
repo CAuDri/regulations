@@ -1,0 +1,256 @@
+\section{Free Drive (w/o Obstacles) and Parking}
+
+In this event, the vehicle shall automatically cover the farthest possible
+distance in a given time. The vehicle drives in the right lane. Additionally,
+the vehicle can perform automatic parking maneuver by finding a suitable
+parking spot inside a parking lot.
+
+\subsection{Scenario}
+
+The complexity of this scenario is limited. It consists of a road with two
+parallel lanes - one for each driving direction. This scenario shall imitate a
+rural road environment, consisting of long straight sections, tight turns,
+intersections, side road junctions and also containing a parking lot. The lanes
+are limited by different types of lane markings. All markings are white and
+approx. 18 mm to 20 mm wide, if not specified differently. The starting line (a
+checkered line of approx. 50 mm) marks the beginning of the track, which is the
+parking zone (cf. Section \ref{fig_parking_lot}).
+
+\subsubsection{Parking Lot}
+
+Following the starting line and indicated by a traffic sign, there are parking
+areas containing spots for parking in parallel and perpendicular orientation to
+the track within the next 20 m. The parking zone is a planar and straight part
+of the track with a dashed center line without missing lane markings.
+Additional elements (intersections, missing lane markings, traffic signs, etc.)
+are not present. All areas for parking are located in this zone.
+
+\subsubsection{Parallel Parking}
+
+Within the parking zone there is at least one parallel parking area next to the
+right lane. White cardboard boxes represent other vehicles. The boxes can be
+fixed to the ground. There is a space of 20 mm to 200 mm between the right lane
+marking and the side of the obstacle which faces the track. The obstacles
+measure at least 100 mm in height and length. The parking area and the track
+are located in the same ground plane. Individual parking spots of the parking
+area can be marked as no parking zones. These areas may not be used for
+parking, but may be used for maneuvering.
+
+There will be multiple parking spots of different size in the parallel parking
+area(s) next to the track. The left- and right-hand limits of the parking spots
+are defined by the right lane marking and an additional solid white line (also
+18 mm to 20 mm wide). Front and rear limits are defined either by white
+cardboard boxes or by a no parking zone (cf. Section
+\ref{fig_parallel_parking}). Approaching from the starting line, the parking
+spots will be growing in length. The final and largest spot will beat least 700
+mm in length. Nevertheless, small distances of under 400 mm might be present
+between obstacles anywhere inside the parallel parking area(s).
+
+\subsubsection{Perpendicular Parking}
+
+An additional type of parking area within the parking zone consists of several
+parking spots with a perpendicular orientation to the track. Such area is
+located at least once on the left-hand side of the track and may also be used
+for parking.
+
+All spots have the same size, as shown in Section
+\ref{fig_perpendicular_parking}. The parking spots are separated and limited to
+the front as well as to the rear by 18 mm to 20 mm wide white markings. Parking
+spots can be blocked by obstacles or no parking zones. A parking spot is
+considered to be blocked, if the vehicle cannot be placed completely inside the
+spot. Obstacles possess the same dimensions as in the parallel parking area and
+can be placed at a distance of 20 mm to 100 mm from the solid left lane
+marking.
+
+For parking, the vehicle must be positioned inside one marked spot that is not
+blocked. Vehicles may move forward or backward into the parking space. The left
+lane of the track may only be crossed during the actual parking maneuver. When
+searching for a parking spot, the vehicle must continue to use the right lane.
+
+\subsubsection{Lane width}
+
+Each lane has a width of 350 mm to 450 mm, measured from the inside of the
+respective markings. The left and right markings do not show lateral
+misalignments. However, the centerline may under circumstances (e.g. because of
+change of marking type, cf. next section) display lateral misalignments.
+
+\subsubsection{Lane markings}
+\label{lane_markings}
+
+Both lanes are separated by a dashed center line. The center line is
+interrupted every 200 mm for another 200 mm. This shape continues until
+reaching an intersection or the starting line, so that the center line might
+stop with a gap at these points.
+
+Alternatively to the dashed center line, a double solid line can be present. In
+this case the solid lines are spaced approx. 20 mm apart, yielding a total
+marking width of approx. 56 mm to 60 mm. A combination of a solid and a dashed
+line is also possible. In both cases, the inner edges of the markings define
+the width of the lane. Marking types can occur in arbitrary order. Marking
+types will persist for a distance of at least 1000 mm. There will be immediate
+changes between marking types (cf. Section \ref{fig_road_layout}). For the Free
+Drive event, these marking types are to be treated as regular dashed markings.
+
+The left and right track boundaries are given by solid white lines. On straight
+sections of the track, the outer track boundaries can also mark side road
+junctions. In this case, the outer track boundaries are marked with 100 mm long
+dashes, interrupted by 50 mm long gaps. These markings are to be treated as
+solid lines and must not be crossed, as the vehicle is assumed to have the
+right of way.
+
+Side road junctions may be at most 960 mm long. The junction is only marked by
+the change in marking types, there are no further markings for the side lane.
+Neighboring sections of the track are space at least 50 mm apart, measured from
+the outer edges of the markings. The minimal distance of the track to the end
+of the course area is 300 mm. The sharpest turn has an inner radius of 1000 mm.
+
+The circuit is mostly planar. Parts of the track can show slopes of up to 10\%
+(0.1 m difference in height on a length of 1 m). Uphill and downhill grades
+will be announced by traffic signs (cf. Section \ref{traffic_signs}). The signs
+will be placed at least 1000 mm prior to any change of slope. All of the lane
+markings can be missing at arbitrary locations for a maximum of
+\colorbox{yellow}{1000 mm}. Except for intersections, no more than two markings
+are missing at the same time.
+
+An example scenario is depicted in Section \ref{fig_example_circuit} in the
+appendix.
+
+In this event, no obstacles are located on the track. Possible stop lines and
+regulations concerning the right of way are to be ignored.
+
+\subsubsection{Traffic Signs}
+\label{traffic_signs}
+
+In addition to the parking sign at the starting line and the steep hill signs
+described above, other supporting traffic signs can be present on the roadside.
+
+Guide signs will be used to indicate sharp turns. They mark a curved section of
+the track with radii below 1200 mm, if it is located after a straight section
+of at least 3 m length. A first guide sign will be placed approx. 1.5 m before
+the transition to the turn. The second sign marks the beginning of the turn.
+Smaller signs will be repeated approximately every 400 mm until reaching the
+apex of the turn.
+
+Additional traffic signs can be present at the roadside. They are located on
+the right-hand side of the lane. For an exact specification see Section
+\ref{fig_traffic_signs}. In this event, regulations announced by traffic signs
+can be ignored.
+
+\subsubsection{Artifacts}
+\label{artifacts}
+
+The design of the area outside of the road is not defined. Artifacts in the
+form of objects or remainders of lane markings might be located outside of the
+road area. The minimum distance between artifacts and valid lane markings is
+100 mm.
+
+\subsection{Execution of the Event}
+
+\subsubsection{Start}
+
+The starting order of the teams will be announced by the commission, visualized
+using the start scheduling system (cf. Section \ref{start_scheduling}) during
+the competition. The vehicle must be placed in the start box, located next to
+the track (cf. Section \ref{start_box}). The attempt is started by a judge or a
+referee, signaled by the opening of the gate of the start box.
+
+It is not strictly necessary to detect the presence of the markings on the
+gate, the vehicle only has to detect when the gate is opened.(cf. Section
+\ref{fig_start_box_markings})
+
+\subsubsection{Attempts}
+
+The attempt may be canceled while the gate of the start box is open. The team
+is then allowed a second attempt, after all other teams have completed their
+first attempt.\\ \colorbox{yellow}{\parbox{\colorboxwidth}{The commission may
+		arbitrarily choose the time of the second attempt if this is required to comply
+		with the schedule. The affected team will be given at least 10 min to prepare
+		for the second attempt after being informed by the commission.}} Canceling an
+attempt is penalized (cf. Section \ref{freedrive_scoring}). A missed start
+results in a second attempt automatically.
+
+\subsection{RC-Mode}
+
+In case the vehicle is not able to continue following the track on its own, the
+team may activate RC-mode in order to get the vehicle back into normal
+behavior. If the vehicle does not return into the right driving lane on its
+own, RC-mode must be activated immediately. Distances travelled outside of the
+driving lane will otherwise be subtracted from the total distance covered. Each
+activation of RC-mode is penalized. RC-mode is subject to the regulations in
+Section \ref{rc_mode}.
+
+\subsection{Parking}
+
+Parking can be performed in any of the rounds of the Free Drive event.
+Successful parking maneuvers result in multipliers to the overall distance
+covered. Collisions during parking attempts result in penalties. The best
+parking results will be considered in the final score (i.e. additional parking
+maneuvers can eliminate penalties of other parking attempts).
+
+After each passing of the starting line, the vehicle can perform one parking
+attempt by finding a parking spot within the parking areas and maneuver into
+it, without touching the surrounding obstacles. The start of the parking
+maneuver has to be signaled using the turn indicators. After the vehicle came
+to a complete stop and flashed all turn indicators at least one time,
+\colorbox{green}{signaling a successful parking maneuver,}it may drive on. The
+correct position of the vehicle will be checked from both sides of the track
+with the first flashing of the indicators.
+	{\colorbox{yellow}{\parbox{\colorboxwidth}{Penalties may apply until the
+				vehicle is driving with a positive speed along the route while touching the
+				right lane with at least 3 wheels.}}}
+
+A complete parking maneuver requires the vehicle to come to a full stop being
+located in a valid spot with at least three of its wheels and flash all turn
+indicators at least one time. While maneuvering out of the parking spot, the
+vehicle may cross the left lane, but has to continue driving in the right lane.
+
+Leaving the outer boundaries of the parking area is penalized the same as
+leaving the right lane while driving. The speed in the parking lot is not
+limited, especially not after the parking maneuver has been completed.
+
+\subsection{Scoring}
+\label{freedrive_scoring}
+
+The covered distance under consideration of penalties will be multiplied by the
+achieved multiplier. The longest resulting distance will be awarded the maximum
+number of points. The subsequent teams will be scored in relation to the best
+team.
+
+\subsubsection{Timing}
+
+Each team has 2 min to complete this event. Timing for the event starts with
+opening of the gate of the start box described in Section \ref{start_box}.
+
+\subsubsection{Penalties}
+\label{freedrive_penalties}
+
+\begin{table}[H]
+	\begin{tabular}{@{}lcc@{}}
+		\toprule
+		\textbf{Violation}                                & \textbf{Maximum Count} & \textbf{Penalty} \\ \midrule
+		Leaving the right lane                            & $\infty$               & 5m               \\
+		Activation of RC-mode                             & $\infty$               & 5m               \\
+		Faulty activation of the brake light              & 3                      & 2.5m             \\
+		False usage of turn indicators                    & 2                      & 2.5m             \\
+		Vehicle not placed inside the markings            & 2                      & 5m               \\
+		Collision with obstacle                           & 6                      & 5m               \\
+		Driving in the wrong direction at an intersection & $\infty$               & 5m               \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Multipliers}
+\label{freedrive_multipliers}
+
+Each team starts this event with a multiplier of \textbf{1.0}.
+
+\begin{table}[H]
+	\begin{tabular}{@{}lcc@{}}
+		\toprule
+		\textbf{Triggering Event}                       & \textbf{Maximum Count} & \textbf{Multiplier Modification} \\ \midrule
+		Canceled attempt / second attempt               & 1                      & -0.3                             \\
+		\colorbox{red}{WiFi enabled during competition} & 1                      & -0.5                             \\
+		Complete parking maneuver                       & 2                      & +1.0                             \\
+		\bottomrule
+	\end{tabular}
+\end{table}
