@@ -1,0 +1,145 @@
+{
+\section*{Obstacle Avoidance Course Scoring 2024}
+
+\renewcommand*\footnoterule{}
+
+\textbf{Overview:} Given a 5 minute time limit, the vehicle will be able to do two laps around the track, while gaining or losing points for each encountered element. The total distance covered by the vehicle won't influence the scoring. Each team starts with a number of base points, which are set by the commission depending on the track length and number of elements. Points will only be given after the vehicle has made a complete lap around the track. The final score will be the sum of the base points and all points gained or lost during the run.
+
+\subsection*{Elements and Penalties}
+
+\subsubsection*{Static Obstacles}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}          & \textbf{Neutral}           & \textbf{Negative}       \\
+        \midrule
+        Used turn indicators       & No use of turn indicators  & Collision with obstacle \\
+        Distance after passing <2m & Distance after passing >2m &                         \\
+        Successfully passed        &                            &                         \\
+        \textbf{+10}               & \textbf{0}                 & \textbf{-10}            \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Dynamic Obstacles}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}          & \textbf{Neutral}           & \textbf{Negative}       \\
+        \midrule
+        Used turn indicators       & No use of turn indicators  & Collision with obstacle \\
+        Distance after passing <2m & Distance after passing >2m &                         \\
+        Successfully passed        & Passed in Intersection     &                         \\
+        \textbf{+15}               & \textbf{0}                 & \textbf{-10}            \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Intersections of the Rural Road Scenario}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}                                 & \textbf{Neutral}                                                  & \textbf{Negative}                                     \\
+        \midrule
+        Went straight through intersection                & Made a wrong turn                                                 & Collision with obstacle                               \\
+        \textit{Stopped at the stop line}\footnotemark[1] & \textit{Stopped for <3s or distance >15cm}\footnotemark[1]        & \textit{Didn't stop at the stop line}\footnotemark[1] \\
+        \textit{Respected right-of-way}\footnotemark[2]   & \textit{Didn't respect the right-of-way}\footnotemark[2]          &                                                       \\
+                                                          & \textit{Obstacle hasn't cleared the intersection}\footnotemark[2] &                                                       \\
+        \textbf{+10}                                      & \textbf{0}                                                        & \textbf{-10}                                          \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Extended Intersections}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}                               & \textbf{Neutral}                                               & \textbf{Negative}                                     \\
+        \midrule
+        Stopped at the stop or give-way line            & \textit{Didn't stop at the give-way line}\footnotemark[3]      & Collision with obstacle                               \\
+        \textit{Respected right-of-way}\footnotemark[2] & \textit{Stopped for <3s at stop line}\footnotemark[1]          & \textit{Didn't stop at the stop line}\footnotemark[1] \\
+        \textit{Took the right turn}\footnotemark[4]    & \textit{Stopped for <1s at give-way line}\footnotemark[3]      &                                                       \\
+                                                        & \textit{Didn't respect the right-of-way}\footnotemark[2]       &                                                       \\
+                                                        & \textit{Took the wrong turn}\footnotemark[4]                   &                                                       \\
+                                                        & \textit{Obstacle has not cleared intersection}\footnotemark[2] &                                                       \\
+        \textbf{+20}                                    & \textbf{0}                                                     & \textbf{-10}                                          \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\footnotetext[1]{In case a stop line is present}
+\footnotetext[2]{In case a dynamic obstacle is present}
+\footnotetext[3]{In case a give-way line is present}
+\footnotetext[4]{In case the intersection has a mandatory turn}
+
+\subsubsection*{No-Passing Zones}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}                     & \textbf{Neutral}                      & \textbf{Negative}       \\
+        \midrule
+        Stayed in the right lane              & Started a passing maneuver            & Collision with obstacle \\
+        Followed obstacle with distance >30cm & Followed obstacle with distance <30cm &                         \\
+        \textbf{+5}                           & \textbf{0}                            & \textbf{-10}            \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Two-Lane Expressway}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}        & \textbf{Neutral}                & \textbf{Negative} \\
+        \midrule
+        Stayed in the right lane & Left the right lane (negative?) &                   \\
+        \textbf{+5}              & \textbf{0}                      &                   \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Barred Area}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}                                      & \textbf{Neutral}                                         & \textbf{Negative}       \\
+        \midrule
+        Didn't enter the barred area                           & Entered the barred area                                  & Collision with obstacle \\
+        \textit{Let the Dynamic Obstacle pass}\footnotemark[1] & \textit{Didn't respect the right-of-way}\footnotemark[1] &                         \\
+        Used turn indicators                                   & Didn't use turn indicators                               &                         \\
+        \textbf{+15}                                           & \textbf{0}                                               & \textbf{-10}            \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection*{Crosswalk}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{@{}XXX@{}}
+        \toprule
+        \textbf{Positive}                                               & \textbf{Neutral}                                           & \textbf{Negative}           \\
+        \midrule
+        \textit{Stopped at the crosswalk}\footnotemark[2]               & \textit{Didn't stop at the crosswalk}\footnotemark[2]      & Collision with a pedestrian \\
+        \textit{Pedestrians have cleared the crosswalk}\footnotemark[2] & \textit{Stopped for <3s or distance >15cm}\footnotemark[2] &                             \\
+                                                                        & \textit{Pedestrians have not crossed}\footnotemark[2]      &                             \\
+        \textbf{+15}                                                    & \textbf{0}                                                 & \textbf{-10}                \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\footnotetext[1]{In case a dynamic obstacle is present}
+\footnotetext[2]{In case a pedestrian is present}
+
+\subsection*{Additional Penalties}
+\begin{table}[H]
+    \begin{tabular}{@{}lcr@{}}
+        \toprule
+        \textbf{Violation}       &  & \textbf{Penalty}   \\
+        \midrule
+        Second Attempt           &  & -0.5 x base points \\
+        Active WiFi Connection   &  & -0.5 x base points \\
+        Exceeding Speed-Limit    &  & -10                \\
+        Leaving the right lane   &  & -5                 \\
+        Collision with road sign &  & -5                 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+}
