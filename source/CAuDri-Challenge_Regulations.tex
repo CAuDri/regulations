@@ -6,74 +6,21 @@
 %% All graphics can be found on our OneDrive in CAuDri-Challenge\Regelwerk\202X\Source\graphics       %%
 %%                                                                                                    %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper]{report}
+\documentclass{caudri_report}
 
-\title{CAuDri-Challenge Regulations \the\year{}}
-\author{Max Weißer, Yannik Süssmuth}
-\date{\today}
+\Title{CAuDri-Challenge Regulations 2025}
+\Subtitle{Official Rules and Regulations}
+\Author{CAuDri e.V.}
+\Date{\today}
 
-\usepackage{geometry}   	% Used to redfine page dimensions
-\usepackage{lmodern} 		% Replaces 'computer modern' font style, better look on modern displays
-\usepackage[T1]{fontenc}	% Uses T1 font encoding
-\usepackage{fancyhdr} 		% Used for header and footer generation
-\usepackage[]{graphicx}		% Include graphics
-\usepackage{titlesec}		% Change properties of chapter/section titles
-\usepackage{etoolbox}		% Used to extend functionality/properties of commands
-\usepackage{color}			% Used for coloring letters and backgrounds
 \usepackage[table]{xcolor}  % Used for coloring tables
 \usepackage{booktabs}		% Used for booktabs style (scientific looking) tables
-\usepackage{parskip}		% Add spacing between paragraphs
-\usepackage{float}			% Honestly, that's like the most important package
-\usepackage{hyperref}		% Enables clickable links and references
 \usepackage{mdframed} 		% Used for colored boxes and multipage frames
-\usepackage{tabularx}		% Used for tables with fixed width columns
 \usepackage{tablefootnote}	% Used for footnotes in tables
 
-% Page geometry
-\geometry{hmargin=2.5cm,
-          vmargin=1cm,
-          headheight=1.5cm, 
-          includeheadfoot}
-
-% Define hyperref link colors
-\hypersetup{colorlinks  = true,
-            linkcolor   = black,
-            urlcolor    = blue,
-            citecolor   = black,
-            anchorcolor = black}
-
 % Helper dimension for colored boxes
-\newlength\colorboxwidth
+\newlength\colorboxwidth{}
 \setlength{\colorboxwidth}{\dimexpr\textwidth-2\fboxsep}
-
-% Disable chapter text and change formatting of chapter titles (titlesec package)
-\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{8pt}{\huge\bf}
-\titlespacing{\chapter}{0pt}{-1\baselineskip}{1.5\baselineskip}
-
-% Slightly scale the height of table rows 
-\renewcommand{\arraystretch}{1.2}
-
-% No indentation of new paragraphs
-\setlength{\parindent}{0pt}
-
-% Use Sans-Serif font as default
-\renewcommand{\familydefault}{\sfdefault} 
-
-% Use fancy headers (fancyhdr package)
-\pagestyle{fancy}
-% Enable headers on pages containing a new chapter (etoolbox package)
-\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
-% Distance between header content and horizontal line
-\renewcommand{\headruleskip}{2mm}
-% clear existing header/footer entries
-\fancyhf{}
-
-% Header and footer definitions
-\fancyhead[L]{\large CAuDri-Challenge Regulations \the\year{}}
-\fancyhead[R]{\includegraphics[width=3cm]{graphics/caudri_logo_no_border.jpg}\hspace{-5mm}
-              \vspace{-3mm}}
-\fancyfoot[L]{Page \thepage}
-%\fancyfoot[R]{\leftmark} % Chapter name
 
 \begin{document}
 
@@ -83,14 +30,14 @@
 	\begin{center}
 		\vspace*{3cm}
 
-		\includegraphics[width=\textwidth]{graphics/caudri_logo_no_border.jpg}\\
+		\includegraphics[width=\textwidth]{caudri_logo.jpg}\\
 		\vspace{1cm}
 
 		\Huge\bfseries\@title\\
 		\vspace{\baselineskip}
 
 		\Large\@date\\
-		\vspace{8cm}
+		\vfill
 
 		\large DISCLAIMER:\\
 
