@@ -58,7 +58,7 @@
 % Define headers and footers 
 \setkomafont{pagehead}{\normalfont}
 \ihead{\large\HeaderText\\\large\Subtitle}
-\ohead{\includegraphics[width=5cm]{caudri_logo.jpg}}
+\ohead{\includegraphics[width=3.5cm]{caudri_logo.png}}
 
 % Enable header on chapter pages and redefine chapter spacing
 \renewcommand*\chapterpagestyle{scrheadings}
