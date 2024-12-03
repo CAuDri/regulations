@@ -17,14 +17,16 @@
 \usepackage{booktabs}		% Used for booktabs style (scientific looking) tables
 \usepackage{mdframed} 		% Used for colored boxes and multipage frames
 \usepackage{tablefootnote}	% Used for footnotes in tables
+\usepackage{soul}			% Used for highlighting text
 
-% Helper dimension for colored boxes
-\newlength\colorboxwidth{}
-\setlength{\colorboxwidth}{\dimexpr\textwidth-2\fboxsep}
+% Custom commands for highlighting text
+\newcommand{\HighlightNew}[1]{\sethlcolor{yellow}\hl{#1}}
+\newcommand{\HighlightChange}[1]{\sethlcolor{green}\hl{#1}}
+\newcommand{\HighlightFix}[1]{\sethlcolor{red}\hl{#1}}
 
 \begin{document}
 
-% Custom title page
+% Custom title page with CAuDri logo
 \begin{titlepage}
 	\makeatletter
 	\begin{center}
@@ -43,8 +45,8 @@
 
 		{\raggedright This document may be subject to change up until the day of the competition.\\
 		All changes will be announced on our Discord Server, in case of major changes we will inform all participants via E-Mail.
-		New features and differences to the previous competition will be highlighted in \colorbox{yellow}{yellow}.
-		Differences to the initial release for each year will be highlighted in \colorbox{green}{green}.\\}
+		New features and differences to the previous competition will be highlighted in \HighlightNew{yellow}.
+		Differences to the initial release for each year will be highlighted in \HighlightChange{green}.}
 
 	\end{center}
 	\makeatother
