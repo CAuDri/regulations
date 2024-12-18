@@ -1,71 +1,18 @@
-\section{Free Drive (w/o Obstacles) and Parking}
+\section{Free Drive (w/o Obstacles)}
 
 In this event, the vehicle shall automatically cover the farthest possible
-distance in a given time. The vehicle drives in the right lane. Additionally,
-the vehicle can perform automatic parking maneuver by finding a suitable
-parking spot inside a parking lot.
+distance in a given time. The vehicle drives in the right lane.
 
 \subsection{Scenario}
 
 The complexity of this scenario is limited. It consists of a road with two
 parallel lanes - one for each driving direction. This scenario shall imitate a
 rural road environment, consisting of long straight sections, tight turns,
-intersections, side road junctions and also containing a parking lot. The lanes
+intersections, side road junctions. The lanes
 are limited by different types of lane markings. All markings are white and
 approx. 18 mm to 20 mm wide, if not specified differently. The starting line (a
-checkered line of approx. 50 mm) marks the beginning of the track, which is the
-parking zone (cf. Section \ref{fig_parking_lot}).
+checkered line of approx. 50 mm) marks the beginning of the track.
 
-\subsubsection{Parking Lot}
-
-Following the starting line and indicated by a traffic sign, there are parking
-areas containing spots for parking in parallel and perpendicular orientation to
-the track within the next 20 m. The parking zone is a planar and straight part
-of the track with a dashed center line without missing lane markings.
-Additional elements (intersections, missing lane markings, traffic signs, etc.)
-are not present. All areas for parking are located in this zone.
-
-\subsubsection{Parallel Parking}
-
-Within the parking zone there is at least one parallel parking area next to the
-right lane. White cardboard boxes represent other vehicles. The boxes can be
-fixed to the ground. There is a space of 20 mm to 200 mm between the right lane
-marking and the side of the obstacle which faces the track. The obstacles
-measure at least 100 mm in height and length. The parking area and the track
-are located in the same ground plane. Individual parking spots of the parking
-area can be marked as no parking zones. These areas may not be used for
-parking, but may be used for maneuvering.
-
-There will be multiple parking spots of different size in the parallel parking
-area(s) next to the track. The left- and right-hand limits of the parking spots
-are defined by the right lane marking and an additional solid white line (also
-18 mm to 20 mm wide). Front and rear limits are defined either by white
-cardboard boxes or by a no parking zone (cf. Section
-\ref{fig_parallel_parking}). Approaching from the starting line, the parking
-spots will be growing in length. The final and largest spot will beat least 700
-mm in length. Nevertheless, small distances of under 400 mm might be present
-between obstacles anywhere inside the parallel parking area(s).
-
-\subsubsection{Perpendicular Parking}
-
-An additional type of parking area within the parking zone consists of several
-parking spots with a perpendicular orientation to the track. Such area is
-located at least once on the left-hand side of the track and may also be used
-for parking.
-
-All spots have the same size, as shown in Section
-\ref{fig_perpendicular_parking}. The parking spots are separated and limited to
-the front as well as to the rear by 18 mm to 20 mm wide white markings. Parking
-spots can be blocked by obstacles or no parking zones. A parking spot is
-considered to be blocked, if the vehicle cannot be placed completely inside the
-spot. Obstacles possess the same dimensions as in the parallel parking area and
-can be placed at a distance of 20 mm to 100 mm from the solid left lane
-marking.
-
-For parking, the vehicle must be positioned inside one marked spot that is not
-blocked. Vehicles may move forward or backward into the parking space. The left
-lane of the track may only be crossed during the actual parking maneuver. When
-searching for a parking spot, the vehicle must continue to use the right lane.
 
 \subsubsection{Lane width}
 
@@ -120,7 +67,7 @@ regulations concerning the right of way are to be ignored.
 \subsubsection{Traffic Signs}
 \label{traffic_signs}
 
-In addition to the parking sign at the starting line and the steep hill signs
+In addition to the the steep hill signs
 described above, other supporting traffic signs can be present on the roadside.
 
 Guide signs will be used to indicate sharp turns. They mark a curved section of
@@ -182,31 +129,7 @@ Section \ref{rc_mode}.
 
 \subsection{Parking}
 
-Parking can be performed in any of the rounds of the Free Drive event.
-Successful parking maneuvers result in multipliers to the overall distance
-covered. Collisions during parking attempts result in penalties. The best
-parking results will be considered in the final score (i.e. additional parking
-maneuvers can eliminate penalties of other parking attempts).
-
-After each passing of the starting line, the vehicle can perform one parking
-attempt by finding a parking spot within the parking areas and maneuver into
-it, without touching the surrounding obstacles. The start of the parking
-maneuver has to be signaled using the turn indicators. After the vehicle came
-to a complete stop and flashed all turn indicators at least one time, signaling
-a successful parking maneuver, it may drive on. The correct position of the
-vehicle will be checked from both sides of the track with the first flashing of
-the indicators. Penalties may apply until the vehicle is driving with a
-positive speed along the route while touching the right lane with at least 3
-wheels.
-
-A complete parking maneuver requires the vehicle to come to a full stop being
-located in a valid spot with at least three of its wheels and flash all turn
-indicators at least one time. While maneuvering out of the parking spot, the
-vehicle may cross the left lane, but has to continue driving in the right lane.
-
-Leaving the outer boundaries of the parking area is penalized the same as
-leaving the right lane while driving. The speed in the parking lot is not
-limited, especially not after the parking maneuver has been completed.
+\HighlightChange{Parking has been removed from the Freedrive Course and moved to the Obstacle Evasion Course.}
 
 \subsection{Scoring}
 \label{freedrive_scoring}
@@ -250,7 +173,6 @@ Each team starts this event with a multiplier of \textbf{1.0}.
 		\textbf{Triggering Event}         & \textbf{Maximum Count} & \textbf{Multiplier Modification} \\ \midrule
 		Canceled attempt / second attempt & 1                      & -0.3                             \\
 		WiFi enabled during competition   & 1                      & -0.5                             \\
-		Complete parking maneuver         & 2                      & +1.0                             \\
 		\bottomrule
 	\end{tabular}
 \end{table}
