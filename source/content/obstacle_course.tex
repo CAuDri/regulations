@@ -4,8 +4,9 @@
 
 The event “Obstacle Evasion Course” extends the track of the Free Drive event
 with additional elements which need to be considered during the driving task.
-Parking maneuvers shall not be performed within this event. Static and dynamic
-obstacles are added to the rural road scenario. The track does additionally
+Static and dynamic obstacles are added to the rural road scenario. 
+\HighlightChange{Additionally, the vehicle has to perform automatic parking maneuvers 
+by finding a suitable parking spot inside a parking lot.} The track does additionally
 contain at least one suburban section at this point. All definitions concerning
 the course of the road maintain validity. There will be at least 1000 mm track
 length between obstacles. The additional elements are spaced at least 1000 mm
@@ -18,7 +19,9 @@ The suburban area is a special section of the track, containing additional
 elements compared to the track design of the rural road scenario. Beginning and
 end of suburban areas are defined by markings on the road surface (cf. Section
 \ref{fig_road_markings}) and according traffic signs (cf. Section
-\ref{traffic_signs}).
+\ref{traffic_signs}). \HighlightChange{The suburban area containins a parking lot as well as the starting line (a 
+checkered line of approx. 50 mm) which marks the beginning of the track, which is the
+parking zone.} (cf. Section \ref{fig_parking_lot})
 
 The speed limit within the suburban section, as indicated by the traffic signs
 has to be scaled by 1:10 (i.e. a speed limit of 30 km/h corresponds to 0.83
@@ -137,6 +140,57 @@ complemented with specific markings on the road surface. Those markings must
 not have the same distance to the corresponding element as the traffic sign
 (cf. Section \ref{turning}). See the following sections for the according
 specifications.
+
+\subsubsection{\HighlightChange{Parking Lot}}
+
+Following the starting line and indicated by a traffic sign, there are parking
+areas containing spots for parking in parallel and perpendicular orientation to
+the track within the next 20 m. The parking zone is a planar and straight part
+of the track with a dashed center line without missing lane markings.
+Additional elements (intersections, missing lane markings, traffic signs, etc.)
+are not present. All areas for parking are located in this zone.
+
+\subsubsection{\HighlightChange{Parallel Parking}}
+
+Within the parking zone there is at least one parallel parking area next to the
+right lane. White cardboard boxes represent other vehicles. The boxes can be
+fixed to the ground. There is a space of 20 mm to 200 mm between the right lane
+marking and the side of the obstacle which faces the track. The obstacles
+measure at least 100 mm in height and length. The parking area and the track
+are located in the same ground plane. Individual parking spots of the parking
+area can be marked as no parking zones. These areas may not be used for
+parking, but may be used for maneuvering.
+
+There will be multiple parking spots of different size in the parallel parking
+area(s) next to the track. The left- and right-hand limits of the parking spots
+are defined by the right lane marking and an additional solid white line (also
+18 mm to 20 mm wide). Front and rear limits are defined either by white
+cardboard boxes or by a no parking zone (cf. Section
+\ref{fig_parallel_parking}). Approaching from the starting line, the parking
+spots will be growing in length. The final and largest spot will beat least 700
+mm in length. Nevertheless, small distances of under 400 mm might be present
+between obstacles anywhere inside the parallel parking area(s).
+
+\subsubsection{\HighlightChange{Perpendicular Parking}}
+
+An additional type of parking area within the parking zone consists of several
+parking spots with a perpendicular orientation to the track. Such area is
+located at least once on the left-hand side of the track and may also be used
+for parking.
+
+All spots have the same size, as shown in Section
+\ref{fig_perpendicular_parking}. The parking spots are separated and limited to
+the front as well as to the rear by 18 mm to 20 mm wide white markings. Parking
+spots can be blocked by obstacles or no parking zones. A parking spot is
+considered to be blocked, if the vehicle cannot be placed completely inside the
+spot. Obstacles possess the same dimensions as in the parallel parking area and
+can be placed at a distance of 20 mm to 100 mm from the solid left lane
+marking.
+
+For parking, the vehicle must be positioned inside one marked spot that is not
+blocked. Vehicles may move forward or backward into the parking space. The left
+lane of the track may only be crossed during the actual parking maneuver. When
+searching for a parking spot, the vehicle must continue to use the right lane.
 
 \subsubsection{Barred Area}
 
@@ -271,6 +325,33 @@ will be punished with the penalty designated for the respective element. Each
 activation of RC-mode is penalized. RC-mode is subject to the regulations in
 Section \ref{rc_mode}.
 
+\subsection{Parking}
+
+\HighlightChange{Parking can be performed in any of the rounds of the Obstacle Evasion Course.
+Collisions during parking attempts result in penalties.}
+
+After each passing of the starting line, the vehicle performs \HighlightChange{exactly one} parking
+attempt by finding a parking spot within the parking areas and maneuver into
+it, without touching the surrounding obstacles. The start of the parking
+maneuver has to be signaled using the turn indicators \HighlightChange{(into the direction of the parking lot)}. 
+After the vehicle came
+to a complete stop and flashed all turn indicators at least one time, signaling
+a successful parking maneuver, it may drive on. The correct position of the
+vehicle will be checked from both sides of the track with the first flashing of
+the indicators. Penalties may apply until the vehicle is driving with a
+positive speed along the route while touching the right lane with at least 3
+wheels.
+
+A complete parking maneuver requires the vehicle to come to a full stop being
+located in a valid spot \HighlightChange{with all of its wheels} and flash all turn
+indicators at least one time. While maneuvering out of the parking spot, the
+vehicle may cross the left lane, but has to continue driving in the right lane
+after the parking maneuver.
+
+Leaving the outer boundaries of the parking area is penalized the same as
+leaving the right lane while driving. \HighlightChange{The speed in the parking lot is limited
+to the speed on the road next to the parking lot.}
+
 \subsection{Scoring}{
 	\label{obstacle_scoring}
 
@@ -404,6 +485,22 @@ Section \ref{rc_mode}.
 	\end{table}
 
 	\clearpage
+
+	
+	\subsubsection*{\HighlightChange{Parking}}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{XXX}
+			\toprule
+			\textbf{Positive}                                           & \textbf{Neutral}                                                  & \textbf{Negative}          \\
+			\midrule
+			Vehicle parked correctly in the parking lot                 & Vehicle parked correctly in the parking lot                       & Collision with an Obstacle \\
+			All of the wheels are within the boundaries of the parking spot& Wheels touch the boundary of the parking spot                     & At least one wheel is outside the boundary of the parking spot  \\
+			Correct use of turn indicators                              & Wrong use of turn indicators                                      & No parking maneuver performed\\
+			\topstrut
+			\textbf{+30}                                                & \textbf{0}                                                        & \textbf{-15}               \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
 
 	\subsubsection*{Barred Area}
 	\begin{table}[H]
