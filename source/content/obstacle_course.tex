@@ -4,9 +4,9 @@
 
 The event “Obstacle Evasion Course” extends the track of the Free Drive event
 with additional elements which need to be considered during the driving task.
-Static and dynamic obstacles are added to the rural road scenario. 
-\HighlightChange{Additionally, the vehicle has to perform automatic parking maneuvers 
-by finding a suitable parking spot inside a parking lot.} The track does additionally
+Static and dynamic obstacles are added to the rural road scenario.
+\HighlightNew{Additionally, the vehicle has to perform automatic parking maneuvers
+	by finding a suitable parking spot inside a parking lot.} The track does additionally
 contain at least one suburban section at this point. All definitions concerning
 the course of the road maintain validity. There will be at least 1000 mm track
 length between obstacles. The additional elements are spaced at least 1000 mm
@@ -19,7 +19,7 @@ The suburban area is a special section of the track, containing additional
 elements compared to the track design of the rural road scenario. Beginning and
 end of suburban areas are defined by markings on the road surface (cf. Section
 \ref{fig_road_markings}) and according traffic signs (cf. Section
-\ref{traffic_signs}). \HighlightChange{The suburban area containins a parking lot which is indicated by the parking traffic sign.} (cf. Section \ref{fig_parking_lot})
+\ref{traffic_signs}). \HighlightNew{The suburban area containins a parking lot which is indicated by the parking traffic sign.} (cf. Section \ref{fig_parking_lot})
 
 The speed limit within the suburban section, as indicated by the traffic signs
 has to be scaled by 1:10 (i.e. a speed limit of 30 km/h corresponds to 0.83
@@ -139,16 +139,16 @@ not have the same distance to the corresponding element as the traffic sign
 (cf. Section \ref{turning}). See the following sections for the according
 specifications.
 
-\subsubsection{\HighlightChange{Parking Lot}}
+\subsubsection{\HighlightNew{Parking Lot}}
 
-\HighlightChange{Indicated by a traffic sign}, there are parking
+\HighlightNew{Indicated by a traffic sign}, there are parking
 areas containing spots for parking in parallel and perpendicular orientation to
 the track within the next 20 m. The parking zone is a planar and straight part
 of the track with a dashed center line without missing lane markings.
 Additional elements (intersections, missing lane markings, traffic signs, etc.)
 are not present. All areas for parking are located in this zone.
 
-\subsubsection{\HighlightChange{Parallel Parking}}
+\subsubsection{\HighlightNew{Parallel Parking}}
 
 Within the parking zone there is at least one parallel parking area next to the
 right lane. White cardboard boxes represent other vehicles. The boxes can be
@@ -164,12 +164,12 @@ area(s) next to the track. The left- and right-hand limits of the parking spots
 are defined by the right lane marking and an additional solid white line (also
 18 mm to 20 mm wide). Front and rear limits are defined either by white
 cardboard boxes or by a no parking zone (cf. Section
-\ref{fig_parallel_parking}). \HighlightChange{Approaching from the parking sign, the parking
-spots will be growing in length.} The final and largest spot will beat least 700
+\ref{fig_parallel_parking}). \HighlightNew{Approaching from the parking sign, the parking
+	spots will be growing in length.} The final and largest spot will beat least 700
 mm in length. Nevertheless, small distances of under 400 mm might be present
 between obstacles anywhere inside the parallel parking area(s).
 
-\subsubsection{\HighlightChange{Perpendicular Parking}}
+\subsubsection{\HighlightNew{Perpendicular Parking}}
 
 An additional type of parking area within the parking zone consists of several
 parking spots with a perpendicular orientation to the track. Such area is
@@ -325,14 +325,14 @@ Section \ref{rc_mode}.
 
 \subsection{Parking}
 
-\HighlightChange{Parking can be performed in any of the rounds of the Obstacle Evasion Course.
-Collisions during parking attempts result in penalties.}
+\HighlightNew{Parking can be performed in any of the rounds of the Obstacle Evasion Course.
+	Collisions during parking attempts result in penalties.}
 
-\HighlightChange{Within each round}, the vehicle performs \HighlightChange{maximum one} parking
+\HighlightNew{Within each round}, the vehicle performs \HighlightNew{maximum one} parking
 attempt by finding a parking spot within the parking areas and maneuver into
-it, without touching the surrounding obstacles. \HighlightChange{More than one one parking attempt per round will result in penalties.} \HighlightChange{The Parking spots are indicated by the parking sign.
-(Note: Unlike the in the previous regulations, the starting line does not indiciate parking.)} The start of the parking
-maneuver has to be signaled using the turn indicators \HighlightChange{(into the direction of the parking lot)}. 
+it, without touching the surrounding obstacles. \HighlightNew{More than one one parking attempt per round will result in penalties.} \HighlightNew{The Parking spots are indicated by the parking sign.
+	(Note: Unlike the in the previous regulations, the starting line does not indiciate parking.)} The start of the parking
+maneuver has to be signaled using the turn indicators \HighlightNew{(into the direction of the parking lot)}.
 After the vehicle came
 to a complete stop and flashed all turn indicators at least one time, signaling
 a successful parking maneuver, it may drive on. The correct position of the
@@ -342,14 +342,14 @@ positive speed along the route while touching the right lane with at least 3
 wheels.
 
 A complete parking maneuver requires the vehicle to come to a full stop being
-located in a valid spot \HighlightChange{with all of its wheels} and flash all turn
+located in a valid spot \HighlightNew{with all of its wheels} and flash all turn
 indicators at least one time. While maneuvering out of the parking spot, the
 vehicle may cross the left lane, but has to continue driving in the right lane
 after the parking maneuver.
 
 Leaving the outer boundaries of the parking area is penalized the same as
-leaving the right lane while driving. \HighlightChange{The speed in the parking lot is limited
-to the speed on the road next to the parking lot.}
+leaving the right lane while driving. \HighlightNew{The speed in the parking lot is limited
+	to the speed on the road next to the parking lot.}
 
 \subsection{Scoring}{
 	\label{obstacle_scoring}
@@ -485,18 +485,18 @@ to the speed on the road next to the parking lot.}
 
 	\clearpage
 
-	
-	\subsubsection*{\HighlightChange{Parking}}
+
+	\subsubsection*{\HighlightNew{Parking}}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
-			\textbf{Positive}                                           & \textbf{Neutral}                                                  & \textbf{Negative}          \\
+			\textbf{Positive}                                               & \textbf{Neutral}                               & \textbf{Negative}          \\
 			\midrule
-			Vehicle parked correctly in the parking lot                 & Not parked correctly                                              & Collision with an Obstacle \\
-			All of the wheels are within the boundaries of the parking spot& No or more than one parking maneuver performed                                  &                            \\
-			Correct use of turn indicators                              & Wrong use of turn indicators                                      &                            \\
+			Vehicle parked correctly in the parking lot                     & Not parked correctly                           & Collision with an Obstacle \\
+			All of the wheels are within the boundaries of the parking spot & No or more than one parking maneuver performed &                            \\
+			Correct use of turn indicators                                  & Wrong use of turn indicators                   &                            \\
 			\topstrut
-			\textbf{+20}                                                & \textbf{0}                                                        & \textbf{-10}               \\
+			\textbf{+20}                                                    & \textbf{0}                                     & \textbf{-10}               \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
