@@ -8,11 +8,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{caudri_report}
 
-\usepackage[table]{xcolor}  % Used for coloring tables
-\usepackage{booktabs}		% Used for booktabs style (scientific looking) tables
-\usepackage{mdframed} 		% Used for colored boxes and multipage frames
-\usepackage{tablefootnote}	% Used for footnotes in tables
-\usepackage{soul}			% Used for highlighting text
+\usepackage[table]{xcolor}  			% Used for coloring tables
+\usepackage{booktabs}					% Used for booktabs style (scientific looking) tables
+\usepackage[framemethod=tikz]{mdframed} % Used for colored boxes and multipage frames
+\usepackage{tablefootnote}				% Used for footnotes in tables
+\usepackage{soul}						% Used for highlighting text
+\usepackage{xparse}                     % For custom environments
+\usepackage{amsmath}                    % For math environments and proper line breaks
+
+% Custom commands for highlighting text
+\newcommand{\HighlightNew}[1]{\sethlcolor{yellow}\hl{#1}}
+\newcommand{\HighlightChange}[1]{\sethlcolor{green}\hl{#1}}
+\newcommand{\HighlightFix}[1]{\sethlcolor{red}\hl{#1}}
+
+% Custom environment for paragraph highlighting
+\NewDocumentEnvironment{highlight}{O{yellow}}%
+{% \begin{highlight}[<rule colour>]
+  \allowdisplaybreaks[1]%
+  \begin{mdframed}%
+    [topline=false,rightline=false,bottomline=false,% Show only left line
+      innertopmargin=0pt,innerrightmargin=0pt,innerbottommargin=0pt,%
+      skipabove=\parskip,skipbelow=0.3\baselineskip,% Add space above and below
+      innerleftmargin=1em,outerlinewidth=5pt,linecolor=#1,% Set line colour and line width
+      leftmargin=-16pt]% Move everything to the left
+    }
+    {\end{mdframed}
+}
 
 \Title{CAuDri-Challenge Regulations 2025}
 \Subtitle{Official Rules and Regulations}
@@ -21,11 +42,6 @@
 
 \newcommand{\yearofchallenge}{2025}
 \newcommand{\dateofchallenge}{May 17th}
-
-% Custom commands for highlighting text
-\newcommand{\HighlightNew}[1]{\sethlcolor{yellow}\hl{#1}}
-\newcommand{\HighlightChange}[1]{\sethlcolor{green}\hl{#1}}
-\newcommand{\HighlightFix}[1]{\sethlcolor{red}\hl{#1}}
 
 \begin{document}
 
