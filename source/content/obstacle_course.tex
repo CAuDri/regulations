@@ -494,23 +494,36 @@ leaving the right lane while driving. \HighlightNew{The speed in the parking lot
 	\footnotetext[2]{Includes driving straight incorrectly}
 	\newpage
 
-
 	\subsubsection*{No-Passing Zones}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
 			\textbf{Positive}                                       & \textbf{Neutral}                   & \textbf{Negative}          \\
 			\midrule
-			\HighlightNew{Vehicle did not cross double center line} & Vehicle started a passing maneuver & Collision with an obstacle \\
-			Distance to obstacle > 30cm                             & Distance to obstacle < 30cm        &                            \\
-			                                                        &                                    &                            \\
+			Stayed in the right lane		& Started a passing maneuver 		& Collision with an Obstacle \\
+			Distance to Obstacle > 30cm     & Distance to Obstacle < 30cm       &                            \\
+			                                &                                   &                            \\
 			\topstrut
 			\textbf{+5}                                             & \textbf{0}                         & \textbf{-10}               \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\clearpage
+
+	\subsubsection*{\HighlightNew{Parking}}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{XXX}
+			\toprule
+			\textbf{Positive}                                               & \textbf{Neutral}                               & \textbf{Negative}          \\
+			\midrule
+			Vehicle parked correctly in the parking lot                     & Not parked correctly                           & Collision with an Obstacle \\
+			All of the wheels are within the boundaries of the parking spot & No or more than one parking maneuver performed &                            \\
+			Correct use of turn indicators                                  & Wrong use of turn indicators                   &                            \\
+			\topstrut
+			\textbf{+20}                                                    & \textbf{0}                                     & \textbf{-10}               \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
 
 
 	\subsubsection*{\HighlightNew{Parking}}
@@ -534,9 +547,9 @@ leaving the right lane while driving. \HighlightNew{The speed in the parking lot
 			\toprule
 			\textbf{Positive}                                           & \textbf{Neutral}                                                  & \textbf{Negative}          \\
 			\midrule
-			Vehicle did not enter the barred area                       & Vehicle entered the barred area                                   & Collision with an obstacle \\
-			\textit{Vehicle respected the right-of-way}\footnotemark[1] & \textit{Vehicle did not respect the right-of-way}\footnotemark[1] &                            \\
-			Use of turn indicators                                      & Wrong use of turn indicators                                      &                            \\
+			Did not enter the barred area                  	& Entered the barred area                        	& Collision with an obstacle	\\
+			Respected the right-of-way \footnotemark[1] 	& Did not respect the right-of-way \footnotemark[1] 	&                            	\\
+			Use of turn indicators                        	& Wrong use of turn indicators                     	&                            	\\
 			\topstrut
 			\textbf{+15}                                                & \textbf{0}                                                        & \textbf{-10}               \\
 			\bottomrule
@@ -549,17 +562,18 @@ leaving the right lane while driving. \HighlightNew{The speed in the parking lot
 			\toprule
 			\textbf{Positive}                                               & \textbf{Neutral}                                                   & \textbf{Negative}           \\
 			\midrule
-			\textit{Vehicle stopped at the crosswalk}\footnotemark[2]       & \textit{Vehicle stopped for < 3s at the crosswalk}\footnotemark[2] & Collision with a pedestrian \\
-			\textit{Pedestrians have cleared the crosswalk}\footnotemark[2] & \textit{Stopping distance from crosswalk > 15cm}\footnotemark[2]   &                             \\
-			                                                                & \textit{Pedestrians have not fully crossed}\footnotemark[2]        &                             \\
+			Stopped at the crosswalk \footnotemark[2]       		& Stopped for < 3s at the crosswalk \footnotemark[2] 				& Collision with a pedestrian	\\
+			Pedestrians have cleared the crosswalk \footnotemark[2]	& Distance from the crosswalk > 15cm \footnotemark[2]   				&                             	\\
+			                                                        & Pedestrians have not fully cleared the crosswalk \footnotemark[2]	&                             	\\
 			\topstrut
 			\textbf{+15}                                                    & \textbf{0}                                                         & \textbf{-10}                \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[1]{In case a dynamic obstacle is present}
+	\footnotetext[1]{In case an Obstacle is present}
 	\footnotetext[2]{In case a pedestrian is present}
+	\newpage
 
 	\subsection*{Additional Penalties}
 	\begin{table}[H]
