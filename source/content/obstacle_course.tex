@@ -445,7 +445,7 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}          & \textbf{Neutral}                                & \textbf{Negative}          \\
 				\midrule
-				Respected the right-of-way & Did not respect right-of-way                    & Collision with an Obstacle \\
+				Respected the right-of-way \footnotemark[1] & Did not respect right-of-way \footnotemark[1]                    & Collision with an Obstacle \\
 				                           & Obstacle has not fully cleared the intersection &                            \\
 				\topstrut
 				\textbf{+10}               & \textbf{0}                                      & \textbf{-10}               \\
@@ -459,14 +459,14 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}                           & \textbf{Neutral}             & \textbf{Negative}          \\
 				\midrule
-				Respected the right-of-way \footnotemark[1] & Did not respect right-of-way & Collision with an Obstacle \\
+				Respected the right-of-way \footnotemark[1] & Did not respect right-of-way \footnotemark[1] & Collision with an Obstacle \\
 				\topstrut
 				\textbf{+5}                                 & \textbf{0}                   & \textbf{-10}               \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
 
-		\footnotetext[1]{If the obstacle has the right-of-way, e.g. at a barred area}
+		\footnotetext[1]{If the obstacle has the right-of-way, e.g. at a barred area, priority-to-right, ...}
 		\newpage
 
 		\subsubsection*{Stop and Give-Way Intersection}
@@ -475,8 +475,8 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}                      & \textbf{Neutral}                           & \textbf{Negative}                              \\
 				\midrule
-				Stopped at the stop or give-way line   & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[1] \\
-				Went straight through the intersection & Made a wrong turn                          &                                                \\
+				Stopped at the stop or give-way line   & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[2] \\
+				Went straight through the intersection & Made a wrong turn \footnotemark[3]         &                                                \\
 				                                       & Stopped for < 3s at stop line              &                                                \\
 				                                       & Stopped for < 1s at give-way line          &                                                \\
 				\topstrut
@@ -492,7 +492,7 @@ Section \ref{rc_mode}.
 				\textbf{Positive}                      & \textbf{Neutral}                   & \textbf{Negative}                    \\
 				\midrule
 				Stopped at the give-way line           & Distance from give-way line > 15cm &                                      \\
-				Went straight through the intersection & Made a wrong turn                  &                                      \\
+				Went straight through the intersection & Made a wrong turn \footnotemark[3] &                                      \\
 				                                       & Stopped for < 1s at give-way line  &                                      \\
 
 				\topstrut
@@ -507,8 +507,8 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}                    & \textbf{Neutral}                           & \textbf{Negative}                              \\
 				\midrule
-				Stopped at the stop or give-way line & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[1] \\
-				Took the correct turn                & Made a wrong turn \footnotemark[2]         &                                                \\
+				Stopped at the stop or give-way line & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[2] \\
+				Took the correct turn                & Made a wrong turn \footnotemark[3]         &                                                \\
 				                                     & Stopped for < 3s at stop line              &                                                \\
 				                                     & Stopped for < 1s at give-way line          &                                                \\
 				\topstrut
@@ -517,8 +517,8 @@ Section \ref{rc_mode}.
 			\end{tabularx}
 		\end{table}
 
-		\footnotetext[1]{Only applies for stop and not for give-way line}
-		\footnotetext[2]{Includes driving straight incorrectly}
+		\footnotetext[2]{Only applies for stop and not for give-way line}
+		\footnotetext[3]{Includes driving straight incorrectly}
 		\newpage
 
 		\subsubsection*{Parking}
@@ -571,8 +571,8 @@ Section \ref{rc_mode}.
 			\toprule
 			\textbf{Positive}                         & \textbf{Neutral}                                    & \textbf{Negative}           \\
 			\midrule
-			Stopped at the crosswalk \footnotemark[1] & Stopped for < 3s at the crosswalk \footnotemark[1]  & Collision with a pedestrian \\
-			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm \footnotemark[1] &                             \\
+			Stopped at the crosswalk \footnotemark[4] & Stopped for < 3s at the crosswalk \footnotemark[4]  & Collision with a pedestrian \\
+			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm \footnotemark[4] &                             \\
 			                                          & Pedestrians have not fully cleared the crosswalk    &                             \\
 			\topstrut
 			\textbf{+15}                              & \textbf{0}                                          & \textbf{-10}                \\
@@ -580,7 +580,7 @@ Section \ref{rc_mode}.
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[1]{If a pedestrian is present}
+	\footnotetext[4]{If a pedestrian is present}
 	\newpage
 
 	\subsection*{Additional Penalties}
