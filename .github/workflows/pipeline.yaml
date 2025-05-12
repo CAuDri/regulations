@@ -12,7 +12,7 @@ jobs:
           root_file: source/CAuDri-Challenge_Regulations.tex
           work_in_root_file_dir: true
       - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: PDF
           path: source/CAuDri-Challenge_Regulations.pdf

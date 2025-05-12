@@ -4,21 +4,26 @@
 
 The event “Obstacle Evasion Course” extends the track of the Free Drive event
 with additional elements which need to be considered during the driving task.
-Parking maneuvers shall not be performed within this event. Static and dynamic
-obstacles are added to the rural road scenario. The track does additionally
-contain at least one suburban section at this point. All definitions concerning
-the course of the road maintain validity. There will be at least 1000 mm track
-length between obstacles. The additional elements are spaced at least 1000 mm
-apart as well and do not overlap. Oncoming traffic is not to be expected,
-except when passing barred areas inside the suburban scenario.
+Static and dynamic obstacles are added to the rural road scenario.
+\HighlightNew{Additionally, the vehicle has to perform automatic parking
+	maneuvers by finding a suitable parking spot inside a parking lot.} The track
+does additionally contain at least one suburban section at this point. All
+definitions concerning the course of the road maintain validity. There will be
+at least 1000 mm track length between obstacles. The additional elements are
+spaced at least 1000 mm apart as well and do not overlap. Oncoming traffic is
+not to be expected, except when passing barred areas inside the suburban
+scenario.
 
 \subsubsection{Suburban Scenario}
+\label{suburban_area}
 
 The suburban area is a special section of the track, containing additional
 elements compared to the track design of the rural road scenario. Beginning and
 end of suburban areas are defined by markings on the road surface (cf. Section
 \ref{fig_road_markings}) and according traffic signs (cf. Section
-\ref{traffic_signs}).
+\ref{traffic_signs}). \HighlightNew{The suburban area containins a parking lot
+	which is indicated by the parking traffic sign.} (cf. Section
+\ref{fig_parking_lot})
 
 The speed limit within the suburban section, as indicated by the traffic signs
 has to be scaled by 1:10 (i.e. a speed limit of 30 km/h corresponds to 0.83
@@ -138,6 +143,61 @@ not have the same distance to the corresponding element as the traffic sign
 (cf. Section \ref{turning}). See the following sections for the according
 specifications.
 
+\begin{highlight}
+	\subsubsection{Parking Lot}
+
+	Located on the track are parking areas with multiple spots for parallel and
+	perpendicular parking. \HighlightNew{Parking areas are announced by the
+		corresponding traffic sign.} (cf. Section \ref{fig_parking_lot}) The parking
+	area is a planar and straight part of the track with a dashed center line
+	without missing lane markings. Additional elements (intersections, missing lane
+	markings, traffic signs, etc.) are not present. All areas for parking are
+	located in this zone.
+
+	\subsubsection{Parallel Parking}
+
+	Within the parking zone there is at least one parallel parking area next to the
+	right lane. White cardboard boxes represent other vehicles. The boxes can be
+	fixed to the ground. There is a space of 20 mm to 200 mm between the right lane
+	marking and the side of the obstacle which faces the track. The obstacles
+	measure at least 100 mm in height and length. The parking area and the track
+	are located in the same ground plane. Individual parking spots of the parking
+	area can be marked as no parking zones. These areas may not be used for
+	parking, but may be used for maneuvering.
+
+	There will be multiple parking spots of different size in the parallel parking
+	area(s) next to the track. The left- and right-hand limits of the parking spots
+	are defined by the right lane marking and an additional solid white line (also
+	18 mm to 20 mm wide). Front and rear limits are defined either by white
+	cardboard boxes or by a no parking zone (cf. Section
+	\ref{fig_parallel_parking}). \HighlightNew{Approaching from the parking sign,
+		the parking spots will be growing in length.} The final and largest spot will
+	beat least 700 mm in length. Nevertheless, small distances of under 400 mm
+	might be present between obstacles anywhere inside the parallel parking
+	area(s).
+
+	\subsubsection{Perpendicular Parking}
+
+	An additional type of parking area within the parking zone consists of several
+	parking spots with a perpendicular orientation to the track. Such area is
+	located at least once on the left-hand side of the track and may also be used
+	for parking.
+
+	All spots have the same size, as shown in Section
+	\ref{fig_perpendicular_parking}. The parking spots are separated and limited to
+	the front as well as to the rear by 18 mm to 20 mm wide white markings. Parking
+	spots can be blocked by obstacles or no parking zones. A parking spot is
+	considered to be blocked, if the vehicle cannot be placed completely inside the
+	spot. Obstacles possess the same dimensions as in the parallel parking area and
+	can be placed at a distance of 20 mm to 100 mm from the solid left lane
+	marking.
+
+	For parking, the vehicle must be positioned inside one marked spot that is not
+	blocked. Vehicles may move forward or backward into the parking space. The left
+	lane of the track may only be crossed during the actual parking maneuver. When
+	searching for a parking spot, the vehicle must continue to use the right lane.
+\end{highlight}
+
 \subsubsection{Barred Area}
 
 In addition to obstacles, the suburban scenario can contain barred areas on
@@ -221,15 +281,16 @@ scenario can have a mandatory direction to cross the intersection. Different
 scenarios are shown in Section \ref{fig_intersection_mandatory}. This will be
 announced by a corresponding traffic sign and a marking on the road surface
 (cf. Sections \ref{traffic_signs} and \ref{fig_road_markings}). Vehicles will
-have to turn left or right according to these regulations. In the intersection,
-the mandatory direction will additionally be indicated by dashed turn lines
-that continue the center line and the right lane boundary. Turn lines cannot be
+have to turn left or right according to these regulations \HighlightNew{and
+	signal this accordingly with their turn indicators}. In the intersection, the
+mandatory direction will additionally be indicated by dashed turn lines that
+continue the center line and the right lane boundary. Turn lines cannot be
 missing.
 
-\subsubsection{Speed Control}
+\subsubsection{Speed Limits}
 
 Within a suburban area, the vehicle has to adhere to the given speed limit.
-Devices for controlling the speed of the vehicle might be present.
+Devices for measuring the speed of the vehicle might be present.
 
 \subsection{Execution of the Event}
 
@@ -269,6 +330,39 @@ skipping challenges of the obstacle course (by not driving in the right lane)
 will be punished with the penalty designated for the respective element. Each
 activation of RC-mode is penalized. RC-mode is subject to the regulations in
 Section \ref{rc_mode}.
+
+\subsection{Parking}
+\begin{highlight}
+	Parking can be performed once per lap during the Obstacle Evasion Course.
+
+	The vehicle can perform a parking attempt by finding a parking spot within the
+	parking areas and maneuvering into it, without touching surrounding obstacles.
+	Attempting more than one parking attempt per lap will be penalized. Parking
+	spots are indicated by the corresponding traffic sign.\footnote{\HighlightNew{
+		Unlike in previous events, the parking area is not guaranteed to be located
+		immediately at the beginning of the track. As a result, the starting line can
+		not be used as an indicator for the parking area.}}
+
+	The start of a parking maneuver must be signaled using the turn indicators. The
+	turn indicators must point in the direction of the parking spot (i.e. blink
+	left if the parking spot is to the left of the vehicle).
+
+	A complete parking maneuver requires the vehicle to come to a full stop being
+	located in a valid spot \HighlightNew{with all of its wheels} and flash all
+	turn indicators at least one time. While maneuvering out of the parking spot,
+	the vehicle may cross the left lane, but has to continue driving in the right
+	lane after the parking maneuver.
+
+	The correct position of the vehicle will be checked from both sides of the
+	track with the first flashing of the indicators. Penalties may apply until the
+	vehicle is driving with a positive speed along the route while touching the
+	right lane with at least 3 wheels.
+
+	Leaving the outer boundaries of the parking area is penalized the same as
+	leaving the right lane while driving. \HighlightNew{The speed in the parking
+		lot is limited to the speed on the adjacent road.} Collisions with obstacles
+	during the parking maneuver will be penalized.
+\end{highlight}
 
 \subsection{Scoring}{
 	\label{obstacle_scoring}
@@ -310,6 +404,8 @@ Section \ref{rc_mode}.
 	vehicle has left the track or skipped certain parts of it, the commission will
 	decide whether the attempt was valid.
 
+	\newpage
+
 	\subsection{Scoring Guidelines}
 	\label{obstacle_scoring_guidelines}
 
@@ -319,9 +415,8 @@ Section \ref{rc_mode}.
 			\toprule
 			\textbf{Positive}                & \textbf{Neutral}             & \textbf{Negative}          \\
 			\midrule
-			Use of turn indicators           & Wrong use of turn indicators & Collision with an obstacle \\
+			Correct use of turn indicators   & Wrong use of turn indicators & Collision with an Obstacle \\
 			Successfully passed the obstacle & Merging distance > 2m        &                            \\
-			                                 &                              &                            \\
 			\topstrut
 			\textbf{+10}                     & \textbf{0}                   & \textbf{-10}               \\
 			\bottomrule
@@ -332,110 +427,161 @@ Section \ref{rc_mode}.
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
-			\textbf{Positive}                & \textbf{Neutral}                & \textbf{Negative}          \\
+			\textbf{Positive}                & \textbf{Neutral}                        & \textbf{Negative}          \\
 			\midrule
-			Use of turn indicators           & Wrong use of turn indicators    & Collision with an obstacle \\
-			Successfully passed the obstacle & Merging distance > 2m           &                            \\
-			                                 & Obstacle passed in intersection &                            \\
+			Correct use of turn indicators   & Wrong use of turn indicators            & Collision with an obstacle \\
+			Successfully passed the obstacle & Merging distance > 2m                   &                            \\
+			                                 & Passed the obstacle in an intersection  &                            \\
 			\topstrut
-			\textbf{+15}                     & \textbf{0}                      & \textbf{-10}               \\
+			\textbf{+15}                     & \textbf{0}                              & \textbf{-10}               \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\subsubsection*{Intersections of the Rural Road Scenario}
-	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{XXX}
-			\toprule
-			\textbf{Positive}                                           & \textbf{Neutral}                                                   & \textbf{Negative}                                              \\
-			\midrule
-			Vehicle went straight through the intersection              & Vehicle made a wrong turn                                          & Collision with an obstacle                                     \\
-			\textit{Vehicle stopped at the stop line}\footnotemark[1]   & \textit{Vehicle stopped for < 3s}\footnotemark[1]                  & \textit{Vehicle did not stop at the stop line}\footnotemark[1] \\
-			                                                            & \textit{Distance from stop-line > 15cm}\footnotemark[1]            &                                                                \\
-			\textit{Vehicle respected the right-of-way}\footnotemark[2] & \textit{Vehicle did not respect the right-of-way}\footnotemark[2]  &                                                                \\
-			                                                            & \textit{Obstacle has not cleared the intersection}\footnotemark[2] &                                                                \\
-			\topstrut
-			\textbf{+10}                                                & \textbf{0}                                                         & \textbf{-10}                                                   \\
-			\bottomrule
-		\end{tabularx}
-	\end{table}
+	\begin{highlight}
+		\subsubsection*{Obstacles at Intersections}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}          & \textbf{Neutral}                                & \textbf{Negative}          \\
+				\midrule
+				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2]                    & Collision with an obstacle \\
+				                           & Obstacle has not fully cleared the intersection &                            \\
+				\topstrut
+				\textbf{+10}               & \textbf{0}                                      & \textbf{-10}               \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-	\footnotetext[1]{In case a stop line is present}
-	\footnotetext[2]{In case a dynamic obstacle is present}
+		\subsubsection*{Oncoming Obstacles}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}                           & \textbf{Neutral}             & \textbf{Negative}          \\
+				\midrule
+				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2] & Collision with an obstacle \\
+				\topstrut
+				\textbf{+5}                                 & \textbf{0}                   & \textbf{-10}               \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-	\subsubsection*{Extended Intersections}
-	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{XXX}
-			\toprule
-			\textbf{Positive}                                           & \textbf{Neutral}                                                   & \textbf{Negative}                                      \\
-			\midrule
-			Vehicle stopped at the stop or give-way line                & \textit{Distance from stop-line > 15cm}\footnotemark[1]            & \textit{Did not stop at the stop line}\footnotemark[1] \\
-			                                                            & \textit{Stopped for < 3s at stop line}\footnotemark[1]             &                                                        \\
-			                                                            & \textit{Stopped for < 1s at give-way line}\footnotemark[3]         &                                                        \\
-			\textit{Vehicle respected the right-of-way}\footnotemark[2] & \textit{Vehicle did not respect the right-of-way}\footnotemark[2]  & Collision with an obstacle                             \\
-			                                                            & \textit{Obstacle has not cleared the intersection}\footnotemark[2] &                                                        \\
-			\textit{Vehicle took the right turn}\footnotemark[4]        & \textit{Vehicle took the wrong turn}\footnotemark[4]               &                                                        \\
-			                                                            &                                                                    &                                                        \\
-			\topstrut
-			\textbf{+20}                                                & \textbf{0}                                                         & \textbf{-10}                                           \\
-			\bottomrule
-		\end{tabularx}
-	\end{table}
+		\footnotetext[2]{If the obstacle has the right-of-way, e.g. at a barred area, priority-to-right, ...}
+		\newpage
 
-	\footnotetext[1]{In case a stop line is present}
-	\footnotetext[2]{In case a dynamic obstacle is present}
-	\footnotetext[3]{In case a give-way line is present}
-	\footnotetext[4]{In case the intersection has a mandatory turn}
+		\subsubsection*{Stop and Give-Way Intersection}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}                      & \textbf{Neutral}                           & \textbf{Negative}                              \\
+				\midrule
+				Stopped at the stop or give-way line   & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[3] \\
+				Went straight through the intersection & Made a wrong turn \footnotemark[4]         &                                                \\
+				                                       & Stopped for < 3s at stop line              &                                                \\
+				                                       & Stopped for < 1s at give-way line          &                                                \\
+				\topstrut
+				\textbf{+5}                            & \textbf{0}                                 & \textbf{-5}                                    \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-	\subsubsection*{No-Passing Zones}
-	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{XXX}
-			\toprule
-			\textbf{Positive}                                       & \textbf{Neutral}                   & \textbf{Negative}          \\
-			\midrule
-			\HighlightNew{Vehicle did not cross double center line} & Vehicle started a passing maneuver & Collision with an obstacle \\
-			Distance to obstacle > 30cm                             & Distance to obstacle < 30cm        &                            \\
-			                                                        &                                    &                            \\
-			\topstrut
-			\textbf{+5}                                             & \textbf{0}                         & \textbf{-10}               \\
-			\bottomrule
-		\end{tabularx}
-	\end{table}
+		\subsubsection*{Priority-to-Right Intersection}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}                      & \textbf{Neutral}                   & \textbf{Negative}                    \\
+				\midrule
+				Stopped at the give-way line           & Distance from give-way line > 15cm &                                      \\
+				Went straight through the intersection & Made a wrong turn \footnotemark[4] &                                      \\
+				                                       & Stopped for < 1s at give-way line  &                                      \\
 
-	\clearpage
+				\topstrut
+				\textbf{+10}                           & \textbf{0}                         & \textit{No negative points possible} \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-	\subsubsection*{Barred Area}
-	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{XXX}
-			\toprule
-			\textbf{Positive}                                           & \textbf{Neutral}                                                  & \textbf{Negative}          \\
-			\midrule
-			Vehicle did not enter the barred area                       & Vehicle entered the barred area                                   & Collision with an obstacle \\
-			\textit{Vehicle respected the right-of-way}\footnotemark[1] & \textit{Vehicle did not respect the right-of-way}\footnotemark[1] &                            \\
-			Use of turn indicators                                      & Wrong use of turn indicators                                      &                            \\
-			\topstrut
-			\textbf{+15}                                                & \textbf{0}                                                        & \textbf{-10}               \\
-			\bottomrule
-		\end{tabularx}
-	\end{table}
+		\subsubsection*{Mandatory Direction Intersection}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}                    & \textbf{Neutral}                           & \textbf{Negative}                              \\
+				\midrule
+				Stopped at the stop or give-way line & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[3] \\
+				Took the correct turn                & Made a wrong turn \footnotemark[4]         &                                                \\
+				                                     & Stopped for < 3s at stop line              &                                                \\
+				                                     & Stopped for < 1s at give-way line          &                                                \\
+				\topstrut
+				\textbf{+10}                         & \textbf{0}                                 & \textbf{-5}                                    \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+
+		\footnotetext[3]{Only applies for stop and not for give-way line}
+		\footnotetext[4]{Includes driving straight incorrectly}
+		\newpage
+
+		\subsubsection*{Parking}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}                                        & \textbf{Neutral}                               & \textbf{Negative}          \\
+				\midrule
+				Parked correctly in the parking lot                      & Not parked correctly                           & Collision with an obstacle \\
+				All wheels are within the boundaries of the parking spot & No or more than one parking maneuver performed &                            \\
+				Correct use of turn indicators                           & Wrong use of turn indicators                   &                            \\
+				\topstrut
+				\textbf{+20}                                             & \textbf{0}                                     & \textbf{-10}               \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+
+		\subsubsection*{No-Passing Zones}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}           & \textbf{Neutral}            & \textbf{Negative}                             \\
+				\midrule
+				Stayed in the right lane    & Distance to Obstacle < 30cm & Crossed the solid line with more than 1 wheel \\
+				Distance to Obstacle > 30cm &                             &                                               \\
+				\topstrut
+				\textbf{+5}                 & \textbf{0}                  & \textbf{-10}                                  \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+
+		\subsubsection*{Barred Area}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}              & \textbf{Neutral}             & \textbf{Negative}                    \\
+				\midrule
+				Did not enter the barred area  & Entered the barred area      &                                      \\
+				Correct use of turn indicators & Wrong use of turn indicators &                                      \\
+				\topstrut
+				\textbf{+10}                   & \textbf{0}                   & \textit{No negative points possible} \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+	\end{highlight}
 
 	\subsubsection*{Crosswalk}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
-			\textbf{Positive}                                               & \textbf{Neutral}                                                   & \textbf{Negative}           \\
+			\textbf{Positive}                         & \textbf{Neutral}                                    & \textbf{Negative}           \\
 			\midrule
-			\textit{Vehicle stopped at the crosswalk}\footnotemark[2]       & \textit{Vehicle stopped for < 3s at the crosswalk}\footnotemark[2] & Collision with a pedestrian \\
-			\textit{Pedestrians have cleared the crosswalk}\footnotemark[2] & \textit{Stopping distance from crosswalk > 15cm}\footnotemark[2]   &                             \\
-			                                                                & \textit{Pedestrians have not fully crossed}\footnotemark[2]        &                             \\
+			Stopped at the crosswalk \footnotemark[5] & Stopped for < 3s at the crosswalk \footnotemark[5]  & Collision with a pedestrian \\
+			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm \footnotemark[5] &                             \\
+			                                          & Pedestrians have not fully cleared the crosswalk    &                             \\
 			\topstrut
-			\textbf{+15}                                                    & \textbf{0}                                                         & \textbf{-10}                \\
+			\textbf{+15}                              & \textbf{0}                                          & \textbf{-10}                \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[1]{In case a dynamic obstacle is present}
-	\footnotetext[2]{In case a pedestrian is present}
+	\footnotetext[5]{If a pedestrian is present}
+	\newpage
 
 	\subsection*{Additional Penalties}
 	\begin{table}[H]
@@ -445,11 +591,11 @@ Section \ref{rc_mode}.
 			\midrule
 			Second Attempt                & 1                      &  & -0.5 x base points \\
 			Active WiFi Connection        & 1                      &  & -0.5 x base points \\
-			Exceeding Speed-Limit         & $\infty$               &  & -10                \\
+			Exceeding Speed-Limit         & $\infty$               &  & \HighlightNew{-5}  \\
 			Activation of RC-Mode         & $\infty$               &  & -5                 \\
-			Leaving the right lane        & 10                     &  & -5                 \\
+			Leaving the right lane        & 10                     &  & \HighlightNew{-2}  \\
 			Collision with road sign      & $\infty$               &  & -5                 \\
-			Falsely using turn indicators & 10                     &  & -5                 \\
+			Falsely using turn indicators & 10                     &  & \HighlightNew{-2}  \\
 			\bottomrule
 		\end{tabular}
 	\end{table}

@@ -36,7 +36,7 @@
 % Default text in header
 \newcommand{\HeaderText}{CAuDri-Challenge 2025}
 
-\graphicspath{{./graphics/}, {../graphics/}, {./}, {../}} 
+\graphicspath{{./graphics/}, {../graphics/}, {./}, {../}}
 
 % Use sans-serif as default font family
 \renewcommand{\familydefault}{\sfdefault}
@@ -50,7 +50,7 @@
 
 % Add space to the top of the header
 % Needs to be defined manually, setting it via KOMA Options won't have any effect
-\setlength{\headheight}{3.3cm}
+\setlength{\headheight}{3.8cm}
 
 % Load scrlayer-scrpage for header/footer management
 \clearpairofpagestyles % Clear default header and footer settings
@@ -59,6 +59,7 @@
 \setkomafont{pagehead}{\normalfont}
 \ihead{\large\HeaderText\\\large\Subtitle}
 \ohead{\includegraphics[width=3.5cm]{caudri_logo.png}}
+\cfoot{\pagemark}
 
 % Enable header on chapter pages and redefine chapter spacing
 \renewcommand*\chapterpagestyle{scrheadings}
@@ -69,10 +70,10 @@
 
 % Define hyperref link colors
 \hypersetup{colorlinks  = true,
-            linkcolor   = black,
-            urlcolor    = blue,
-            citecolor   = black,
-            anchorcolor = black}
+  linkcolor   = black,
+  urlcolor    = blue,
+  citecolor   = black,
+  anchorcolor = black}
 
 % Slightly scale the height of table rows
 \renewcommand{\arraystretch}{1.2}
