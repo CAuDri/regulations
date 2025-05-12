@@ -561,14 +561,14 @@ Section \ref{rc_mode}.
 		\end{table}
 	\end{highlight}
 
-	\subsubsection*{Crosswalk}
+	\subsubsection*{Crosswalk with Pedestrian(s)}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
 			\textbf{Positive}                         & \textbf{Neutral}                                    & \textbf{Negative}           \\
 			\midrule
-			Stopped at the crosswalk \footnotemark[5] & Stopped for < 3s at the crosswalk \footnotemark[5]  & Collision with a pedestrian \\
-			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm \footnotemark[5] &                             \\
+			Stopped at the crosswalk                  & Stopped for < 3s at the crosswalk                   & Collision with a pedestrian \\
+			Pedestrians have cleared the crosswalk    & Distance from the crosswalk                         &                             \\
 			                                          & Pedestrians have not fully cleared the crosswalk    &                             \\
 			\topstrut
 			\textbf{+15}                              & \textbf{0}                                          & \textbf{-10}                \\
@@ -576,7 +576,19 @@ Section \ref{rc_mode}.
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[5]{If a pedestrian is present}
+	\subsubsection*{Crosswalk without Pedestrians}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{XXX}
+			\toprule
+			\textbf{Positive}             & \textbf{Neutral}         & \textbf{Negative}                     \\
+			\midrule
+			Did not stop at the crosswalk & Stopped at the crosswalk &                                       \\
+			\topstrut
+			\textbf{+10}                  & \textbf{0}               &  \textit{No negative points possible} \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+
 	\newpage
 
 	\subsection*{Additional Penalties}
