@@ -415,8 +415,7 @@ Section \ref{rc_mode}.
 			\toprule
 			\textbf{Positive}                & \textbf{Neutral}             & \textbf{Negative}          \\
 			\midrule
-			Correct use of turn indicators   & Wrong use of turn indicators & Collision with an Obstacle \\
-			Successfully passed the Obstacle & Merging distance > 2m        &                            \\
+			Successfully passed the obstacle & Merging distance > 2m        & Collision with an obstacle \\
 			\topstrut
 			\textbf{+10}                     & \textbf{0}                   & \textbf{-10}               \\
 			\bottomrule
@@ -429,9 +428,8 @@ Section \ref{rc_mode}.
 			\toprule
 			\textbf{Positive}                & \textbf{Neutral}                        & \textbf{Negative}          \\
 			\midrule
-			Correct use of turn indicators   & Wrong use of turn indicators            & Collision with an Obstacle \\
-			Successfully passed the Obstacle & Merging distance > 2m                   &                            \\
-			                                 & Passed the Obstacle in the intersection &                            \\
+			Successfully passed the obstacle & Merging distance > 2m                   & Collision with an obstacle \\
+			                                 & Passed the obstacle in an intersection  &                            \\
 			\topstrut
 			\textbf{+15}                     & \textbf{0}                              & \textbf{-10}               \\
 			\bottomrule
@@ -445,7 +443,7 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}          & \textbf{Neutral}                                & \textbf{Negative}          \\
 				\midrule
-				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2]                    & Collision with an Obstacle \\
+				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2]                    & Collision with an obstacle \\
 				                           & Obstacle has not fully cleared the intersection &                            \\
 				\topstrut
 				\textbf{+10}               & \textbf{0}                                      & \textbf{-10}               \\
@@ -459,7 +457,7 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}                           & \textbf{Neutral}             & \textbf{Negative}          \\
 				\midrule
-				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2] & Collision with an Obstacle \\
+				Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2] & Collision with an obstacle \\
 				\topstrut
 				\textbf{+5}                                 & \textbf{0}                   & \textbf{-10}               \\
 				\bottomrule
@@ -469,14 +467,14 @@ Section \ref{rc_mode}.
 		\footnotetext[2]{If the obstacle has the right-of-way, e.g. at a barred area, priority-to-right, ...}
 		\newpage
 
-		\subsubsection*{Stop and Give-Way Intersection}
+		\subsubsection*{Drive Straight Stop/Give-Way Intersection}
 		\begin{table}[H]
 			\begin{tabularx}{\textwidth}{XXX}
 				\toprule
 				\textbf{Positive}                      & \textbf{Neutral}                           & \textbf{Negative}                              \\
 				\midrule
 				Stopped at the stop or give-way line   & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[3] \\
-				Went straight through the intersection & Made a wrong turn \footnotemark[4]         &                                                \\
+				Went straight through the intersection & Turned at the intersection                 &                                                \\
 				                                       & Stopped for < 3s at stop line              &                                                \\
 				                                       & Stopped for < 1s at give-way line          &                                                \\
 				\topstrut
@@ -485,14 +483,14 @@ Section \ref{rc_mode}.
 			\end{tabularx}
 		\end{table}
 
-		\subsubsection*{Priority-to-Right Intersection}
+		\subsubsection*{Drive Straight Priority-to-Right Intersection}
 		\begin{table}[H]
 			\begin{tabularx}{\textwidth}{XXX}
 				\toprule
 				\textbf{Positive}                      & \textbf{Neutral}                   & \textbf{Negative}                    \\
 				\midrule
 				Stopped at the give-way line           & Distance from give-way line > 15cm &                                      \\
-				Went straight through the intersection & Made a wrong turn \footnotemark[4] &                                      \\
+				Went straight through the intersection & Turned at the intersection         &                                      \\
 				                                       & Stopped for < 1s at give-way line  &                                      \\
 
 				\topstrut
@@ -501,7 +499,7 @@ Section \ref{rc_mode}.
 			\end{tabularx}
 		\end{table}
 
-		\subsubsection*{Mandatory Direction Intersection}
+		\subsubsection*{\HighlightChange{Mandatory Turn Stop/Give-Way Intersection}}
 		\begin{table}[H]
 			\begin{tabularx}{\textwidth}{XXX}
 				\toprule
@@ -512,7 +510,22 @@ Section \ref{rc_mode}.
 				                                     & Stopped for < 3s at stop line              &                                                \\
 				                                     & Stopped for < 1s at give-way line          &                                                \\
 				\topstrut
-				\textbf{+10}                         & \textbf{0}                                 & \textbf{-5}                                    \\
+				\textbf{+15}                         & \textbf{0}                                 & \textbf{-5}                                    \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+
+		\subsubsection*{\HighlightChange{Mandatory Turn Priority-to-Right Intersection}}
+		\begin{table}[H]
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Positive}        & \textbf{Neutral}                   & \textbf{Negative}                    \\
+				\midrule
+				Stopped at give-way line & Distance from give-way line > 15cm &                                      \\
+				Took the correct turn    & Made a wrong turn \footnotemark[4] &                                      \\
+				                         & Stopped for < 1s at give-way line  &                                      \\
+				\topstrut
+				\textbf{+15}             & \textbf{0}                         & \textit{No negative points possible} \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
@@ -527,9 +540,8 @@ Section \ref{rc_mode}.
 				\toprule
 				\textbf{Positive}                                        & \textbf{Neutral}                               & \textbf{Negative}          \\
 				\midrule
-				Parked correctly in the parking lot                      & Not parked correctly                           & Collision with an Obstacle \\
+				Parked correctly in the parking lot                      & Not parked correctly                           & Collision with an obstacle \\
 				All wheels are within the boundaries of the parking spot & No or more than one parking maneuver performed &                            \\
-				Correct use of turn indicators                           & Wrong use of turn indicators                   &                            \\
 				\topstrut
 				\textbf{+20}                                             & \textbf{0}                                     & \textbf{-10}               \\
 				\bottomrule
@@ -540,12 +552,12 @@ Section \ref{rc_mode}.
 		\begin{table}[H]
 			\begin{tabularx}{\textwidth}{XXX}
 				\toprule
-				\textbf{Positive}           & \textbf{Neutral}            & \textbf{Negative}                             \\
+				\textbf{Positive}                   & \textbf{Neutral}            & \textbf{Negative}                                    \\
 				\midrule
-				Stayed in the right lane    & Distance to Obstacle < 30cm & Crossed the solid line with more than 1 wheel \\
-				Distance to Obstacle > 30cm &                             &                                               \\
+				Did not cross the solid center line & Distance to obstacle < 30cm & Crossed the solid center line with more than 1 wheel \\
+				Distance to obstacle > 30cm         &                             &                                                      \\
 				\topstrut
-				\textbf{+5}                 & \textbf{0}                  & \textbf{-10}                                  \\
+				\textbf{+5}                         & \textbf{0}                  & \textbf{-10}                                         \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
@@ -557,7 +569,6 @@ Section \ref{rc_mode}.
 				\textbf{Positive}              & \textbf{Neutral}             & \textbf{Negative}                    \\
 				\midrule
 				Did not enter the barred area  & Entered the barred area      &                                      \\
-				Correct use of turn indicators & Wrong use of turn indicators &                                      \\
 				\topstrut
 				\textbf{+10}                   & \textbf{0}                   & \textit{No negative points possible} \\
 				\bottomrule
@@ -565,14 +576,14 @@ Section \ref{rc_mode}.
 		\end{table}
 	\end{highlight}
 
-	\subsubsection*{Crosswalk}
+	\subsubsection*{Crosswalk with Pedestrian(s)}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{XXX}
 			\toprule
 			\textbf{Positive}                         & \textbf{Neutral}                                    & \textbf{Negative}           \\
 			\midrule
-			Stopped at the crosswalk \footnotemark[5] & Stopped for < 3s at the crosswalk \footnotemark[5]  & Collision with a pedestrian \\
-			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm \footnotemark[5] &                             \\
+			Stopped at the crosswalk                  & Stopped for < 3s at the crosswalk                   & Collision with a pedestrian \\
+			Pedestrians have cleared the crosswalk    & Distance from the crosswalk > 15cm                  &                             \\
 			                                          & Pedestrians have not fully cleared the crosswalk    &                             \\
 			\topstrut
 			\textbf{+15}                              & \textbf{0}                                          & \textbf{-10}                \\
@@ -580,7 +591,19 @@ Section \ref{rc_mode}.
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[5]{If a pedestrian is present}
+	\subsubsection*{\HighlightChange{Crosswalk without Pedestrians}}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{XXX}
+			\toprule
+			\textbf{Positive}             & \textbf{Neutral}         & \textbf{Negative}                     \\
+			\midrule
+			Did not stop at the crosswalk & Stopped at the crosswalk &                                       \\
+			\topstrut
+			\textbf{+10}                  & \textbf{0}               &  \textit{No negative points possible} \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+
 	\newpage
 
 	\subsection*{Additional Penalties}
