@@ -1,180 +1,160 @@
-\chapter{Vehicle Requirements and Limitations}
+\chapter{Vehicle Requirements}
 
-The observance of the following regulations will be monitored during the
-competition. Violating these regulations will lead to a deduction of points or
-exclusion from the competition. The same vehicle must be used for all events.
+The observance of the following regulations will be monitored during the competition. 
+Violating these regulations will lead to a deduction of points or exclusion from the competition.
+The same vehicle must be used for all events.
 
-\section{Drivetrain}
+\section{General specifications}
 
-The vehicle must be equipped with (an) electric motor(s). The number of driven
-wheels is not limited (torque vectoring is allowed). Other motors (e.g.
-combustion engines) are not permitted.
+\subsection{Drivetrain}
 
-\section{Energy Supply}
+The vehicle must be equipped with (an) electric motor(s).
+The number of driven wheels is not limited (torque vectoring is allowed).
+Other motors (e.g. combustion engines) are not permitted.
 
-Energy must be supplied in the form of batteries. Changing the batteries
-between single events is allowed.
+\subsection{Energy Supply}
 
-\section{Physical Dimensions}
+Energy must be supplied in the form of batteries.
+Changing the batteries between single events is allowed.
 
-The vehicles must be based on four-wheeled 1:10 scale chassis. Only two axles
-are permitted. The wheelbase must measure at least 200 mm. The track width
-(measured from the center of the wheels) must measure at least 160 mm. The
-vehicle, including possible extensions and bodywork, must not be wider than 300
-mm. The height of fixed installations must not exceed a height of 300 mm above
-the track surface. Flexible antennae are allowed.
+\subsection{Steering / Tires}
 
-Apart from this, the design of the chassis is subject to the team’s creativity,
-as long as it adheres the maximum physical dimensions. For the acceptance test,
-the car must be able to drive through a fixed gate (inner dimensions: height
-300 mm, width 300 mm) in RC-mode.
+At least one axle must be steerable. 
+Teams are expected to use cushion or foam rubber tires.
+Other types of tires need to be confirmed by the commission prior to the training sessions.
+The use of traction additives or studded tires is not allowed.
 
-\section{Steering / Tires}
+\subsection{Physical Dimensions}
 
-At least one axle must be steerable. Teams are expected to use cushion or foam
-rubber tires. Other types of tires need to be confirmed by the commission prior
-to the training sessions. The use of traction additives or studded tires is not
-allowed.
+The vehicles must be based on four-wheeled 1:10 scale chassis.
+Only two axles are permitted.
+The wheelbase must measure at least 200 mm.
+The track width (measured from the center of the wheels) must measure at least 160 mm.
+The vehicle, including possible extensions and bodywork, must not be wider than 300 mm.
+The height of fixed installations must not exceed a height of 300 mm above the track surface.
+Flexible antennas are allowed.
 
-\section{Sensor Setup}
+Apart from this, the design of the chassis is subject to the team’s creativity, as long as it adheres the maximum physical dimensions.
+For the acceptance test, the car must be able to drive through a fixed gate (inner dimensions: height 300 mm, width 300 mm) in RC mode.
 
-The sensor setup can be arbitrarily chosen by the teams. Laser sensors are
-allowed only up to class 2 devices.
+\subsection{Bodywork}
 
-\section{Data Transmission}
+The teams must be able to quickly disassemble the vehicles’ bodywork, so that the inner parts of the vehicle can be inspected at any time.
+The bodywork must conform to IP 10 (EN 60529).
 
-No data or signals must be transferred from the vehicle to the outside world
-during the dynamic events, except for those signals necessary for the remote
-control (cf. Section \ref{rc_mode}).\newline An active WiFi connection may be
-used during dynamic events, this will lead to a decreased score multiplier (cf.
-Section \ref{freedrive_multipliers} and \ref{obstacle_scoring}).
+\subsection{Sensor Setup}
 
-\section{WiFi-Network}
+The sensor setup can be arbitrarily chosen by the teams.
+Laser sensors are allowed only up to class 2 devices.
 
-Each participating team may set up a single private wifi network.\newline For
-internet access, participants can connect to the eduroam network at the venue.
+\subsection{Lights}
 
-\section{Bodywork}
+The vehicle must be equipped with different lights to signal its driving behavior.
+All lights must be clearly visible in daylight conditions and be distinguishable from each other.
 
-The teams must be able to quickly disassemble the vehicles’ bodywork, so that
-the inner parts of the vehicle can be inspected at any time. The bodywork must
-conform to IP 10 (EN 60529).
+\subsubsection{Braking Lights}
 
-\section{RC-Mode}
+Three clearly visible and differentiable braking lights must be installed at the rear of the vehicle.
+Active braking must be signaled.
+
+\subsubsection{Direction Indicators}
+
+Each corner of the vehicle must be equipped with a yellow / orange light.
+The respective lights at the correct side must be flashed at a maximum frequency of 2 Hz (50\% duty-cycle, initial state "on") when overtaking, turning, or parking.
+
+\subsubsection{RC Mode Indicator}
+
+A clearly visible blue light is to be installed at the highest point of the vehicle, which flashes to signal the activation of RC mode (cf. Section \ref{rc_mode}).
+
+\subsection{Event selection}
+\label{event_selection}
+
+The vehicle must provide multiple distinctive buttons (e.g. push-buttons, touchscreen buttons, etc.), which start the different modes for the events.
+The buttons must be located on the vehicle, uniquely identifiable and easily reachable in order to allow non-team members (e.g. Judges, Referees) to start the vehicle.
+A single button or switch may be used if its usage is intuitive and the intended mode of operation clearly indicated.
+
+\section{Data and Communication}
+
+
+\subsection{Data Transmission}
+
+No data or signals must be transferred from the vehicle to the outside world during the events, except for those signals necessary for the remote control (cf. Section \ref{rc_mode}).
+An active WiFi connection may be used during events, this will lead to a decreased score multiplier (cf. Section \ref{freedrive_multipliers} and \ref{obstacle_scoring}).
+
+\subsection{WiFi Network}
+
+Each participating team may set up a single private wifi network.
+For internet access, participants can connect to the eduroam network at the venue.
+
+\subsection{RC Transmission Frequencies}
+
+In order to limit interference between the vehicles of the different teams, each team must inform the commission about the transmission frequency of their remote control used when registering.
+Frequencies are issued on a first-come-first-serve basis. 
+Additionally, specific models are known to interfere with Wi-Fi networks, or other infrastructure.
+Thus, remote controls using frequencies in the 2.4 GHz band need to be confirmed by the commission individually.
+
+\section{RC Mode}
 \label{rc_mode}
 
-In emergency situations, the vehicle must be stoppable and maneuverable using a
-remote control. This can become necessary due to faults or errors in the data
-processing or due to other problems so that the vehicle cannot continue to
-execute its automated driving task.
+In emergency situations, the vehicle must be stoppable and maneuverable using a remote control.
+This can become necessary due to faults or errors in the data processing or due to other problems so that the vehicle cannot continue to execute its automated driving task.
 
-\subsection{Activating RC-Mode}
+\subsection{Activating RC Mode}
 
-RC-mode is activated by the remote control. An active RC-mode must be signaled
-by utilizing a sufficiently bright, flashing, blue light, which is visible from
-any position on the track. The light must be fixed at the highest point of the
-vehicle. The light must flash with a frequency of 1 Hz, showing a duty cycle of
-50\%, beginning with the status "on" when activating RC-mode. RC-mode must only
-be activated after a clear misbehavior of the vehicle. This means e.g.
-completely leaving the designated course of the track.
+RC mode is activated by the remote control. An active RC mode must be signaled by utilizing a sufficiently bright, flashing, blue light, which is visible from any position on the track.
+The light must be fixed at the highest point of the vehicle.
+The light must flash with a frequency of 1 Hz, showing a duty cycle of 50\%, beginning with the status "on" when activating RC mode.
+RC mode must only be activated after a clear misbehavior of the vehicle. 
+This means e.g. completely leaving the designated course of the track.
 
-\subsection{Driving in RC-Mode}
+\subsection{Driving in RC Mode}
 
-Switching from autonomous-mode to RC-mode must instantly bring the vehicle to a
-complete halt without further steering maneuvers. The vehicle must remain
-stationary for at least 1 second before remote control is possible and
-switching back to autonomous mode is allowed. When RC-mode is engaged during
-the dynamic events, the maximum forward and backward speed of the vehicle must
-not exceed 0.3 m/s. There are no restrictions on the RC-mode during test
-drives. No additional functionality is allowed in RC-mode.
+Switching from autonomous mode to RC mode must instantly bring the vehicle to a complete halt without further steering maneuvers.
+The vehicle must remain stationary for at least 1 second before remote control is possible and switching back to autonomous mode is allowed.
+When RC mode is engaged during the dynamic events, the maximum forward and backward speed of the vehicle must not exceed 0.3 m/s.
+There are no restrictions on the RC mode during test drives.
+No additional functionality is allowed in RC mode.
 
-\subsection{Transmission Frequencies}
+\subsection{Use in Competition}
 
-In order to limit interference between the vehicles of the different teams,
-each team must inform the commission about the transmission frequency of their
-remote control used when registering. Frequencies are issued on a
-first-come-first-serve basis. Additionally, specific models are known to
-interfere with Wi-Fi networks, or other infrastructure. Thus, remote controls
-using frequencies in the 2.4 GHz band need to be confirmed by the commission
-individually.
+In case the vehicle is not able to continue following the track on its own, the team may activate RC mode in order to get the vehicle back into normal behavior.
+If the vehicle does not return into the right driving lane on its own, RC mode must be activated immediately.
+For the events, the penalty applied for activating RC mode is specified in their respective scoring sections.
 
-\section{Handling of the Vehicle}
-\label{handling_vehicle}
-
-The vehicle must provide multiple distinctive buttons (e.g. push-buttons,
-touchscreen buttons, etc.), which start the different modes for the dynamic
-events. The buttons must be located on the vehicle, uniquely identifiable and
-easily reachable in order to allow non-team members (e.g. Judges, Referees) to
-start the vehicle. A single button or switch may be used if its usage is
-intuitive and the intended mode of operation clearly indicated.
-
-\section{Lights}
-
-The vehicle must be equipped with different lights to signal its driving
-behavior. All lights must be clearly visible in daylight conditions and be
-distinguishable from each other.
-
-\subsection{Braking Lights}
-
-Three clearly visible and differentiable braking lights must be installed at
-the rear of the vehicle. Active braking must be signaled.
-
-\subsection{Direction Indicators}
-
-Each corner of the vehicle must be equipped with a yellow / orange light. The
-respective lights at the correct side must be flashed at a maximum frequency of
-2 Hz (50\% duty-cycle, initial state "on") when overtaking, turning, or
-parking.
-
-\subsection{RC-Mode-Indicator}
-
-A clearly visible blue light is to be installed at the highest point of the
-vehicle, which flashes to signal the activation of RC-mode (cf. Section
-\ref{rc_mode}).
+\section{Development and Safety}
 
 \section{Development Know-How}
 \label{dev_know_how}
 
-The basic concepts of the vehicle must be conceptualized and implemented by the
-students themselves. They may not accept the direct help of professional
-engineers or suppliers. The students are encouraged to do research and/or
-discuss their problems with professional engineers or suppliers.
+The basic concepts of the vehicle must be conceptualized and implemented by the students themselves.
+They may not accept the direct help of professional engineers or suppliers.
+The students are encouraged to do research and/or discuss their problems with professional engineers or suppliers.
 
-Ready-made solutions may never be included in the vehicle. This particularly
-concerns the use of predesigned algorithms which may be part of a hardware
-platform and serve the purpose of providing a fully functional system for
-perception, behavior generation or control for automated vehicles or robots.
+Ready-made solutions may never be included in the vehicle.
+This particularly concerns the use of predesigned algorithms which may be part of a hardware platform and serve the purpose of providing a fully functional system for perception, behavior generation or control for automated vehicles or robots.
 
-The final decision on acceptable components is taken by the commission. The
-teams are encouraged to contact the commission early in case of doubts or
-questions about a particular component. In case of violating these guidelines
-or intentional fraud, the commission reserves the right to exclude the
-respective team from the competition.
+The final decision on acceptable components is taken by the commission.
+The teams are encouraged to contact the commission early in case of doubts or questions about a particular component.
+In case of violating these guidelines or intentional fraud, the commission reserves the right to exclude the respective team from the competition.
 
 \section{Safety Regulations}
 
-During the competition, safety instructions issued by the venue and commission
-members are to be followed. Ignorance of notes or guidelines can be punished by
-excluding the respective team from the training sessions or the competition.
-Each individual is required at all times to take care that no other
-participants are injured or other vehicles are damaged due to careless
-behavior.
+During the competition, safety instructions issued by the venue and commission members are to be followed. 
+Ignorance of notes or guidelines can be punished by excluding the respective team from the training sessions or the competition.
+Each individual is required at all times to take care that no other participants are injured or other vehicles are damaged due to careless behavior.
 
-As far as the sensor setup is concerned, special requirements and restrictions
-arise. All components within the vehicles must adhere to established guidelines
-for safe public usage. Particularly the usage of active sensors can be limited
-by this rule.
+As far as the sensor setup is concerned, special requirements and restrictions arise.
+All components within the vehicles must adhere to established guidelines for safe public usage.
+Particularly the usage of active sensors can be limited by this rule.
 
-The teams must ensure that no third parties are subject to possible injury due
-to installation or handling of the sensors. In case of questions concerning
-particular sensors, the admission must be discussed with the commission prior
-to the beginning of the training sessions.
+The teams must ensure that no third parties are subject to possible injury due to installation or handling of the sensors.
+In case of questions concerning particular sensors, the admission must be discussed with the commission prior to the beginning of the training sessions.
 
-Violations of these regulations lead to an immediate exclusion from the
-competition. Any claim for compensation from the commission is excluded.
+Violations of these regulations lead to an immediate exclusion from the competition.
+Any claim for compensation from the commission is excluded.
 
 \section{Modification of the Vehicle}
 
-During the dynamic events, the hardware of the vehicle may not be modified
-except in case of supervised repair. The software may not be modified during
-the dynamic events. Changing and charging batteries is allowed.
+During the events, the hardware of the vehicle may not be modified except in case of supervised repair.
+The software may not be modified during the events.
+Changing and charging batteries is allowed.
