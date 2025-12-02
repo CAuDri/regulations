@@ -1,0 +1,319 @@
+\section{Road Layout}
+
+The following is a general definition of the road layout and all elements that are present in one or more courses. 
+The course description then describes which elements can be present in the respective discipline. 
+
+
+\subsection{Road definition}
+
+In general, the road layout is a closed loop consisting of a road with two parallel lanes - one for each driving direction.
+This road can be interruped/extended with other elements like intersections, pedestrian crossings, and other elements described in \ref{}.
+The lanes are limited by different types of lane markings.
+All markings are white and approx. 18 mm to 20 mm wide, if not specified differently.
+The starting line (a checkered line of approx. 50 mm) marks the beginning of the track.
+
+\subsubsection{Lane width}
+\label{lane_width}
+
+Each lane has a width of 350 mm to 450 mm, measured from the inside of the respective markings.
+The left and right markings do not show lateral misalignments.
+However, the centerline may under circumstances (e.g. because of change of marking type, cf. next section) display lateral misalignments.
+
+\subsubsection{Lane markings}
+\label{lane_markings}
+
+Both lanes are separated by a dashed center line. The center line is interrupted every 200 mm for another 200 mm. 
+This shape continues until reaching an intersection or the starting line, so that the center line might stop with a gap at these points.
+
+Alternatively to the dashed center line, a double solid line can be present.
+In this case the solid lines are spaced approx. 20 mm apart, yielding a total marking width of approx. 56 mm to 60 mm.
+A combination of a solid and a dashed line is also possible.
+In both cases, the inner edges of the markings define the width of the lane.
+Marking types can occur in arbitrary order.
+Marking types will persist for a distance of at least 1000 mm.
+There will be immediate changes between marking types (cf. Section \ref{fig_road_layout}).
+For the Free Drive event, these marking types are to be treated as regular dashed markings.
+
+The left and right track boundaries are given by solid white lines.
+On straight sections of the track, the outer track boundaries can also mark side road junctions.
+In this case, the outer track boundaries are marked with 100 mm long dashes, interrupted by 50 mm long gaps.
+These markings are to be treated as solid lines and must not be crossed, as the vehicle is assumed to have the right of way.
+
+Side road junctions may be at most 960 mm long.
+The junction is only marked by the change in marking types, there are no further markings for the side lane.
+Neighboring sections of the track are space at least 50 mm apart, measured from the outer edges of the markings.
+The minimal distance of the track to the end of the course area is 300 mm.
+The sharpest turn has an inner radius of 1000 mm.
+
+The circuit is mostly planar.
+Parts of the track can show slopes of up to 10\% (0.1 m difference in height on a length of 1 m).
+Uphill and downhill grades will be announced by traffic signs (cf. Section \ref{traffic_signs}).
+The signs will be placed at least 1000 mm prior to any change of slope.
+
+All of the lane markings can be missing at arbitrary locations for a maximum of 1000 mm.
+Except for intersections, no more than two markings are missing at the same time.
+
+An example scenario is depicted in Section \ref{fig_example_circuit} in the appendix.
+
+The vehicle has to stay in the right lane at all times.
+Crossing the lane markings with two or more wheels will result in a penalty.
+Exempt from this rule are road elements where the vehicle is expected to change lanes (i.e. intersections).
+
+In this event, no obstacles are located on the track.
+Possible stop lines and regulations concerning the right of way are to be ignored.
+
+
+\subsubsection{Traffic Signs}
+\label{traffic_signs}
+
+In addition to the the steep hill signs described above, other supporting traffic signs can be present on the roadside.
+
+Guide signs will be used to indicate sharp turns.
+They mark a curved section of the track with radii below 1200 mm, if it is located after a straight section
+of at least 3 m length.
+A first guide sign will be placed approx. 1.5 m before the transition to the turn.
+The second sign marks the beginning of the turn.
+Smaller signs will be repeated approximately every 400 mm until reaching the apex of the turn.
+
+Additional traffic signs can be present at the roadside.
+They are located on the right-hand side of the lane.
+For an exact specification see Section \ref{fig_traffic_signs}.
+In this event, regulations announced by traffic signs can be ignored.
+
+In addition to the traffic signs defined in Section \ref{traffic_signs} and \ref{intersection_rural}, the suburban scenario contains several other traffic signs which must be respected.
+Each traffic sign defines the beginning of the connected elements as defined in the following sections.
+Traffic signs can only occur in combination with their connected element.
+The exact dimensions and positioning are defined in the appendix of this document (cf. Section \ref{fig_traffic_signs}).
+Distances for longitudinal distances are measured on the right hand lane marking.
+Each traffic sign of the suburban scenario is complemented with specific markings on the road surface.
+Those markings must not have the same distance to the corresponding element as the traffic sign (cf. Section \ref{turning}).
+See the following sections for the according specifications.
+
+\subsubsection{Artifacts}
+\label{artifacts}
+
+The design of the area outside of the road is not defined.
+Artifacts in the form of objects or remainders of lane markings might be located outside of the
+road area.
+The minimum distance between artifacts and valid lane markings is 100 mm.
+
+\subsection{Obstacles}
+
+\subsubsection{Static Obstacles}
+
+During this event, a number of static obstacles will be placed in the right lane, in the left lane and outside of the track.
+The body of each obstacle consists of white cardboard with dimensions as specified in the appendix
+(Section \ref{fig_obstacle_dimensions}).
+Obstacles can be fixed on the ground.
+The obstacles are not always placed exactly in a specific lane, however under no circumstance can both lanes be blocked.
+In this sense, static obstacles outside the track are no artifacts in the sense of Section \ref{artifacts}.
+Thus, the described minimum distance to lane markings for artifacts does not apply.
+
+Obstacles may force the vehicle to change lanes.
+Lane changes must be indicated using the turn indicators. Passing maneuvers must be executed without touching an obstacle.
+They must be completed after a maximum distance of 2 m after having passed the obstacle.
+
+\subsubsection{Dynamic Obstacles}
+
+Apart from static obstacles, at least one dynamic obstacle is present on the
+track.
+Its shape resembles the static obstacles (“driving white cardboard box”) and it can be encountered in both lanes and in combination with other track elements, as long as this is not explicitly excluded.
+It moves at a speed of 0.6 m/s.
+Dynamic obstacles do not execute lane changes and do not perform any passing maneuver.
+Dynamic obstacles can stop temporarily and potentially block the right lane.
+It may be passed, but not in intersections.
+Passing maneuvers in intersections are penalized.
+A dynamic obstacle will not block both lanes in combination with a static obstacle, unless passing is prohibited in the area (cf. Section \ref{no_passing_zones}).
+Thus, allowed passing maneuvers can always be executed without encountering an obstacle on the left lane. The passing maneuver is subject to the same regulations as when passing a static obstacle.
+
+\subsection{Intersections}
+
+\subsubsection{Intersections of the Rural Road Scenario}
+\label{intersection_rural}
+
+Sections of the track can be part of intersections with other parts of the track.
+The respective lanes meet at angles between 70° and 90°.
+
+An intersection possesses three to four entries or exits respectively.
+Design and layout of the intersections of the rural road scenario are shown in the appendix (Section \ref{intersection_rural}).
+Left and right lane boundaries of intersecting lanes can be connected through a rounded transition with a radius of about 100 mm.
+Intersections of the rural road scenario must be crossed driving straight.
+Entries to intersections can display stop lines.
+These lines are 36 mm to 40 mm wide and cross one lane completely.
+
+Additionally, a stop line is complemented by a traffic sign (stop sign, cf. Section \ref{fig_traffic_signs}).
+Entries without a stop line are not marked separately.
+The right of way is only announced by the respective traffic sign.
+If a stop line is located in the own lane, the vehicle must stop for at least 3s.
+The front of the vehicle must be located in front of the stop line, however the distance must not be greater than 150 mm.
+
+The right of way of a dynamic obstacle must be respected at an intersection, if the dynamic obstacle is located within the defined area (cf. Section \ref{fig_intersection_give_way}).
+If the vehicle does not possess the right of way, it must wait until the dynamic obstacle has completely crossed the intersection.
+Only one dynamic obstacle at a time can be present at an intersection.
+
+\subsubsection{Extended Regulations at Intersections of the Suburban Scenario}
+
+In addition to the requirements arising from stop lines, there can be different regulations for the right of way at intersections in the suburban scenario.
+Three types of intersections have to be considered:
+
+\begin{itemize}
+	\item Intersections with stop lines (cf. Section \ref{intersection_rural})
+	\item Intersections with priority road and give-way lines
+	\item Intersections without regulations by road markings or signs (priority to the right)
+\end{itemize}
+
+Dimensions and layout of the additional intersections are displayed in the appendix (cf. Section \ref{additional_intersections}).
+Stop lines and give-way lines at priority roads are also announced by traffic signs (cf. Sections
+\ref{fig_traffic_signs}).
+A give-way line is 36 mm to 40 mm wide and consists of 80 mm long dashes, interrupted by 60 mm long gaps.
+Stop and give-way lines occur in pairs at opposing intersection entries, unless the priority road displays a mandatory direction and requires turning (cf. next Section).
+At a give-way line, the vehicle must stop for at least 1 s.
+
+Dynamic obstacles must be considered in any type of intersection.
+If an intersection does not contain any indication of priority by road markings or signs, priority to the right is to be applied.
+There will be no traffic signs to announce such intersections, while all four arms of the intersection will display a give-way line.
+The requirement to stop and potentially give the right of way to dynamic obstacles must still be respected.
+Scenarios which yield ambiguous regulations of the right of way will not be encountered.
+
+\subsubsection{Turning}
+\label{turning}
+
+In addition to the intersections described above, intersections in the suburban scenario can have a mandatory direction to cross the intersection.
+Different scenarios are shown in Section \ref{fig_intersection_mandatory}.
+This will be announced by a corresponding traffic sign and a marking on the road surface (cf. Sections \ref{traffic_signs} and \ref{fig_road_markings}).
+Vehicles will have to turn left or right according to these regulations and signal this accordingly with their turn indicators.
+In the intersection, the mandatory direction will additionally be indicated by dashed turn lines that continue the center line and the right lane boundary.
+Turn lines cannot be missing.
+
+\subsection{Parking}
+\label{parking}
+
+\subsubsection{Parking Lot}
+
+Located on the track are parking areas with multiple spots for parallel and perpendicular parking.
+Parking areas are announced by the corresponding traffic sign (cf. Section \ref{fig_parking_lot}).
+The parking area is a planar and straight part of the track with a dashed center line without missing lane markings.
+Additional elements (intersections, missing lane markings, traffic signs, etc.) are not present.
+All areas for parking are located in this zone.
+
+\subsubsection{Parallel Parking}
+
+Within the parking zone there is at least one parallel parking area next to the right lane.
+White cardboard boxes represent other vehicles.
+The boxes can be fixed to the ground.
+There is a space of 20 mm to 200 mm between the right lane marking and the side of the obstacle which faces the track.
+The obstacles measure at least 100 mm in height and length.
+The parking area and the track are located in the same ground plane.
+Individual parking spots of the parking area can be marked as no parking zones.
+These areas may not be used for parking, but may be used for maneuvering.
+
+There will be multiple parking spots of different size in the parallel parking area(s) next to the track.
+The left- and right-hand limits of the parking spots are defined by the right lane marking and an additional solid white line (also 18 mm to 20 mm wide).
+Front and rear limits are defined either by white cardboard boxes or by a no parking zone (cf. Section \ref{fig_parallel_parking}).
+Approaching from the parking sign, the parking spots will be growing in length.
+The final and largest spot will be at least 700 mm in length.
+Nevertheless, small distances of under 400 mm might be present between obstacles anywhere inside the parallel parking area(s).
+
+\subsubsection{Perpendicular Parking}
+
+An additional type of parking area within the parking zone consists of several parking spots with a perpendicular orientation to the track.
+Such area is located at least once on the left-hand side of the track and may also be used for parking.
+
+All spots have the same size, as shown in Section \ref{fig_perpendicular_parking}.
+The parking spots are separated and limited to the front as well as to the rear by 18 mm to 20 mm wide white markings.
+Parking spots can be blocked by obstacles or no parking zones.
+A parking spot is considered to be blocked, if the vehicle cannot be placed completely inside the spot.
+Obstacles possess the same dimensions as in the parallel parking area and can be placed at a distance of 20 mm to 100 mm from the solid left lane marking.
+
+For parking, the vehicle must be positioned inside one marked spot that is not blocked.
+Vehicles may move forward or backward into the parking space.
+The left lane of the track may only be crossed during the actual parking maneuver.
+When searching for a parking spot, the vehicle must continue to use the right lane.
+
+\subsection{No-Passing Zones}
+\label{no_passing_zones}
+
+Sections of the track, not only in the suburban area, can be defined as no-passing zones.
+Corresponding traffic signs and lane markings will indicate such sections (cf. Section \ref{lane_markings}).
+In sections with a solid center line (a solid line within a double center line facing the ego lane) obstacles must not be passed.
+However, if a passing maneuver has been started before a no-passing zone, the vehicle is allowed to return to the right lane in any case.
+
+In a no-passing zone, the dynamic obstacle must be followed at a distance of at least 300 mm until the end of the zone.
+Static obstacles will not block the right lane in no-passing zones.
+Since passing is prohibited, a combination of a dynamic obstacle in the right lane and a static object in the left lane can occur, temporarily blocking the whole track.
+
+\subsection{Two-lane Expressway}
+\label{two_lane_expressway}
+
+Sections of the rural scenario, can be defined as an expressway.
+The beginning and end of such sections will be indicated by traffic signs (cf. Section \ref{fig_traffic_signs}).
+Expressways are a planar and mostly straight section of at least 10 m length, without any sharp turns.
+Any distinctive curve will be supported with traffic signs, as described in Section \ref{traffic_signs}.
+Vehicles on the expressway have right of way, no stop lines will be encountered.
+No obstacles will be present in the right lane of this section.
+Since the track is assumed to be a two-lane expressway, the vehicles must stay in the right lane all the time.
+
+\subsubsection{Barred Area}
+\label{barred_area}
+
+In addition to obstacles, the suburban scenario can contain barred areas on straight sections of the track.
+These areas block one lane for a length of max. 2000 mm, measured along the outer lane marking.
+The areas must be passed just as a regular obstacle.
+Barred areas are marked with a 18 mm to 20 mm wide trapezoidal outline, filled with 36 mm to 40 mm wide white markings with black spacing.
+For shape and dimensions see Section \ref{fig_barred_area}.
+The areas are at least 150 mm wide and are always connected with the left or right lane boundaries.
+Oncoming traffic has the right of way at barred areas, indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
+
+If a dynamic obstacle is located within 1000 mm of the beginning of the barred area, the vehicle has to wait.
+Switching lanes is only allowed with an empty left lane, oncoming traffic must have completely passed.
+The desired passing maneuver has to be indicated while waiting by flashing the left turn indicators.
+Only one dynamic obstacle at a time can occur at a barred area.
+If the vehicle is able to pass a barred area without leaving the own lane or driving over the markings, the vehicle may continue along the barred area even in case of oncoming traffic.
+
+\subsubsection{Crosswalk}
+
+In a suburban area, one or more crosswalks may be present.
+These are marked with several 36 mm to 40 mm wide and 400 mm long white markings parallel to the direction of travel which are spaced 40 mm apart (cf. Section \ref{fig_crosswalk}).
+A crosswalk is indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
+On the roadside at each crosswalk “pedestrians” may wait to cross the road.
+For this purpose two areas are defined which may contain relevant pedestrians.
+
+A “pedestrian” is depicted by a small white cardboard box in analogy to the static obstacles.
+In addition, each pedestrian is marked with a pictograph, in order to facilitate its detection (cf. Section \ref{fig_pedestrians}).
+Multiple pedestrians can be located on the right- as well as on the left-hand side of the crosswalk.
+Pedestrians will always be clearly distinguishable from the view of the approaching vehicle.
+Only if at least one pedestrian is present in the defined zones, the vehicle must stop in front of the crosswalk.
+Stopping must be performed with the same regulations as at intersections.
+Pedestrians start crossing only after the vehicle has stopped.
+If all relevant pedestrians have crossed in front of the vehicle, the vehicle may continue.
+Driving on before all pedestrians start to cross and have cleared the crosswalk will be penalized.
+If no pedestrian is present, the vehicle may slow down, but is not allowed to come to a complete stop.
+
+\subsubsection{Speed Limits}
+\label{speed_limits}
+
+Within a suburban area, the vehicle has to adhere to the given speed limit.
+Devices for measuring the speed of the vehicle might be present.
+
+The track might include suburban areas (cf. Section \ref{suburban_area}) where a speed limit is enforced.
+The speed limit within the suburban section, as indicated by the traffic signs and road markings has to be scaled by 1:10.
+In addition to the speed limits depicted in the signs, marking the suburban scenario, other numeric signs in steps of 10 km/h might appear (e.g. a speed limit of 20 km/h).
+Speed limit zones begin and end at the road markings, as depicted in Section \ref{fig_speed_limit_zone}.
+
+\subsubsection{Landmarks}
+\label{landmarks}
+
+Landmarks are additional "traffic signs" serving as navigation points for the vehicle.
+Each landmark sign will depict a QR code with a unique identifier.
+
+The landmark signs have the same shape and size as a zone 30 traffic sign with the QR-Code in the middle (cf. Section \ref{fig_landmarks}).
+Landmarks can appear anywhere on the track, where their position is not obstructed by other road elements or obstacles.
+Each landmark will have two landmark signs with the same identifier, one on each side of the track, facing the vehicle on the right-hand side.
+This allows the vehicle to detect the landmark from either direction.
+
+The QR codes will encode a unique identifier for each landmark.
+The identifiers will be in ascending order, starting with 1.
+During the event the vehicle must navigate to the landmarks in the given order.
+
+A maximum of 10 landmarks will be placed on the track.
+The exact number of landmarks will not be announced before the event.
