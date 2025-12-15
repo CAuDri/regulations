@@ -30,11 +30,11 @@
 \RequirePackage{tikz}                           % For custom text fields
 \RequirePackage{tabularx}                       % For tables with fixed width
 \RequirePackage{multicol}                       % For multiple column pages
-% \RequirePackage[german]{datetime2}              % For german date formatting
+% \RequirePackage[german]{datetime2}            % For german date formatting
 \RequirePackage{float}                          % The most important package ever
 
 % Default text in header
-\newcommand{\HeaderText}{CAuDri-Challenge 2025}
+\newcommand{\HeaderText}{CAuDri-Challenge \yearofchallenge}
 
 \graphicspath{{./graphics/}, {../graphics/}, {./}, {../}}
 
@@ -57,9 +57,13 @@
 
 % Define headers and footers 
 \setkomafont{pagehead}{\normalfont}
-\ihead{\large\HeaderText\\\large\Subtitle}
+\ihead{\large\HeaderText\\\large\ifthenelse{\equal{\thechapter}{0}}{\Subtitle}{\leftmark\ \rightmark}}
 \ohead{\includegraphics[width=3.5cm]{caudri_logo.png}}
 \cfoot{\pagemark}
+
+% Redefine chaptermark and sectionmark to actually display chapter and sections in the header
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand*{\sectionmark}[1]{\markright{- #1}}
 
 % Enable header on chapter pages and redefine chapter spacing
 \renewcommand*\chapterpagestyle{scrheadings}
