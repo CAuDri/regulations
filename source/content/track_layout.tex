@@ -33,29 +33,43 @@ They do not show any abrupt lateral displacements or misalignment.
 While the lane width can vary within the specified range, the transition of the outer markings remains smooth.
 The centerline can display lateral displacements or misalignment under specific circumstances, such as when the marking type transitions from a single dashed line to a double solid line as defined in the following.
 
-The two lanes are separated by a center line. There are three possible configurations for it:
-\begin{itemize}
-    \item \textbf{Dashed:} Consists of 200 mm strokes separated by 200 mm gaps. 
-    This pattern continues until it reaches an intersection or the starting line, where the line might end with a gap.
 
-    \item \textbf{Double Solid:} Consists of two solid lines spaced approximately 20 mm apart, resulting in a total marking width of approximately 56 mm to 60 mm.
-    
-    \item \textbf{Mixed:} A combination of one solid line and one dashed line.
-\end{itemize}
+\noindent
+\begin{minipage}[t]{0.78\textwidth}
+    \vspace{0pt}
+    The two lanes are separated by a center line. There are three possible configurations for it:
+    \begin{itemize}
+        \item \textbf{Dashed:} Consists of 200 mm strokes separated by 200 mm gaps. 
+        This pattern continues until it reaches an intersection or the starting line, where the line might end with a gap.
 
-Marking types persist for a distance of at least 1000 mm. Transitions between marking types are immediate and can show lateral misalignment (cf. Section \ref{fig_road_layout}).
+        \item \textbf{Double Solid:} Consists of two solid lines spaced approximately 20 mm apart, resulting in a total marking width of approximately 56 mm to 60 mm.
+        
+        \item \textbf{Mixed:} A combination of one solid line and one dashed line.
+    \end{itemize}
 
-The left and right boundaries of the track are marked by solid white lines.
-On straight sections, the outer boundary can indicate a side road junction.
-In these areas, the boundary consists of 100 mm long dashes separated by 50 mm gaps.
-Despite the dashed appearance, these markings must be treated as solid lines and must not be crossed, as the vehicle on the main track is assumed to have the right of way.
-These side road junctions are at most 960 mm long and are identified only by the change in marking type. 
-There are no additional markings.
+    Marking types persist for a distance of at least 1000 mm. Transitions between marking types are immediate and can show lateral misalignment.
 
-Any lane marking can be missing at arbitrary locations for a maximum length of 1000 mm.
-Except for intersections, no more than two markings will be missing simultaneously.
+    The left and right boundaries of the track are marked by solid white lines.
+    On straight sections, the outer boundary can indicate a side road junction.
+    In these areas, the boundary consists of 100 mm long dashes separated by 50 mm gaps.
+    Despite the dashed appearance, these markings must be treated as solid lines and must not be crossed, as the vehicle on the main track is assumed to have the right of way.
+    These side road junctions are at most 960 mm long and are identified only by the change in marking type. 
+    There are no additional markings.
 
-An example of a full track layout is depicted in Section \ref{fig_example_circuit}.
+    Any lane marking can be missing at arbitrary locations for a maximum length of 1000 mm.
+    Except for intersections, no more than two markings will be missing simultaneously.
+
+    An example of a full track layout is depicted in Section \ref{fig_example_circuit}.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.12\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_4_mixed_lane_wotext.pdf}
+
+    \vspace{20pt}
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_4_side_junction_wotext.pdf}
+\end{minipage}
 
 \subsection{Traffic Signs}
 \label{traffic_signs}
@@ -65,7 +79,7 @@ They are located 75 mm to 125 mm from the right-hand side of the lane unless spe
 The exact dimensions and positioning of signs are defined in Section \ref{fig_traffic_signs}.
 Longitudinal distances are measured along the right-hand lane marking.
 Some traffic signs are complemented by road surface markings.
-Those markings do not have to be at the same distance from the track element as the sign itself (cf. Section \ref{intersection}).
+Those markings do not have to be at the same distance from the track element as the sign itself (cf. Sections \ref{intersection}, \ref{speed_limit}).
 
 In addition to the signs from the track elements, guide signs are used to indicate sharp turns.
 They mark a curved section of the track with radii below 1200 mm, if it is located after a straight section of at least 3 m length.
@@ -80,7 +94,7 @@ Smaller signs will be repeated approximately every 400 mm until reaching the ape
 Obstacles are represented by white cardboard boxes measuring 100 mm to 400 mm in width, 100 mm to 240 mm in height, and at least 100 mm in length (cf. Section \ref{fig_obstacle_dimensions}).
 Obstacles can be positioned in the right lane, the left lane, or outside the track boundaries and in conjunction with other elements.
 Along the track, there is a minimum spacing of 1000 mm between distinct obstacles.
-A blockage of both lanes will not occur, except for barred areas and no-passing zones (cf. Sections \ref{barred_area} and \ref{no_passing_zones}).
+A blockage of both lanes will not occur, except for no-passing zones and barred areas (cf. Sections \ref{no_passing_zones} and \ref{barred_area}).
 
 \subsection{Static Obstacles}
 \label{static_obstacle}
@@ -108,23 +122,62 @@ A maximum of one dynamic obstacle can be present at an intersection at any given
 Intersections exist in three variations:
 
 \begin{itemize}
-    \item \textbf{Stop:} Intersections with stop lines feature a solid white line (36 mm to 40 mm wide) that crosses the entire lane.
-    Stop lines occur in pairs at opposing intersection entries and are always complemented with a stop sign.
-    Entries without a stop line are not marked separately.
-    For these, the right of way is indicated only by the corresponding traffic sign.
-
-    \item \textbf{Give-Way:} Intersections with give-way lines are similar in layout to stop intersections but utilize give-way markings and signs. 
-    A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
+    \begin{minipage}[t]{0.75\textwidth}
+        \vspace{0pt}
+        \item \textbf{Stop:} Intersections with stop lines (cf. Section \ref{fig_intersection_stop_lines}) feature a solid white line (36 mm to 40 mm wide) that crosses the entire lane.
+        Stop lines occur in pairs at opposing intersection entries and are always complemented with a stop sign.
+        Entries without a stop line are not marked separately.
+        For these, the right of way is indicated only by the corresponding traffic sign.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.15\textwidth}
+        \vspace{0pt}
+        \centering
+        \includegraphics[angle=0, width=\linewidth]{graphics/Abb_5_intersection_wotext.pdf}
+    \end{minipage}
     
-    \item \textbf{Priority to the Right:} If an intersection does not have markings or signs indicating priority, the "priority to the right" rule applies.
-    These intersections are not announced by traffic signs.
-    Instead, all entries to the intersection are marked with a give-way line on the road surface.
+    \vspace{-5pt}
+    \begin{minipage}[t]{0.75\textwidth}
+        \vspace{0pt}
+        \item \textbf{Give-Way:} Intersections with give-way lines (cf. Section \ref{fig_intersection_give_way_lines}) are similar in layout to stop intersections but utilize give-way markings and signs. 
+        A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.15\textwidth}
+        \vspace{0pt}
+        \centering
+        \includegraphics[angle=0, width=\linewidth]{graphics/Abb_12_intersection_give_way_lines_wotext.pdf}
+    \end{minipage}
+
+    \vspace{10pt}
+    \begin{minipage}[t]{0.75\textwidth}
+        \vspace{0pt}
+            \item \textbf{Priority to the Right:} If an intersection does not have markings or signs indicating priority (cf. Section \ref{fig_intersection_priority}), the "priority to the right" rule applies.
+            These intersections are not announced by traffic signs.
+            Instead, all entries to the intersection are marked with a give-way line on the road surface.
+            A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.15\textwidth}
+        \vspace{0pt}
+        \centering
+        \includegraphics[angle=0, width=\linewidth]{graphics/Abb_13_intersection_priority.pdf}
+    \end{minipage}  
 \end{itemize}
 
-Additionally, intersections can impose a mandatory driving direction for specific entries.
-This requirement is indicated by a traffic sign and complementary road surface markings.
-Within the intersection, the mandatory path is defined by dashed turn lines that extend the center line and the relevant lane boundary.
-Unlike other markings, turn lines are never missing.
+\noindent
+\begin{minipage}[t]{0.7\textwidth}
+    Additionally, intersections of all 3 types can impose a mandatory driving direction for specific entries  (cf. Section \ref{fig_intersection_mandatory}).  
+    This requirement is indicated by a traffic sign and complementary road surface markings.
+    Within the intersection, the mandatory path is defined by dashed turn lines that extend the center line and the relevant lane boundary.
+    Unlike other markings, turn lines are never missing.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_14_mandatory_stop_wotext.pdf}
+\end{minipage}
 
 
 \section{Parking}
@@ -132,7 +185,7 @@ Unlike other markings, turn lines are never missing.
 
 Parking zones contain multiple spots for parallel and perpendicular parking.
 The beginning of a parking zone is announced by a corresponding traffic sign 300 to 500 mm before the start of the first parking area.
-A parking zone is a planar, straight section of the track with a dashed center line and no missing lane markings.
+A parking zone is a planar, straight section of the track with a dashed center line and no missing lane markings (cf. Section \ref{fig_parking_lot}).
 Additional track elements (intersections, crosswalks and others) are not present.
 Static obstacles are used to represent other parked vehicles and can be fixed to the ground. 
 Dynamic obstacles do not occur in parking zones.
@@ -140,65 +193,115 @@ Dynamic obstacles do not occur in parking zones.
 \subsection{Parallel Parking}
 \label{parallel_parking}
 
-The parking zone includes at least one parallel parking area located next to the right lane.
-Obstacles representing parked vehicles are positioned with a lateral gap of 20 mm to 200 mm next to the right lane marking.
-Individual spots within the parking area can be marked as "no parking" zones.
-These areas must not be used for parking but may be used for maneuvering.
+\noindent
+\begin{minipage}[t]{0.8\textwidth}
+    \vspace{0pt}
+    The parking zone includes at least one parallel parking area located next to the right lane.
+    Obstacles representing parked vehicles are positioned with a lateral gap of 20 mm to 200 mm next to the right lane marking.
+    Individual spots within the parking area can be marked as "no parking" zones.
+    These areas must not be used for parking but may be used for maneuvering.
 
-The parallel parking area contains multiple parking spots of varying sizes.
-Approaching from the parking sign, the spots increase in length.
-The final and largest spot will be at least 700 mm long.
-The front and rear limits are defined either by obstacles or by "no parking" zones (cf. Section \ref{fig_parallel_parking}).
-The lateral limits of the parking spots are defined by the right lane marking and an additional solid white line (18 mm to 20 mm wide).
-Gaps smaller than 400 mm can exist between obstacles anywhere in the parallel parking area.
-These spaces are not valid parking spots.
+    The parallel parking area contains multiple parking spots of varying sizes.
+    Approaching from the parking sign, the spots increase in length.
+    The final and largest spot will be at least 700 mm long.
+    The front and rear limits are defined either by obstacles or by "no parking" zones (cf. Section \ref{fig_parallel_parking}).
+    The lateral limits of the parking spots are defined by the right lane marking and an additional solid white line (18 mm to 20 mm wide).
+    Gaps smaller than 400 mm can exist between obstacles anywhere in the parallel parking area.
+    These spaces are not valid parking spots.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.10\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=90, width=\linewidth]{graphics/Abb_2_parallel_parking_wotext.pdf}
+\end{minipage}
 
 \subsection{Perpendicular Parking}
 \label{perpendicular_parking}
 
-The parking zone includes at least one parking area with parking spots oriented perpendicular to the track and is located on the left-hand side of the road.
-All parking spots have uniform dimensions, as shown in Section \ref{fig_perpendicular_parking}.
+\noindent
+\begin{minipage}[t]{0.8\textwidth}
+    \vspace{0pt}
+    The parking zone includes at least one parking area with parking spots oriented perpendicular to the track and is located on the left-hand side of the road.
+    All parking spots have uniform dimensions (cf. Section \ref{fig_perpendicular_parking}).
 
-The spots are separated from one another and limited at the front and rear by white markings (18 mm to 20 mm wide).
-Parking spots can be blocked by obstacles or designated "no parking" zones.
-A spot is considered blocked if the vehicle cannot be positioned completely inside the boundaries of the spot.
-Obstacles blocking these spots can be placed at a distance of 20 mm to 100 mm from the solid left lane marking.
+    The spots are separated from one another and limited at the front and rear by white markings (18 mm to 20 mm wide).
+    Parking spots can be blocked by obstacles or designated "no parking" zones.
+    A spot is considered blocked if the vehicle cannot be positioned completely inside the boundaries of the spot.
+    Obstacles blocking these spots can be placed at a distance of 20 mm to 100 mm from the solid left lane marking.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.10\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=90, width=\linewidth]{graphics/Abb_3_perpendicular_parking_wotext.pdf}
+\end{minipage}
 
 
 \section{No-Passing Zone}
 \label{no_passing_zones}
 
-Sections of the track can be defined as no-passing zones, indicated by the corresponding traffic sign and lane markings (cf. Section \ref{lane_markings}).
-A no-passing rule applies in sections where the center line facing the current driving lane is solid (either a double solid line or a mixed line where the line on the driver's side is solid).
-If a passing maneuver is initiated prior to entering a no-passing zone, the vehicle is allowed to complete the maneuver and return to the right lane in any case.
+\noindent
+\begin{minipage}[t]{0.78\textwidth}
+    \vspace{0pt}
+    Sections of the track can be defined as no-passing zones, indicated by the corresponding traffic sign and lane markings (cf. Section \ref{lane_markings}).
+    A no-passing rule applies in sections where the center line facing the current driving lane is solid (either a double solid line or a mixed line where the line on the driver's side is solid).
+    If a passing maneuver is initiated prior to entering a no-passing zone, the vehicle is allowed to complete the maneuver and return to the right lane in any case.
 
-Static obstacles are not placed in the right lane of a no-passing zone.
-However, dynamic obstacles can still be present.
-A combination of a dynamic obstacle in the right lane and a static obstacle in the left lane can occur, temporarily blocking both lanes.
+    Static obstacles are not placed in the right lane of a no-passing zone.
+    However, dynamic obstacles can still be present.
+    A combination of a dynamic obstacle in the right lane and a static obstacle in the left lane can occur, temporarily blocking both lanes.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.12\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_4_no_parking_zone_wotext.pdf}
+\end{minipage}
 
 
 \section{Barred Area}
 \label{barred_area}
 
-Barred areas are located on straight sections of the track and block one lane for a maximum length of 2000 mm, measured along the outer lane marking.
-They are marked with a trapezoidal outline (18 mm to 20 mm wide), filled with diagonal white markings (36 mm to 40 mm wide) separated by 150 mm wide gaps and are always connected with the left or right lane boundaries.
-For shape and dimensions, refer to Section \ref{fig_barred_area}.
+\noindent
+\begin{minipage}[t]{0.78\textwidth}
+    \vspace{0pt}
+    Barred areas are located on straight sections of the track and block one lane for a maximum length of 2000 mm, measured along the outer lane marking.
+    They are marked with a trapezoidal outline (18 mm to 20 mm wide), filled with diagonal white markings (36 mm to 40 mm wide) separated by 150 mm wide gaps and are always connected with the left or right lane boundaries.
+    For shape and dimensions, refer to Section \ref{fig_barred_area}.
 
-Oncoming traffic in the unobstructed lane has the right of way, as indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
-A maximum of one dynamic obstacle can be present at a barred area at any given time.
+    Oncoming traffic in the unobstructed lane has the right of way, as indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
+    A maximum of one dynamic obstacle can be present at a barred area at any given time.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.12\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=90, width=\linewidth]{graphics/Abb_8_barred_area_wotext.pdf}
+\end{minipage}
 
 
 \section{Crosswalk}
 \label{crosswalk}
 
-Crosswalks are marked by a "zebra" pattern consisting of multiple white stripes parallel to the direction of travel.
-The stripes are 36 mm to 40 mm wide, 400 mm long, and spaced 40 mm apart (cf. Section \ref{fig_crosswalk}).
-Crosswalks are indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
+\noindent
+\begin{minipage}[t]{0.75\textwidth}
+    \vspace{0pt}
+    Crosswalks are marked by a "zebra" pattern consisting of multiple white stripes parallel to the direction of travel.
+    The stripes are 36 mm to 40 mm wide, 400 mm long, and spaced 40 mm apart (cf. Section \ref{fig_crosswalk}).
+    Crosswalks are indicated by a corresponding traffic sign.
 
-Two designated waiting areas are defined on the roadside at each crosswalk. 
-Pedestrians located in these areas are represented by small white cardboard boxes, similar in structure to static obstacles. 
-Additionally, each pedestrian box is marked with a specific pictograph (cf. Section \ref{fig_pedestrians}).
-Multiple pedestrians can be present on both the right- and left-hand sides of the crosswalk and will always be clearly distinguishable from the view of an approaching vehicle.
+    Two designated waiting areas are defined on the roadside at each crosswalk. 
+    Pedestrians located in these areas are represented by small white cardboard boxes, similar in structure to static obstacles. 
+    Additionally, each pedestrian box is marked with a specific pictograph (cf. Section \ref{fig_pedestrians}).
+    Multiple pedestrians can be present on both the right- and left-hand sides of the crosswalk and will always be clearly distinguishable from the view of an approaching vehicle.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.15\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_9_crosswalk_wotext.pdf}
+\end{minipage}
 
 
 \section{Two-lane Expressway}
@@ -207,7 +310,7 @@ Multiple pedestrians can be present on both the right- and left-hand sides of th
 An expressway is a mostly straight, planar section of the track with one driving lane in each direction and a minimum length of 5 m.
 It does not contain any sharp turns.
 Any distinctive curves within this track element will be marked by guide signs as described in Section \ref{traffic_signs}.
-The start and end of the expressway are indicated by specific traffic signs (cf. Section \ref{fig_traffic_signs}).
+The start and end of the expressway are indicated by specific traffic signs.
 Vehicles on the expressway have the right of way, no stop lines will be encountered.
 No obstacles will be present in the right lane throughout this track element.
 
@@ -215,13 +318,23 @@ No obstacles will be present in the right lane throughout this track element.
 \section{Speed Limit}
 \label{speed_limit}
 
-The track can include sections where a specific speed limit is enforced.
-The speed limit is indicated by numeric signs in steps of 10 km/h (e.g., 20 km/h) and must be scaled by a factor of 1:10 for the actual vehicle speed.
+\noindent
+\begin{minipage}[t]{0.75\textwidth}
+    \vspace{0pt}
+    The track can include sections where a specific speed limit is enforced.
+    The speed limit is indicated by numeric signs in steps of 10 km/h (e.g., 20 km/h) and must be scaled by a factor of 1:10 for the actual vehicle speed.
 
-Speed limits begin and end at the corresponding signs and road surface markings, as depicted in Section \ref{fig_speed_limit_zone}.
-A speed limit can start and end at any location on the track.
-However, the surface markings for speed limits do not interfere with or overlap the markings of other track elements.
-In cases where other traffic signs are present at the same location, they are either placed next to each other in no particular order or spaced at least 500 mm apart.
+    Speed limits begin and end at the corresponding signs and road surface markings (cf. Section \ref{fig_speed_limit_zone}).
+    A speed limit can start and end at any location on the track.
+    However, the surface markings for speed limits do not interfere with or overlap the markings of other track elements.
+    In cases where other traffic signs are present at the same location, they are either placed next to each other in no particular order or spaced at least 500 mm apart.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.15\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_7_speed_limit_zone_wotext.pdf}
+\end{minipage}
 
 
 \section{Landmark}
