@@ -248,8 +248,14 @@ A missed start results in a second attempt automatically.
 
 In case the vehicle is not able to continue following the track on its own, the team may activate RC-mode in order to get the vehicle back into normal behavior.
 If the vehicle does not return into the right driving lane on its own, RC-mode must be activated immediately.
-Distances travelled outside of the driving lane will otherwise be subtracted from the total distance covered. Bonuses cannot be earned by vehicle behavior shown in RC-mode.
-Additionally, skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the penalty designated for the respective element.
+\HighlightNew{Before switching back to autonomous mode, the vehicle must be repositioned on the track within 1 m of the point at which it left the track.}
+Bonuses cannot be earned by vehicle behavior shown in RC-mode.
+Additionally, skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
+
+\HighlightNew{Each obstacle course element may be evaluated only once per round.
+Elements may not be retried using RC-mode.
+If incorrect behavior with respect to an element occurs before the activation of RC-mode, the element will be evaluated accordingly.
+An element may be continued after use of the RC-mode only if no incorrect behavior related to that element caused the activation of RC-mode.}
 Each activation of RC-mode is penalized. RC-mode is subject to the regulations in Section \ref{rc_mode}.
 
 \subsection{Parking}
