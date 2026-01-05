@@ -2,167 +2,82 @@
 
 \section{Obstacle Evasion Course}
 
-The event “Obstacle Evasion Course” extends the track of the Free Drive event with additional elements which need to be considered during the driving task.
-Static and dynamic obstacles are added to the rural road scenario.
-Additionally, the vehicle has to perform automatic parking maneuvers by finding a suitable parking spot inside a parking lot.
-The track does additionally contain at least one suburban section at this point.
-All definitions concerning the course of the road maintain validity.
-% There will be at least 1000 mm track length between obstacles.
-% The additional elements are spaced at least 1000 mm apart as well and do not overlap.
-Oncoming traffic is not to be expected, except when passing barred areas inside the suburban scenario.
+The "Obstacle Evasion Course" tests the vehicle's advanced driving capabilities and decision-making in complex traffic scenarios.
 
-\subsubsection{Suburban Scenario}
-\label{suburban_area}
+% TODO: Removal of any kind of mention of rural road and suburban area throughout the document
 
-The suburban area is a special section of the track, containing additional elements compared to the track design of the rural road scenario.
-Beginning and end of suburban areas are defined by markings on the road surface (cf. Section \ref{fig_road_markings}) and according traffic signs (cf. Section \ref{traffic_signs}).
-The suburban area contains a parking lot which is indicated by the parking traffic sign. (cf. Section \ref{fig_parking_lot})
+% The “Obstacle Evasion Course” extends the track of the Free Drive event with additional elements which need to be considered during the driving task.
+% Static and dynamic obstacles are added to the rural road scenario.
+% Additionally, the vehicle has to perform automatic parking maneuvers by finding a suitable parking spot inside a parking lot.
+% The track does additionally contain at least one suburban section at this point.
+% All definitions concerning the course of the road maintain validity.
 
-% The speed limit within the suburban section, as indicated by the traffic signs has to be scaled by 1:10 (i.e. a speed limit of 30 km/h corresponds to 0.83 m/s).
-% In addition to the speed limits depicted in the signs marking the suburban scenario, other numeric signs in steps of 10 km/h might appear (e.g. a speed limit of 20 km/h).
-% Speed limit zones begin and end at the road markings, as depicted in Section \ref{fig_speed_limit_zone}.
-% The according traffic signs will be placed at those positions.
-Elements of the suburban scenario will not be located on uphill and downhill grades.
+% Oncoming traffic is not to be expected, except when passing barred areas inside the suburban scenario.
+
+\subsection{Scenario}
+
+The track of the Obstacle Evasion Course can contain any of the elements described in Section \ref{track_layout} except for landmarks.
+
+Static and dynamic obstacles are present on the track, intersections may specify turning directions and right of way regulations.
+All traffic signs defined in Section \ref{traffic_signs} can be present and must be respected.
+
+The vehicle is expected to stay in the right driving lane at all times.
+Crossing the lane markings with two or more wheels will result in a penalty.
+
+The vehicle will be evaluated for each element it passes according to the scoring guidelines in Section \ref{obstacle_scoring_guidelines}.
+Additionally, parking maneuvers can be performed once per lap.
+
+Elements will not be located on uphill and downhill grades. 
 
 \subsection{Elements of the Obstacle Evasion Course}
+
+The following sections describe the vehicle's expected behavior when encountering specific elements on the track.
+
 \label{elements_obstacle_evasion}
-\subsubsection{Static Obstacles}
+\subsubsection{Static and Dynamic Obstacles}
 
-% During this event, a number of static obstacles will be placed in the right lane, in the left lane and outside of the track.
-% The body of each obstacle consists of white cardboard with dimensions as specified in the appendix (Section \ref{fig_obstacle_dimensions}).
-% Obstacles can be fixed on the ground.
-% The obstacles are not always placed exactly in a specific lane, however under no circumstance can both lanes be blocked.
-% In this sense, static obstacles outside the track are no artifacts in the sense of Section \ref{artifacts}.
-% Thus, the described minimum distance to lane markings for artifacts does not apply.
-
-Obstacles may force the vehicle to change lanes. Lane changes must be indicated using the turn indicators.
+Obstacles may force the vehicle to change lanes. 
+Lane changes must be indicated using the turn indicators.
 Passing maneuvers must be executed without touching an obstacle.
-They must be completed after a maximum distance of 2 m after having passed the obstacle.
+After the obstacle has been passed, the vehicle must return to the right driving lane within 2 meters.
 
-\subsubsection{Dynamic Obstacles}
-
-Apart from static obstacles, at least one dynamic obstacle is present on the track.
-% Its shape resembles the static obstacles (“driving white cardboard box”) and it can be encountered in both lanes and in combination with other track elements, as long as this is not explicitly excluded.
-% It moves at a speed of 0.6 m/s.
-% Dynamic obstacles do not execute lane changes and do not perform any passing maneuver.
-% Dynamic obstacles can stop temporarily and potentially block the right lane.
+Apart from static obstacles, at least one dynamic obstacle will be present on the track.
 It may be passed, but not in intersections.
 Passing maneuvers in intersections are penalized.
-% A dynamic obstacle will not block both lanes in combination with a static obstacle, unless passing is prohibited in the area (cf. Section \ref{no_passing_zones}).
-% Thus, allowed passing maneuvers can always be executed without encountering an obstacle on the left lane.
-The passing maneuver is subject to the same regulations as when passing a static obstacle.
 
-\subsubsection{Intersections of the Rural Road Scenario}
+\subsubsection{Intersections}
 \label{intersection_rural}
 
-% Sections of the track can be part of intersections with other parts of the track.
-% The respective lanes meet at angles between 70° and 90°.
+% Intersections of the rural road scenario must be crossed driving straight.
+Intersections without a mandatory turning direction must be crossed driving straight.
+A mandatory turning direction is indicated by the lane markings and a corresponding traffic sign (cf. Sections \ref{intersection} and \ref{traffic_signs}).
 
-% An intersection possesses three to four entries or exits respectively.
-% Design and layout of the intersections of the rural road scenario are shown in the appendix (Section \ref{intersection_rural}).
-% Left and right lane boundaries of intersecting lanes can be connected through a rounded transition with a radius of about 100 mm.
-Intersections of the rural road scenario must be crossed driving straight.
-% Entries to intersections can display stop lines.
-% These lines are 36 mm to 40 mm wide and cross one lane completely.
+If a stop line is located in the driving lane, the vehicle must stop for at least 3 seconds.
+The front of the vehicle may not cross the stop line, but must be positioned no further than 150 mm away from it.
 
-% Additionally, a stop line is complemented by a traffic sign (stop sign, cf. Section \ref{fig_traffic_signs}).
-% Entries without a stop line are not marked separately.
-% The right of way is only announced by the respective traffic sign.
-If a stop line is located in the own lane, the vehicle must stop for at least 3 s.
-The front of the vehicle must be located in front of the stop line, however the distance must not be greater than 150 mm.
+At a give-way line, the vehicle must stop for at least 1 second.
+The same regulations as for stop lines apply.
 
 The right of way of a dynamic obstacle must be respected at an intersection, if the dynamic obstacle is located within the defined area (cf. Section \ref{fig_intersection_give_way}).
 If the vehicle does not possess the right of way, it must wait until the dynamic obstacle has completely crossed the intersection.
-% Only one dynamic obstacle at a time can be present at an intersection.
 
 \subsubsection{No-Passing Zones}
 \label{event_no_passing_zones}
 
-% Sections of the track, not only in the suburban area, can be defined as no-passing zones.
-% Corresponding traffic signs and lane markings will indicate such sections (cf. Section \ref{lane_markings}).
-% In sections with a solid center line (a solid line within a double center line facing the ego lane) obstacles must not be passed.
-% However, if a passing maneuver has been started before a no-passing zone, the vehicle is allowed to return to the right lane in any case.
-
-In a no-passing zone, the dynamic obstacle must be followed at a distance of at least 300 mm until the end of the zone.
-% Static obstacles will not block the right lane in no-passing zones.
-% Since passing is prohibited, a combination of a dynamic obstacle in the right lane and a static object in the left lane can occur, temporarily blocking the whole track.
+In a no-passing zone, the dynamic obstacle must be followed with a distance of at least 300 mm until the end of the zone.
 
 \subsubsection{Two-lane Expressway}
 
 Sections of the rural scenario, can be defined as an expressway.
-% The beginning and end of such sections will be indicated by traffic signs (cf. Section \ref{fig_traffic_signs}).
-% Expressways are a planar and mostly straight section of at least 10 m length, without any sharp turns.
-% Any distinctive curve will be supported with traffic signs, as described in Section \ref{traffic_signs}.
-% Vehicles on the expressway have right of way, no stop lines will be encountered.
-% No obstacles will be present in the right lane of this section.
-Since the track is assumed to be a two-lane expressway, the vehicles must stay in the right lane all the time.
-
-\subsection{Additional Elements of the Suburban Scenario}
-\label{elements_suburban_scenario}
-\subsubsection{Traffic Signs}
-
-In addition to the traffic signs defined in Section \ref{traffic_signs} and \ref{intersection_rural}, the suburban scenario contains several other traffic signs which must be respected.
-% Each traffic sign defines the beginning of the connected elements as defined in the following sections.
-% Traffic signs can only occur in combination with their connected element.
-% The exact dimensions and positioning are defined in the appendix of this document (cf. Section \ref{fig_traffic_signs}).
-% Distances for longitudinal distances are measured on the right hand lane marking.
-% Each traffic sign of the suburban scenario is complemented with specific markings on the road surface.
-% Those markings must not have the same distance to the corresponding element as the traffic sign (cf. Section \ref{turning}).
-% See the following sections for the according specifications.
-
-\subsubsection{Parking Lot}
-
-% Located on the track are parking areas with multiple spots for parallel and perpendicular parking.
-% Parking areas are announced by the corresponding traffic sign (cf. Section \ref{fig_parking_lot}).
-% The parking area is a planar and straight part of the track with a dashed center line without missing lane markings.
-% Additional elements (intersections, missing lane markings, traffic signs, etc.) are not present.
-% All areas for parking are located in this zone.
-
-\subsubsection{Parallel Parking}
-
-% Within the parking zone there is at least one parallel parking area next to the right lane.
-% White cardboard boxes represent other vehicles.
-% The boxes can be fixed to the ground.
-% There is a space of 20 mm to 200 mm between the right lane marking and the side of the obstacle which faces the track.
-% The obstacles measure at least 100 mm in height and length.
-% The parking area and the track are located in the same ground plane.
-% Individual parking spots of the parking area can be marked as no parking zones.
-% These areas may not be used for parking, but may be used for maneuvering.
-
-% There will be multiple parking spots of different size in the parallel parking area(s) next to the track.
-% The left- and right-hand limits of the parking spots are defined by the right lane marking and an additional solid white line (also 18 mm to 20 mm wide).
-% Front and rear limits are defined either by white cardboard boxes or by a no parking zone (cf. Section \ref{fig_parallel_parking}).
-% Approaching from the parking sign, the parking spots will be growing in length.
-% The final and largest spot will be at least 700 mm in length.
-% Nevertheless, small distances of under 400 mm might be present between obstacles anywhere inside the parallel parking area(s).
-
-\subsubsection{Perpendicular Parking}
-
-% An additional type of parking area within the parking zone consists of several parking spots with a perpendicular orientation to the track.
-% Such area is located at least once on the left-hand side of the track and may also be used for parking.
-
-% All spots have the same size, as shown in Section \ref{fig_perpendicular_parking}.
-% The parking spots are separated and limited to the front as well as to the rear by 18 mm to 20 mm wide white markings.
-% Parking spots can be blocked by obstacles or no parking zones.
-% A parking spot is considered to be blocked, if the vehicle cannot be placed completely inside the spot.
-% Obstacles possess the same dimensions as in the parallel parking area and can be placed at a distance of 20 mm to 100 mm from the solid left lane marking.
-
-For parking, the vehicle must be positioned inside one marked spot that is not blocked.
-Vehicles may move forward or backward into the parking space.
-The left lane of the track may only be crossed during the actual parking maneuver.
-When searching for a parking spot, the vehicle must continue to use the right lane.
+Since the track is assumed to be a two-lane expressway, the vehicles must stay in the right lane all the time. \HighlightFix{Ref Issue}
 
 \subsubsection{Barred Area}
 
-In addition to obstacles, the suburban scenario can contain barred areas on straight sections of the track.
-% These areas block one lane for a length of max. 2000 mm, measured along the outer lane marking.
-The areas must be passed just as a regular obstacle.
-% Barred areas are marked with a 18 mm to 20 mm wide trapezoidal outline, filled with 36 mm to 40 mm wide white markings with black spacing.
-% For shape and dimensions see Section \ref{fig_barred_area}.
-% The areas are at least 150 mm wide and are always connected with the left or right lane boundaries.
-% Oncoming traffic has the right of way at barred areas, indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
+A barred area may not be entered by the vehicle.
+It must be passed by switching to the left lane if necessary.
+The same regulations as for overtaking obstacles apply.
 
-If a dynamic obstacle is located within 1000 mm of the beginning of the barred area, the vehicle has to wait.
+If a dynamic obstacle is located within 1000 mm of the beginning of the barred area, the vehicle has to wait for the obstacle to pass.
 Switching lanes is only allowed with an empty left lane, oncoming traffic must have completely passed.
 The desired passing maneuver has to be indicated while waiting by flashing the left turn indicators.
 % Only one dynamic obstacle at a time can occur at a barred area.
@@ -171,94 +86,15 @@ If the vehicle is able to pass a barred area without leaving the own lane or dri
 \subsubsection{Crosswalk}
 
 In a suburban area, one or more crosswalks may be present.
-% These are marked with several 36 mm to 40 mm wide and 400 mm long white markings parallel to the direction of travel which are spaced 40 mm apart (cf. Section \ref{fig_crosswalk}).
-% A crosswalk is indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
-% On the roadside at each crosswalk “pedestrians” may wait to cross the road.
-% For this purpose two areas are defined which may contain relevant pedestrians.
-
-% A “pedestrian” is depicted by a small white cardboard box in analogy to the static obstacles.
-% In addition, each pedestrian is marked with a pictograph, in order to facilitate its detection (cf. Section \ref{fig_pedestrians}).
-% Multiple pedestrians can be located on the right- as well as on the left-hand side of the crosswalk.
-% Pedestrians will always be clearly distinguishable from the view of the approaching vehicle.
-Only if at least one pedestrian is present in the defined zones, the vehicle must stop in front of the crosswalk.
+If at least one pedestrian is present in the defined zones, the vehicle must stop in front of the crosswalk.
 Stopping must be performed with the same regulations as at intersections.
 Pedestrians start crossing only after the vehicle has stopped.
 If all relevant pedestrians have crossed in front of the vehicle, the vehicle may continue.
 Driving on before all pedestrians start to cross and have cleared the crosswalk will be penalized.
 If no pedestrian is present, the vehicle may slow down, but is not allowed to come to a complete stop.
 
-\subsubsection{Extended Regulations at Intersections}
+\subsubsection{Parking}
 
-% In addition to the requirements arising from stop lines, there can be different regulations for the right of way at intersections in the suburban scenario.
-% Three types of intersections have to be considered:
-
-% \begin{itemize}
-% 	\item Intersections with stop lines (cf. Section \ref{intersection_rural})
-% 	\item Intersections with priority road and give-way lines
-% 	\item Intersections without regulations by road markings or signs (priority to the right)
-% \end{itemize}
-
-% Dimensions and layout of the additional intersections are displayed in the appendix (cf. Section \ref{additional_intersections}).
-% Stop lines and give-way lines at priority roads are also announced by traffic signs (cf. Sections \ref{fig_traffic_signs}).
-% A give-way line is 36 mm to 40 mm wide and consists of 80 mm long dashes, interrupted by 60 mm long gaps.
-% Stop and give-way lines occur in pairs at opposing intersection entries, unless the priority road displays a mandatory direction and requires turning (cf. next Section).
-At a give-way line, the vehicle must stop for at least 1 s.
-
-% Dynamic obstacles must be considered in any type of intersection.
-% If an intersection does not contain any indication of priority by road markings or signs, priority to the right is to be applied.
-% There will be no traffic signs to announce such intersections, while all four arms of the intersection will display a give-way line.
-The requirement to stop and potentially give the right of way to dynamic obstacles must still be respected.
-% Scenarios which yield ambiguous regulations of the right of way will not be encountered.
-
-\subsubsection{Turning}
-\label{turning}
-
-% In addition to the intersections described above, intersections in the suburban scenario can have a mandatory direction to cross the intersection.
-% Different scenarios are shown in Section \ref{fig_intersection_mandatory}.
-% This will be announced by a corresponding traffic sign and a marking on the road surface (cf. Sections \ref{traffic_signs} and \ref{fig_road_markings}).
-% Vehicles will have to turn left or right according to these regulations and signal this accordingly with their turn indicators.
-% In the intersection, the mandatory direction will additionally be indicated by dashed turn lines that continue the center line and the right lane boundary.
-% Turn lines cannot be missing.
-
-\subsubsection{Speed Limits}
-
-% Within a suburban area, the vehicle has to adhere to the given speed limit.
-% Devices for measuring the speed of the vehicle might be present.
-
-\subsection{Execution of the Event}
-
-\subsubsection{Start}
-
-The starting order of the teams will be announced by the commission, visualized using the start scheduling system (cf. Section \ref{start_scheduling}) during the competition.
-The vehicle must be placed in the start box, located next to the track (cf. Section \ref{start_box}).
-The attempt is started by a judge or a referee, signaled by the opening of the start box gate.
-It is not strictly necessary to detect the presence of the markings on the gate, the vehicle only has to detect when the gate is opened (cf. Section \ref{fig_start_box_markings}).
-
-\subsubsection{Attempts}
-
-The attempt may be canceled while the gate of the start box is open.
-The team is then allowed a second attempt, after all other teams have completed their first attempt.
-The commission may arbitrarily choose the time of the second attempt if this is required to comply with the schedule.
-The affected team will be given at least 10 minutes to prepare for the second attempt after being informed by the commission.
-The vehicle does not have to be placed back at the "parc fermé" and may be modified by the team while preparing for the second attempt.
-Cancelling an attempt is penalized (cf. Section \ref{obstacle_scoring}).
-A missed start results in a second attempt automatically.
-
-\subsection{RC-Mode}
-
-In case the vehicle is not able to continue following the track on its own, the team may activate RC-mode in order to get the vehicle back into normal behavior.
-If the vehicle does not return into the right driving lane on its own, RC-mode must be activated immediately.
-\HighlightNew{Before switching back to autonomous mode, the vehicle must be repositioned on the track within 1 m of the point at which it left the track.}
-Bonuses cannot be earned by vehicle behavior shown in RC-mode.
-Additionally, skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
-
-\HighlightNew{Each obstacle course element may be evaluated only once per round.
-Elements may not be retried using RC-mode.
-If incorrect behavior with respect to an element occurs before the activation of RC-mode, the element will be evaluated accordingly.
-An element may be continued after use of the RC-mode only if no incorrect behavior related to that element caused the activation of RC-mode.}
-Each activation of RC-mode is penalized. RC-mode is subject to the regulations in Section \ref{rc_mode}.
-
-\subsection{Parking}
 Parking can be performed once per lap during the Obstacle Evasion Course.
 
 The vehicle can perform a parking attempt by finding a parking spot within the parking areas and maneuvering into it, without touching surrounding obstacles.
@@ -276,6 +112,20 @@ Penalties may apply until the vehicle is driving with a positive speed along the
 
 Leaving the outer boundaries of the parking area is penalized the same as leaving the right lane while driving.
 The speed in the parking lot is limited to the speed on the adjacent road. Collisions with obstacles during the parking maneuver will be penalized.
+
+Vehicles may move forward or backward into the parking space.
+The left lane of the track may only be crossed during the actual parking maneuver.
+When searching for a parking spot, the vehicle must continue to use the right lane.
+
+\subsection{RC-Mode}
+
+Skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
+
+\HighlightNew{Each obstacle course element may be evaluated only once per round.
+Elements may not be retried using RC-mode.
+If incorrect behavior with respect to an element occurs before the activation of RC-mode, the element will be evaluated accordingly.
+An element may be continued after use of the RC-mode only if no incorrect behavior related to that element caused the activation of RC-mode.}
+Each activation of RC-mode is penalized. RC-mode is subject to the regulations in Section \ref{rc_mode}.
 
 \subsection{Scoring}{
 	\label{obstacle_scoring}
