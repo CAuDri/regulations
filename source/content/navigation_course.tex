@@ -2,25 +2,19 @@
 \section{Navigation Course}
 \label{navigation_course}
 
-The Navigation Course is a new event in 2025.
-The event is designed to test the ability of the vehicle to map an unknown environment and navigate between predefined landmarks.
+The "Navigation Course" is designed to test the ability of the vehicle to map an unknown environment and navigate between predefined landmarks.
 
 \subsection{Scenario}
 
 The track layout of the Navigation Course will not be announced before the event.
-All road elements of the Obstacle Evasion Course (cf. Section \ref{elements_obstacle_evasion}) can appear.
-No pedestrians and no static and dynamic obstacles will be present on the track.
+
+All track elements of the Obstacle Evasion Course (cf. Section \ref{elements_obstacle_evasion}) can appear. In addition, landmarks (cf. Section \ref{landmarks}) will be placed on the track.
+Neither pedestrians nor static or dynamic obstacles will be present.
+The track might include areas where a speed limit is enforced (cf. Section \ref{speed_limits}).
+
 In this event, regulations announced by regular traffic signs and mandatory turning directions at intersections can be ignored.
 
-\subsubsection{Speed Limits}
-
-The track might include suburban areas (cf. Section \ref{suburban_area}) where a speed limit is enforced.
-% The speed limit within the suburban section, as indicated by the traffic signs and road markings has to be scaled by 1:10.
-% In addition to the speed limits depicted in the signs, marking the suburban scenario, other numeric signs in steps of 10 km/h might appear (e.g. a speed limit of 20 km/h).
-% Speed limit zones begin and end at the road markings, as depicted in Section \ref{fig_speed_limit_zone}.
-
 \subsubsection{Landmarks}
-\label{landmarks}
 
 % Landmarks are additional "traffic signs" serving as navigation points for the vehicle.
 % Each landmark sign will depict a QR code with a unique identifier.
@@ -32,32 +26,18 @@ The track might include suburban areas (cf. Section \ref{suburban_area}) where a
 
 % The QR codes will encode a unique identifier for each landmark.
 % The identifiers will be in ascending order, starting with 1.
-During the event the vehicle must navigate to the landmarks in the given order.
-
+During the event the vehicle has to navigate to the landmarks in the given order (cf Section \ref{landmark}).
 % A maximum of 10 landmarks will be placed on the track.
 The exact number of landmarks will not be announced before the event.
 
-\subsection{Execution of the Event}
+\subsection{Event Excecution}
 
 The event can be divided into two parts, a mapping phase and a navigation phase.
 
-\subsubsection{Start}
+\subsubsection{Second Attempt}
 
-The starting order of the teams will be announced by the commission, visualized using the start scheduling system (cf. Section \ref{start_scheduling}) during the competition.
-The vehicle must be placed in the start box, located next to the track (cf. Section \ref{start_box}).
-The attempt is started by a judge or a referee, signaled by the opening of the start box gate.
-It is not strictly necessary to detect the presence of the markings on the gate, the vehicle only has to detect when the gate is opened.(cf. Section \ref{fig_start_box_markings})
-
-\subsubsection{Attempts}
-
-The attempt may be canceled during the mapping phase while the gate of the start box is open.
-The team is allowed a second attempt, after all other teams have completed their first attempt.
-The commission may arbitrarily choose the time of the second attempt if this is required to comply with the schedule.
-The affected team will be given at least 10 minutes to prepare for the second attempt after being informed by the commission.
-The vehicle does not have to be placed back at the "parc fermé" and may be modified by the team while preparing for the second attempt.
-Cancelling an attempt is penalized (cf. Section \ref{navigation_scoring}).
-A missed start results in a second attempt automatically.
-Any information about the track and the landmarks gathered during the first attempt may not be used in the second attempt and needs to be deleted from the vehicle.
+When an attempt is canceled
+Any information about the track and the landmarks gathered during the first attempt may not be used in the second attempt and needs to be discarded.
 
 \subsubsection{Mapping Phase}
 
@@ -90,7 +70,6 @@ Each team will be given a maximum of 3 minutes to complete the navigation phase.
 \HighlightNew{After the 3 minutes have passed, the vehicle must be brought to an immediate and complete stop by switching to RC-mode.
 The vehicle must remain stationary until the commission signals that it may be removed from the track.}
 
-
 \subsection{RC-Mode}
 
 In case the vehicle is not able to continue following the track on its own, the team may activate RC-mode in order to get the vehicle back into normal behavior.
@@ -106,6 +85,8 @@ RC-mode is subject to the regulations in Section \ref{rc_mode}.
 
 \subsection{Scoring}
 \label{navigation_scoring}
+
+\HighlightFix{TODO: Scoring}
 
 There will be no scoring for the Navigation Course in 2025.
 
