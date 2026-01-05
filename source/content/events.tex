@@ -1,23 +1,103 @@
 \chapter{Dynamic Events}
 \label{events}
 
-During the dynamic events, the actual performance of the automated model vehicles will be challenged in multiple disciplines:
+During the dynamic events, the performance of the automated model vehicles will be challenged in multiple events:
+
 \begin{itemize}
     \item Free Drive Course
     \item Obstacle Course
     \item Navigation Course
 \end{itemize}
-Parking maneuvers are performed in a distinctive parking zone during the "Obstacle Evasion Course”. 
-The additional elements of the “Obstacle Course” and "Navigation Course" combine the rural road scenario with challenges of suburban scenarios.
+
+Each event focuses on different aspects of autonomous driving and will be scored individually.
+Teams can freely choose in which events they want to participate.
+% The events will be executed in the order listed above if not stated otherwise by the commission.
+
+\section{Event Execution}
+
+The following sections describe the general execution and rules of the dynamic events.
+Event-specific rules and regulations are described in the respective chapters (cf. Chapters \ref{freedrive_course}, \ref{obstacle_course}, and \ref{navigation_course}).
+In case of discrepancies, the event-specific regulations take precedence over the general regulations.
+
+\subsection{Starting Order}
+
+The starting order of the teams will be announced ahead of the competition. 
+It will remain unchanged throughout all events, unless stated otherwise. 
+The commission may change the starting order if this is required to comply with the schedule. 
+Affected teams will be informed at least 10 minutes prior to their attempt.
+
+% The starting order of the teams will be announced by the commission, visualized using the start scheduling system (cf. Section \ref{start_scheduling}) during the competition.
+% The vehicle must be placed in the start box, located next to the track (cf. Section \ref{start_box}).
+% The attempt is started by a judge or a referee, signaled by the opening of the start box gate.
+
+% It is not strictly necessary to detect the presence of the markings on the gate, the vehicle only has to detect when the gate is opened.(cf. Section \ref{fig_start_box_markings})
+
+\subsection{Attempts}
+
+Each team is allowed one attempt per event. The first attempt may be canceled
+under the conditions described below and repeated once.
+
+The Start Scheduling System (cf. Section \ref{start_scheduling}) will inform
+the teams about preparation and start times. The attempt starts with the
+opening of the start box gate (cf. Section \ref{start_box}). It will stay open
+for 30 seconds.
+
+Penalties will only apply once the vehicle has left the start box and passed
+the starting line.
+
+An attempt may be canceled by the team while the gate of the start box is open,
+even after the vehicle left the start box.
+
+An attempt is canceled automatically if:
+\begin{itemize}
+    \item The vehicle has not been placed in the start box when the gate opens.
+    \item The gate is damaged or forced open by a vehicle.
+    \item The vehicle fails to leave the box while the gate is open.
+    \item RC mode is actively used inside the start box.
+\end{itemize}
+
+The affected team is granted a second attempt after all other teams have completed their first attempt.
+To comply with the schedule, the commission may arbitrarily choose the time of the second attempt.
+At least 10 minutes of preparation time will be given to the affected team after the first attempt has been canceled.
+The vehicle does not have to be placed back at the "parc fermé" and may be modified by the team while preparing for the second attempt.
+No additional attempt is granted if the second attempt is canceled.
+
+Canceling an attempt will be penalized.
+Any progress made during a canceled attempt will not be counted towards the final score.
+
+% Penalties will not be applied until the vehicle passes the start line (i.e. collisions in the start box or driving outside of the right lane before passing the start line do not reduce the overall score).
+
+% The attempt may be canceled while the gate of the start box is open, even after the vehicle left the start box. The start box is open for 30s.
+% The team is then allowed a second attempt, after all other teams have completed their first attempt.
+% The commission may arbitrarily choose the time of the second attempt if this is required to comply with the schedule.
+% The affected team will be given at least 10 minutes to prepare for the second attempt after being informed by the commission.
+% The vehicle does not have to be placed back at the "parc fermé" and may be modified by the team while preparing for the second attempt.
+
+\subsection{RC-Mode}
+
+If the vehicle is not able to continue following the track on its own, the team may activate RC-mode in order to get the vehicle back into normal behavior.
+If the vehicle does not return into the right driving lane on its own, RC-mode must be activated immediately.
+Distances travelled outside of the driving lane will otherwise be subtracted from the total distance covered.
+Each activation of RC-mode is penalized.
+RC-mode is subject to the regulations in Section \ref{rc_mode}.
 
 \section{Referees}
 
 Referees around the track are evaluating each vehicle’s performance and will be responsible for registering violations.
-Team referees are nominated by every team to support the scoring during the dynamic events.
-Teams consisting of less than five members present during the dynamic events can choose to refrain from providing a referee.
-During dynamic events, team referees are the spokesperson for the commission and the official referees.
+
+\subsection{Official Referees}
+
+Official referees are appointed by the commission to oversee the dynamic events.
+They are responsible for monitoring the track, registering violations, and ensuring compliance with the regulations.
+If required, the commission has the authority to overrule decisions made by any referee. \HighlightFix{Restrictions?}
+
+\subsection{Team Referees}
+
+In addition to the official referees, at least one team referee is nominated by each team to support the scoring during the dynamic events.
+Teams consisting of less than five members can choose to refrain from providing a referee.
 Team referees are expected to approve the compliance of the track prior to the start of the individual discipline.
-Then, they will be asked to join a referee in observing a specific section of the track.
+During the dynamic events, they will be asked to join an official referee in observing a specific section of the track.
+Team referees are expected to remain impartial and objective in their observations.
 
 \input{content/freedrive_course.tex}
 \input{content/obstacle_course.tex}
