@@ -184,7 +184,7 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}                           & \textbf{Neutral}                                & \textbf{Negative}          \\
 			\midrule
-			Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2]   & Collision with an obstacle \\
+			Respected the right-of-way \footnotemark[1] & Did not respect right-of-way \footnotemark[1]   & Collision with an obstacle \\
 			                                            & Obstacle has not fully cleared the intersection &                            \\
 			\topstrut
 			\textbf{+10}                                & \textbf{0}                                      & \textbf{-10}               \\
@@ -198,14 +198,14 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}                           & \textbf{Neutral}                              & \textbf{Negative}          \\
 			\midrule
-			Respected the right-of-way \footnotemark[2] & Did not respect right-of-way \footnotemark[2] & Collision with an obstacle \\
+			Respected the right-of-way \footnotemark[1] & Did not respect right-of-way \footnotemark[1] & Collision with an obstacle \\
 			\topstrut
 			\textbf{+5}                                 & \textbf{0}                                    & \textbf{-10}               \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[2]{If the obstacle has the right-of-way, e.g. at a barred area, priority-to-right, ...}
+	\footnotetext[1]{If the obstacle has the right-of-way, e.g. at a barred area, priority-to-right, ...}
 	\newpage
 
 	\subsubsection*{Drive Straight Stop/Give-Way Intersection}
@@ -214,10 +214,10 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}                      & \textbf{Neutral}                           & \textbf{Negative}                              \\
 			\midrule
-			Stopped at the stop or give-way line   & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[3] \\
-			Went straight through the intersection & Turned at the intersection                 &                                                \\
-			                                       & Stopped for < 3s at stop line              &                                                \\
-			                                       & Stopped for < 1s at give-way line          &                                                \\
+			Stopped at the stop or give-way line \footnotemark[2] & Distance from stop or give-way line > 15cm \footnotemark[2] & Did not stop at the stop line \footnotemark[3] \\
+			Went straight through the intersection & Turned at the intersection & \\
+			& Stopped for < 3s at stop line \footnotemark[2] & \\
+			& Stopped for < 1s at give-way line \footnotemark[2] & \\
 			\topstrut
 			\textbf{+5}                            & \textbf{0}                                 & \textbf{-5}                                    \\
 			\bottomrule
@@ -230,10 +230,9 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}                      & \textbf{Neutral}                   & \textbf{Negative}                    \\
 			\midrule
-			Stopped at the give-way line           & Distance from give-way line > 15cm &                                      \\
-			Went straight through the intersection & Turned at the intersection         &                                      \\
-			                                       & Stopped for < 1s at give-way line  &                                      \\
-
+			Stopped at the give-way line \footnotemark[2] & Distance from give-way line > 15cm \footnotemark[2] & \\
+			Went straight through the intersection & Turned at the intersection & \\
+			& Stopped for < 1s at give-way line \footnotemark[2] & \\
 			\topstrut
 			\textbf{+10}                           & \textbf{0}                         & \textit{No negative points possible} \\
 			\bottomrule
@@ -246,10 +245,10 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}                    & \textbf{Neutral}                           & \textbf{Negative}                              \\
 			\midrule
-			Stopped at the stop or give-way line & Distance from stop or give-way line > 15cm & Did not stop at the stop line \footnotemark[3] \\
-			Took the correct turn                & Made a wrong turn \footnotemark[4]         &                                                \\
-			                                     & Stopped for < 3s at stop line              &                                                \\
-			                                     & Stopped for < 1s at give-way line          &                                                \\
+			Stopped at the stop or give-way line \footnotemark[2] & Distance from stop or give-way line > 15cm \footnotemark[2] & Did not stop at the stop line \footnotemark[3] \\
+			Took the correct turn & Made a wrong turn \footnotemark[4] & \\
+			& Stopped for < 3s at stop line \footnotemark[2] & \\
+			& Stopped for < 1s at give-way line \footnotemark[2] &  \\
 			\topstrut
 			\textbf{+15}                         & \textbf{0}                                 & \textbf{-5}                                    \\
 			\bottomrule
@@ -262,16 +261,17 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 			\toprule
 			\textbf{Positive}        & \textbf{Neutral}                   & \textbf{Negative}                    \\
 			\midrule
-			Stopped at give-way line & Distance from give-way line > 15cm &                                      \\
-			Took the correct turn    & Made a wrong turn \footnotemark[4] &                                      \\
-			                         & Stopped for < 1s at give-way line  &                                      \\
+			Stopped at give-way line \footnotemark[2] & Distance from give-way line > 15cm \footnotemark[2] & \\
+			Took the correct turn & Made a wrong turn \footnotemark[4] & \\
+			& Stopped for < 1s at give-way line \footnotemark[2] & \\
 			\topstrut
 			\textbf{+15}             & \textbf{0}                         & \textit{No negative points possible} \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
 
-	\footnotetext[3]{Only applies for stop and not for give-way line}
+	\footnotetext[2]{Only applies if a stop or give-way line is present}
+	\footnotetext[3]{Only applies if a stop line is present and does not apply for give-way lines}
 	\footnotetext[4]{Includes driving straight incorrectly}
 	\newpage
 
