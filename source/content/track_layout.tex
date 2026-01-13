@@ -31,7 +31,7 @@ Uphill and downhill grades are announced by traffic signs placed at least 1000 m
 Each driving lane has a width of 350 mm to 450 mm, measured from the inside edges of the markings.
 The left and right boundary markings are geometrically continuous, except where lane markings are missing.
 They do not show any abrupt lateral displacements or misalignment.
-While the lane width can vary within the specified range, the transition of the outer markings remains smooth.
+While the lane width can vary within the specified range, \HighlightNew{the transition of the outer markings remains smooth}.
 The centerline can display lateral displacements or misalignment under specific circumstances, such as when the marking type transitions from a single dashed line to a double solid line as defined in the following.
 
 
@@ -187,7 +187,7 @@ Intersections exist in three variations:
 \label{parking}
 
 Parking zones contain multiple spots for parallel and perpendicular parking.
-The beginning of a parking zone is announced by a corresponding traffic sign 300 to 500 mm before the start of the first parking area.
+The beginning of a parking zone is announced by a corresponding traffic sign \HighlightNew{300 to 500 mm before the start of the first parking area}.
 A parking zone is a planar, straight section of the track with a dashed center line and no missing lane markings (cf. Section \ref{fig_parking_lot}).
 Additional track elements (intersections, crosswalks and others) are not present.
 Static obstacles are used to represent other parked vehicles and can be fixed to the ground, \HighlightNew{however they occur on either driving lane}.
@@ -306,37 +306,39 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     \includegraphics[angle=0, width=\linewidth]{graphics/Abb_9_crosswalk_wotext.pdf}
 \end{minipage}
 
-
 \section{Two-lane Expressway}
 \label{two_lane_expressway}
 
-An expressway is a mostly straight, planar section of the track with one driving lane in each direction and a minimum length of 5 m.
+An expressway is a mostly straight, planar section of the track with one driving lane in each direction and a minimum length of \HighlightNew{5 m}.
 It does not contain any sharp turns.
 Any distinctive curves within this track element will be marked by guide signs as described in Section \ref{traffic_signs}.
 The start and end of the expressway are indicated by specific traffic signs.
 Vehicles on the expressway have the right of way, no stop lines will be encountered.
 No obstacles will be present throughout this track element.
 
+\begin{highlight}[yellow]
 \section{Speed Limit}
 \label{speed_limit}
 
 \noindent
-\begin{minipage}[t]{0.75\textwidth}
-    \vspace{0pt}
-    The track can include sections where a specific speed limit is enforced.
-    The speed limit is indicated by numeric signs in steps of 10 km/h (e.g., 20 km/h) and must be scaled by a factor of 1:10 for the actual vehicle speed.
+    \begin{minipage}[t]{0.75\textwidth}
+        \vspace{0pt}
+        The track can include sections where a specific speed limit is enforced.
+        The speed limit is indicated by numeric signs in steps of 10 km/h (e.g., 20 km/h) and must be scaled by a factor of 1:10 for the actual vehicle speed.
 
-    Speed limits begin and end at the corresponding signs and road surface markings (cf. Section \ref{fig_speed_limit_zone}).
-    A speed limit can start and end at any location on the track.
-    However, the surface markings for speed limits do not interfere with or overlap the markings of other track elements.
-    In cases where other traffic signs are present at the same location, they are either placed next to each other in no particular order or spaced at least 500 mm apart.
+        Speed limits begin and end at the corresponding signs and road surface markings (cf. Section \ref{fig_speed_limit_zone}).
+        A speed limit can start and end at any location on the track.
+        However, the surface markings for speed limits do not interfere with or overlap the markings of other track elements.
+        In cases where other traffic signs are present at the same location, they are either placed next to each other in no particular order or spaced at least 500 mm apart.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.15\textwidth}
+        \vspace{0pt}
+        \centering
+        \includegraphics[angle=0, width=\linewidth]{graphics/Abb_7_speed_limit_zone_wotext.pdf}
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.15\textwidth}
-    \vspace{0pt}
-    \centering
-    \includegraphics[angle=0, width=\linewidth]{graphics/Abb_7_speed_limit_zone_wotext.pdf}
-\end{minipage}
+\end{highlight}
+
 
 
 \section{Landmarks}
