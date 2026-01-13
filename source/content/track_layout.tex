@@ -93,9 +93,9 @@ Smaller signs will be repeated approximately every 400 mm until reaching the ape
 \label{obstacles}
 
 Obstacles are represented by white cardboard boxes measuring 100 mm to 400 mm in width, 100 mm to 240 mm in height, and at least 100 mm in length (cf. Section \ref{fig_obstacle_dimensions}).
-Obstacles can be positioned in the right lane, the left lane, or outside the track boundaries and in conjunction with other elements.
+\HighlightNew{Obstacles can be positioned in the right lane, the left lane, or outside the track boundaries and do not occur in track elements unless stated otherwise}.
 Along the track, there is a minimum spacing of 1000 mm between distinct obstacles.
-\HighlightFix{A blockage of both lanes will not occur, except for no-passing zones and barred areas} (cf. Sections \ref{no_passing_zones} and \ref{barred_area}).
+A blockage of both lanes will not occur, except for no-passing zones and barred areas (cf. Sections \ref{no_passing_zones} and \ref{barred_area}).
 
 \subsection{Static Obstacles}
 \label{static_obstacle}
@@ -110,9 +110,7 @@ Therefore, the minimum distance requirements applicable to artifacts do not appl
 
 Dynamic obstacles move at a speed of up to 0.6 m/s. \HighlightNew{They may appear on either the left or the right lane.}
 They do not execute lane changes or passing maneuvers and can stop temporarily, potentially blocking the right lane.
-\HighlightNew{A dynamic obstacle may temporarily block the left lane when a static obstacle is blocking the right lane.
-Conversely, a static obstacle may block the left lane while a dynamic obstacle is driving in the right lane, resulting in a temporary blockage of both lanes.
-Passing dynamic obstacles is prohibited in intersections, no-passing zones, barred areas, and crosswalks.}
+\HighlightNew{Passing dynamic obstacles is prohibited in intersections, no-passing zones, barred areas, and crosswalks.}
 
 \section{Intersection}
 \label{intersection}
@@ -192,8 +190,7 @@ Parking zones contain multiple spots for parallel and perpendicular parking.
 The beginning of a parking zone is announced by a corresponding traffic sign 300 to 500 mm before the start of the first parking area.
 A parking zone is a planar, straight section of the track with a dashed center line and no missing lane markings (cf. Section \ref{fig_parking_lot}).
 Additional track elements (intersections, crosswalks and others) are not present.
-Static obstacles are used to represent other parked vehicles and can be fixed to the ground. 
-\HighlightFix{Dynamic obstacles do not occur in parking zones.}
+Static obstacles are used to represent other parked vehicles and can be fixed to the ground, \HighlightNew{however they occur on either driving lane}.
 
 \subsection{Parallel Parking}
 \label{parallel_parking}
@@ -253,9 +250,8 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     A no-passing rule applies in sections where the center line facing the current driving lane is solid (either a double solid line or a mixed line where the line on the driver's side is solid).
     If a passing maneuver is initiated prior to entering a no-passing zone, the vehicle is allowed to complete the maneuver and return to the right lane in any case.
 
-    Static obstacles are not placed in the right lane of a no-passing zone.
+    \HighlightNew{Static obstacles are not placed in a no-passing zone.}
     However, dynamic obstacles can still be present.
-    A combination of a dynamic obstacle in the right lane and a static obstacle in the left lane can occur, temporarily blocking both lanes.
     \HighlightNew{After the no-passing zone no other element can occure for 2000 mm.}
 \end{minipage}
 \hfill
@@ -319,9 +315,7 @@ It does not contain any sharp turns.
 Any distinctive curves within this track element will be marked by guide signs as described in Section \ref{traffic_signs}.
 The start and end of the expressway are indicated by specific traffic signs.
 Vehicles on the expressway have the right of way, no stop lines will be encountered.
-No \HighlightNew{static} obstacles will be present in the right lane throughout this track element.
-\HighlightNew{Dynamic obstacles can occure on both lanes of the expressway.}
-
+No obstacles will be present throughout this track element.
 
 \section{Speed Limit}
 \label{speed_limit}
