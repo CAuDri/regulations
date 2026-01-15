@@ -12,7 +12,7 @@ The track of the Obstacle Evasion Course can contain any of the elements describ
 Static and dynamic obstacles are present on the track, intersections may specify turning directions and right of way regulations.
 All traffic signs defined in Section \ref{traffic_signs} can be present and must be respected.
 
-The vehicle is expected to stay in the right driving lane at all times.
+The vehicle is expected to stay in the right driving lane at all times \HighlightNew{except for overtaking an obstacle or other track element specific regulations}.
 Crossing the lane markings with two or more wheels will result in a penalty.
 
 The vehicle will be evaluated for each element it passes according to the scoring guidelines in Section \ref{obstacle_scoring_guidelines}.
@@ -54,7 +54,7 @@ If the vehicle does not possess the right of way, it must wait until the dynamic
 \subsubsection{No-Passing Zones}
 \label{event_no_passing_zones}
 
-In a no-passing zone, the dynamic obstacle must be followed with a distance of at least 300 mm until the end of the zone.
+If a dynamic obstacle occures in a no-passing zone, it must be followed with a distance of at least 300 mm until the end of the zone.
 
 \subsubsection{Barred Area}
 
@@ -104,7 +104,6 @@ When searching for a parking spot, the vehicle must continue to use the right la
 
 \subsection{RC-Mode}
 
-\HighlightNew{Before switching back to autonomous mode, the vehicle must be repositioned on the track within 1 m of the point at which it left the track.}
 Skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
 
 \HighlightNew{Each obstacle course element may be evaluated only once per round.

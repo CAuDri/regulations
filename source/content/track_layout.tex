@@ -118,8 +118,8 @@ They do not execute lane changes or passing maneuvers and can stop temporarily, 
 Sections of the track can intersect with other track sections at angles between 70° and 90°. 
 An intersection consists of three or four entries and exits. 
 The lane boundaries at the corners can be connected via rounded transitions with a radius of approximately 100 mm. 
-A maximum of one dynamic obstacle can be present at an intersection at any given time. 
-\HighlightNew{The dynamic obstacle may proceed straight, turn left, or turn right, and shall comply with the intersections priority regulations, such as priority-to-the-right, give-way, or stop signs.}
+A maximum of one dynamic obstacle can be present at an intersection at any given time.
+\HighlightNew{The dynamic obstacle will drive towards the intersection from a different entry than the vehicle. It may proceed straight, turn left, or turn right, and shall comply with the intersections priority regulations, such as priority-to-the-right, give-way, or stop signs.}
 Scenarios resulting in ambiguous right-of-way regulations will not be encountered.
 
 Intersections exist in three variations:
@@ -250,9 +250,9 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     A no-passing rule applies in sections where the center line facing the current driving lane is solid (either a double solid line or a mixed line where the line on the driver's side is solid).
     If a passing maneuver is initiated prior to entering a no-passing zone, the vehicle is allowed to complete the maneuver and return to the right lane in any case.
 
-    \HighlightNew{Static obstacles are not placed in a no-passing zone.}
-    However, dynamic obstacles can still be present.
-    \HighlightNew{After the no-passing zone no other element can occure for 2000 mm.}
+    \HighlightNew{Static obstacles are not placed in a no-passing zone.
+    However, up to one dynamic obstacle can still be present, driving on the right lane.
+    After the no-passing zone no other element can occure for 2000 mm.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.12\textwidth}
