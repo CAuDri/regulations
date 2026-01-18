@@ -18,7 +18,7 @@ Crossing the lane markings with two or more wheels will result in a penalty.
 The vehicle will be evaluated for each element it passes according to the scoring guidelines in Section \ref{obstacle_scoring_guidelines}.
 Additionally, parking maneuvers can be performed once per lap.
 
-Elements will not be located on uphill or downhill grades.
+\HighlightFix{Elements will not be located on uphill or downhill grades.}
 
 \subsection{Elements of the Obstacle Evasion Course}
 \label{elements_obstacle_evasion}
@@ -32,10 +32,12 @@ Obstacles may force the vehicle to change lanes.
 Lane changes must be indicated using the turn indicators.
 Passing maneuvers must be executed without touching an obstacle.
 After the obstacle has been passed, the vehicle must return to the right driving lane within 2 meters.
+Collisions with obstacles will be penalized. 
+A successful passing maneuver will be evaluated positively (cf. Section \ref{obstacle_scoring_guidelines}).
 
 Apart from static obstacles, at least one dynamic obstacle will be present on the track.
-It may be passed, but not in intersections.
-Passing maneuvers in intersections are penalized.
+It may be passed anywhere on the track, except for intersections, \HighlightNew{no-passing zones, barred areas and crosswalks}.
+
 
 \subsubsection{Intersections}
 \label{obstacle_course_intersections}
@@ -141,13 +143,17 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 		A lap is considered successful after the vehicle has passed the starting line without skipping any elements or sections of the track (i.e. by leaving the right lane).}
 	The total distance covered by the vehicle will have no influence on the scoring.
 
+	Additional points can be gained or lost by the evaluation of the individual track elements as described below.
+
 	\subsubsection{Timing}
 	Each team will be given a \textbf{5 minute time limit} to complete \textbf{three laps} around the track.
 	After the vehicle has completed all three laps, the attempt is over and no further points will be awarded.
 	Timing of the event starts with the opening of the start box gate, described in section \ref{start_box}.
 
-	\subsubsection{Evaluation}
-	When the vehicle passes one of the elements described in section \ref{track_layout} and \ref{obstacle_scoring_guidelines}, it will receive either a positive, neutral or negative evaluation.
+	\subsubsection{Evaluation of Track Elements}
+	\label{obstacle_evaluation}
+
+	When the vehicle passes one of the elements described in section \ref{track_layout} and \ref{elements_obstacle_evasion}, it will receive either a positive, neutral or negative evaluation.
 
 	Any time the vehicle complies with all the requirements of a certain element, it will receive a positive evaluation and gain points.
 	If the vehicle fails to comply with any of the requirements, it will generally receive a neutral evaluation and no points will be awarded.

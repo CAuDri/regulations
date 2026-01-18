@@ -92,15 +92,16 @@ Smaller signs will be repeated approximately every 400 mm until reaching the ape
 \section{Obstacles}
 \label{obstacles}
 
-Obstacles are represented by white cardboard boxes measuring 100 mm to 400 mm in width, 100 mm to 240 mm in height, and at least 100 mm in length (cf. Section \ref{fig_obstacle_dimensions}).
-\HighlightNew{Obstacles can be positioned in the right lane, the left lane, or outside the track boundaries and do not occur in track elements unless stated otherwise}.
-Along the track, there is a minimum spacing of 1000 mm between distinct obstacles.
-A blockage of both lanes will not occur, except for no-passing zones and barred areas (cf. Sections \ref{no_passing_zones} and \ref{barred_area}).
+Obstacles are used to simulate other vehicles on the track.
+They are represented by white cardboard boxes measuring 100 mm to 400 mm in width, 100 mm to 240 mm in height, and at least 100 mm in length (cf. Section \ref{fig_obstacle_dimensions}).
+\HighlightNew{Obstacles can be positioned in either lane or outside the track boundaries and do not occur in track elements unless stated otherwise}.
+Along the track, there is a minimum spacing of 1000 mm between any two obstacles.
+An obstruction of both lanes will not occur, except for no-passing zones and barred areas (cf. Sections \ref{no_passing_zones} and \ref{barred_area}).
 
 \subsection{Static Obstacles}
 \label{static_obstacle}
 
-Static obstacles are stationary obstacles that can be fixed to the ground.
+Static obstacles are stationary and can be fixed to the ground.
 While their placement within a lane can vary, they will never block both lanes simultaneously.
 Unlike other objects found outside the track, static obstacles placed outside the track are not considered artifacts.
 Therefore, the minimum distance requirements applicable to artifacts do not apply to static obstacles.
@@ -108,9 +109,9 @@ Therefore, the minimum distance requirements applicable to artifacts do not appl
 \subsection{Dynamic Obstacles}
 \label{dynamic_obstacle}
 
-Dynamic obstacles move at a speed of up to 0.6 m/s. \HighlightNew{They may appear on either the left or the right lane.}
-They do not execute lane changes or passing maneuvers and can stop temporarily, potentially blocking the right lane.
-\HighlightNew{Passing dynamic obstacles is prohibited in intersections, no-passing zones, barred areas, and crosswalks.}
+Dynamic obstacles can move along the track, simulating other traffic participants.
+They move at a speed of up to 0.6 m/s, keeping to the right lane.
+They do not execute lane changes or passing maneuvers and can stop temporarily, potentially blocking the lane.
 
 \section{Intersection}
 \label{intersection}
@@ -118,8 +119,8 @@ They do not execute lane changes or passing maneuvers and can stop temporarily, 
 Sections of the track can intersect with other track sections at angles between 70° and 90°. 
 An intersection consists of three or four entries and exits. 
 The lane boundaries at the corners can be connected via rounded transitions with a radius of approximately 100 mm. 
-A maximum of one dynamic obstacle can be present at an intersection at any given time.
-\HighlightNew{The dynamic obstacle will drive towards the intersection from a different entry than the vehicle. It may proceed straight, turn left, or turn right, and shall comply with the intersections priority regulations, such as priority-to-the-right, give-way, or stop signs.}
+No more than one dynamic obstacle can be present at an intersection at any given time.
+\HighlightNew{The dynamic obstacle will approach the intersection from a different direction than the vehicle. It may proceed straight, turn left, or turn right, and shall comply with the intersections priority regulations, such as priority-to-the-right, give-way, or stop signs.}
 Scenarios resulting in ambiguous right-of-way regulations will not be encountered.
 
 Intersections exist in three variations:
@@ -187,7 +188,7 @@ Intersections exist in three variations:
 \label{parking}
 
 Parking zones contain multiple spots for parallel and perpendicular parking.
-The beginning of a parking zone is announced by a corresponding traffic sign \HighlightNew{300 to 500 mm before the start of the first parking area}.
+The beginning of a parking zone is announced by a corresponding traffic sign \HighlightNew{placed 300 to 500 mm before the start of the first parking area}.
 A parking zone is a planar, straight section of the track with a dashed center line and no missing lane markings (cf. Section \ref{fig_parking_lot}).
 Additional track elements (intersections, crosswalks and others) are not present.
 Static obstacles are used to represent other parked vehicles and can be fixed to the ground, \HighlightNew{however they occur on either driving lane}.
@@ -198,7 +199,7 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
 \noindent
 \begin{minipage}[t]{0.8\textwidth}
     \vspace{0pt}
-    The parking zone includes at least one parallel parking area located next to the right lane.
+    The parking zone includes at least one parallel parking area located next to the right lane. \HighlightFix{Desginated Route}
     Obstacles representing parked vehicles are positioned with a lateral gap of 20 mm to 200 mm next to the right lane marking.
     Individual spots within the parking area can be marked as "no parking" zones.
     These areas must not be used for parking but may be used for maneuvering.
@@ -229,7 +230,7 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
 
     The spots are separated from one another and limited at the front and rear by white markings (18 mm to 20 mm wide).
     Parking spots can be blocked by obstacles or designated "no parking" zones.
-    A spot is considered blocked if the vehicle cannot be positioned completely inside the boundaries of the spot.
+    A spot is considered blocked if the vehicle cannot be positioned fully inside the boundaries of the spot.
     Obstacles blocking these spots can be placed at a distance of 20 mm to 100 mm from the solid left lane marking.
 \end{minipage}
 \hfill
@@ -273,7 +274,7 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     For shape and dimensions, refer to Section \ref{fig_barred_area}.
 
     Oncoming traffic in the unobstructed lane has the right of way, as indicated by a corresponding traffic sign (cf. Section \ref{fig_traffic_signs}).
-    A maximum of one dynamic obstacle can be present at a barred area at any given time.
+    No more than one dynamic obstacle can be present at a barred area at any given time.
 
 \end{minipage}
 \hfill
