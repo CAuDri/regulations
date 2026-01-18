@@ -9,10 +9,10 @@ Not all track elements are part of all events.
 \section{General Track Configuration}
 \label{general_track_configuration}
 
-The track consists of a closed-loop road with two parallel lanes, one for each direction of travel. 
+The track consists of a closed-loop road with two parallel lanes, one for each direction of travel.
 It can include other elements such as intersections or pedestrian crossings, which are detailed in the following sections.
-The track surface is of a dark shade close to black. 
-Unless specified otherwise, all lane markings are white and approximately 18 mm to 20 mm wide. 
+The track surface is of a dark shade close to black.
+Unless specified otherwise, all lane markings are white and approximately 18 mm to 20 mm wide.
 The starting line (a checkered line of approximately 50 mm width) marks the beginning of the track.
 
 Different track elements are spaced at least 1000 mm apart and do not overlap.
@@ -24,6 +24,16 @@ Artifacts, such as physical objects or remainders of old lane markings, can be p
 The track is mostly planar.
 However, parts of it can show slopes of up to 10\% (a 0.1 m height difference over a 1 m length).
 Uphill and downhill grades are announced by traffic signs placed at least 1000 mm prior to the change in slope.
+
+\begin{highlight}
+    \subsection{Designated Route}
+    \label{designated_route}
+
+    The designated route refers to the intended path along the track, starting at the starting line and following all mandatory turn directions at intersections (cf. Section \ref{intersection}).
+    A vehicle that leaves the start box (cf. Section \ref{start_box}) and follows the designated route will complete one lap of the track and return to the starting line.
+
+    A valid track will always have a designated route that is implicitly defined by the track layout and included track elements. \HighlightFix{Neccessary? Intended for the Navigation Course?}
+\end{highlight}
 
 \subsection{Lane markings}
 \label{lane_markings}
@@ -40,11 +50,11 @@ The centerline can display lateral displacements or misalignment under specific 
     \vspace{0pt}
     The two lanes are separated by a center line. There are three possible configurations for it:
     \begin{itemize}
-        \item \textbf{Dashed:} Consists of 200 mm strokes separated by 200 mm gaps. 
-        This pattern continues until it reaches an intersection or the starting line, where the line might end with a gap.
+        \item \textbf{Dashed:} Consists of 200 mm strokes separated by 200 mm gaps.
+              This pattern continues until it reaches an intersection or the starting line, where the line might end with a gap.
 
         \item \textbf{Double Solid:} Consists of two solid lines spaced approximately 20 mm apart, resulting in a total marking width of approximately 56 mm to 60 mm.
-        
+
         \item \textbf{Mixed:} A combination of one solid line and one dashed line.
     \end{itemize}
 
@@ -54,7 +64,7 @@ The centerline can display lateral displacements or misalignment under specific 
     On straight sections, the outer boundary can indicate a side road junction.
     In these areas, the boundary consists of 100 mm long dashes separated by 50 mm gaps.
     Despite the dashed appearance, these markings must be treated as solid lines and must not be crossed, as the vehicle on the main track is assumed to have the right of way.
-    These side road junctions are at most 960 mm long and are identified only by the change in marking type. 
+    These side road junctions are at most 960 mm long and are identified only by the change in marking type.
     There are no additional markings.
 
     Any lane marking can be missing at arbitrary locations for a maximum length of 1000 mm.
@@ -116,9 +126,9 @@ They do not execute lane changes or passing maneuvers and can stop temporarily, 
 \section{Intersection}
 \label{intersection}
 
-Sections of the track can intersect with other track sections at angles between 70° and 90°. 
-An intersection consists of three or four entries and exits. 
-The lane boundaries at the corners can be connected via rounded transitions with a radius of approximately 100 mm. 
+Sections of the track can intersect with other track sections at angles between 70° and 90°.
+An intersection consists of three or four entries and exits.
+The lane boundaries at the corners can be connected via rounded transitions with a radius of approximately 100 mm.
 No more than one dynamic obstacle can be present at an intersection at any given time.
 \HighlightNew{The dynamic obstacle will approach the intersection from a different direction than the vehicle. It may proceed straight, turn left, or turn right, and shall comply with the intersections priority regulations, such as priority-to-the-right, give-way, or stop signs.}
 Scenarios resulting in ambiguous right-of-way regulations will not be encountered.
@@ -139,11 +149,11 @@ Intersections exist in three variations:
         \centering
         \includegraphics[angle=0, width=\linewidth]{graphics/Abb_5_intersection_wotext.pdf}
     \end{minipage}
-    
+
     \vspace{-5pt}
     \begin{minipage}[t]{0.75\textwidth}
         \vspace{0pt}
-        \item \textbf{Give-Way:} Intersections with give-way lines (cf. Section \ref{fig_intersection_give_way_lines}) are similar in layout to stop intersections but utilize give-way markings and signs. 
+        \item \textbf{Give-Way:} Intersections with give-way lines (cf. Section \ref{fig_intersection_give_way_lines}) are similar in layout to stop intersections but utilize give-way markings and signs.
         A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
     \end{minipage}
     \hfill
@@ -156,22 +166,22 @@ Intersections exist in three variations:
     \vspace{10pt}
     \begin{minipage}[t]{0.75\textwidth}
         \vspace{0pt}
-            \item \textbf{Priority to the Right:} If an intersection does not have markings or signs indicating priority (cf. Section \ref{fig_intersection_priority}), the "priority to the right" rule applies.
-            These intersections are not announced by traffic signs.
-            Instead, all entries to the intersection are marked with a give-way line on the road surface.
-            A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
+        \item \textbf{Priority to the Right:} If an intersection does not have markings or signs indicating priority (cf. Section \ref{fig_intersection_priority}), the "priority to the right" rule applies.
+        These intersections are not announced by traffic signs.
+        Instead, all entries to the intersection are marked with a give-way line on the road surface.
+        A give-way line consists of 80 mm long dashes (36 mm to 40 mm wide) separated by 60 mm long gaps.
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.15\textwidth}
         \vspace{0pt}
         \centering
         \includegraphics[angle=0, width=\linewidth]{graphics/Abb_13_intersection_priority.pdf}
-    \end{minipage}  
+    \end{minipage}
 \end{itemize}
 
 \noindent
 \begin{minipage}[t]{0.7\textwidth}
-    Additionally, intersections of all 3 types can impose a mandatory driving direction for specific entries  (cf. Section \ref{fig_intersection_mandatory}).  
+    Additionally, intersections of all 3 types can impose a mandatory driving direction for specific entries  (cf. Section \ref{fig_intersection_mandatory}).
     This requirement is indicated by a traffic sign and complementary road surface markings.
     Within the intersection, the mandatory path is defined by dashed turn lines that extend the center line and the relevant lane boundary.
     Unlike other markings, turn lines are never missing.
@@ -199,7 +209,7 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
 \noindent
 \begin{minipage}[t]{0.8\textwidth}
     \vspace{0pt}
-    The parking zone includes at least one parallel parking area located next to the right lane. \HighlightFix{Desginated Route}
+    The parking zone includes at least one parallel parking area located next to the right lane \HighlightNew{when following the designated route of the track} (cf. Section \ref{designated_route}).
     Obstacles representing parked vehicles are positioned with a lateral gap of 20 mm to 200 mm next to the right lane marking.
     Individual spots within the parking area can be marked as "no parking" zones.
     These areas must not be used for parking but may be used for maneuvering.
@@ -252,8 +262,8 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     If a passing maneuver is initiated prior to entering a no-passing zone, the vehicle is allowed to complete the maneuver and return to the right lane in any case.
 
     \HighlightNew{Static obstacles are not placed in a no-passing zone.
-    However, up to one dynamic obstacle can still be present, driving on the right lane.
-    After the no-passing zone no other element can occure for 2000 mm.}
+        However, up to one dynamic obstacle can still be present, driving on the right lane.
+        After the no-passing zone no other element can occure for 2000 mm.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.12\textwidth}
@@ -295,8 +305,8 @@ Static obstacles are used to represent other parked vehicles and can be fixed to
     The stripes are 36 mm to 40 mm wide, 400 mm long, and spaced 40 mm apart (cf. Section \ref{fig_crosswalk}).
     Crosswalks are indicated by a corresponding traffic sign.
 
-    Two designated waiting areas are defined on the roadside at each crosswalk. 
-    \HighlightNew{Up to 1 pedestrian} is located in these areas and represented by a small white cardboard box, similar in structure to static obstacles. 
+    Two designated waiting areas are defined on the roadside at each crosswalk.
+    \HighlightNew{Up to 1 pedestrian} is located in these areas and represented by a small white cardboard box, similar in structure to static obstacles.
     Additionally, the pedestrian box is marked with a specific pictograph (cf. Section \ref{fig_pedestrians}).
     The pedestrian can be present on both the right- and left-hand sides of the crosswalk and will always be clearly distinguishable from the view of an approaching vehicle.
 \end{minipage}
@@ -318,10 +328,10 @@ Vehicles on the expressway have the right of way, no stop lines will be encounte
 No obstacles will be present throughout this track element.
 
 \begin{highlight}[yellow]
-\section{Speed Limit}
-\label{speed_limit}
+    \section{Speed Limit}
+    \label{speed_limit}
 
-\noindent
+    \noindent
     \begin{minipage}[t]{0.75\textwidth}
         \vspace{0pt}
         The track can include sections where a specific speed limit is enforced.
@@ -337,7 +347,7 @@ No obstacles will be present throughout this track element.
         \vspace{0pt}
         \centering
         \includegraphics[angle=0, width=\linewidth]{graphics/Abb_7_speed_limit_zone_wotext.pdf}
-\end{minipage}
+    \end{minipage}
 \end{highlight}
 
 
@@ -345,7 +355,7 @@ No obstacles will be present throughout this track element.
 \section{Landmarks}
 \label{landmarks}
 
-Landmarks are additional signs that serve as navigation points for the vehicle. 
+Landmarks are additional signs that serve as navigation points for the vehicle.
 They can appear at any location where their position is not obstructed by other road elements or obstacles.
 A maximum of 10 landmarks are placed across the track.
 
