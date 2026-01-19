@@ -12,7 +12,7 @@ The track of the Obstacle Evasion Course can contain any of the elements describ
 Static and dynamic obstacles are present on the track, intersections may specify turning directions and right of way regulations.
 All traffic signs defined in Section \ref{traffic_signs} can be present and must be respected.
 
-The vehicle is expected to stay in the right driving lane at all times \HighlightNew{except for overtaking an obstacle or other track element specific regulations}.
+The vehicle is expected to stay in the right driving lane at all times, exceptions can be made for overtaking obstacles or other track element specific regulations.
 Crossing the lane markings with two or more wheels will result in a penalty.
 
 The vehicle will be evaluated for each element it passes according to the scoring guidelines in Section \ref{obstacle_scoring_guidelines}.
@@ -30,7 +30,7 @@ Obstacles may force the vehicle to change lanes.
 Lane changes must be indicated using the turn indicators.
 Passing maneuvers must be executed without touching an obstacle.
 After the obstacle has been passed, the vehicle must return to the right driving lane within 2 meters.
-Collisions with obstacles will be penalized. 
+Collisions with obstacles will be penalized.
 A successful passing maneuver will be evaluated positively (cf. Section \ref{obstacle_scoring_guidelines}).
 
 Apart from static obstacles, at least one dynamic obstacle will be present on the track.
@@ -118,15 +118,33 @@ Vehicles may move forward or backward into the parking space.
 The left lane of the track may only be crossed during the actual parking maneuver.
 When searching for a parking spot, the vehicle must continue to use the right lane.
 
+\begin{highlight}
 \subsection{RC-Mode}
 
-Skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
+For the Obstacle Evasion Course, additional regulations regarding the use of RC-mode apply.
 
-\HighlightNew{Each obstacle course element may be evaluated only once per round.
-	Elements may not be retried using RC-mode.
-	If incorrect behavior with respect to an element occurs before the activation of RC-mode, the element will be evaluated accordingly.
-	An element may be continued after use of the RC-mode only if no incorrect behavior related to that element caused the activation of RC-mode.}
-Each activation of RC-mode is penalized. RC-mode is subject to the regulations in Section \ref{rc_mode}.
+% Skipping challenges of the obstacle course (by not driving in the right lane) will be punished with the \HighlightNew{neutral} penalty designated for the respective element.
+
+% \HighlightNew{Each obstacle course element may only be evaluated once per round.
+% 	Elements may not be retried using RC-mode.
+
+Elements of the Obstacle Evasion Course may not be retried using RC-mode.
+% If incorrect behavior regarding an element occurs before the activation of RC-mode, the element will be evaluated based on that behavior.
+If the vehicle shows incorrect behavior in regard to an element before the activation of RC-mode, the element will be evaluated based on that behavior.
+Once RC-mode has been activated, the element will only be further evaluated if the activation was not caused by incorrect behavior related to that element.
+
+\HighlightFix{Check if this definition is sufficient}
+
+Each activation of RC-mode is penalized (cf. Section \ref{obstacle_additional_penalties}).
+\end{highlight}
+
+% 	% If incorrect behavior with respect to an element occurs before the activation of RC-mode, the element will be evaluated accordingly.
+% 	% An element may be continued after use of the RC-mode only if no incorrect behavior related to that element caused the activation of RC-mode.}
+% 	% 	If incorrect behavior regarding an element occurs before RC-mode activation, the element will be evaluated based on that behavior.
+% 	% An element may only be continued after RC-mode use if the RC-mode activation was not caused by incorrect behavior related to that element.
+% Each activation of RC-mode is penalized. RC-mode is subject to the regulations in Section \ref{rc_mode}.
+
+
 
 \subsection{Scoring}{
 	\label{obstacle_scoring}
@@ -159,6 +177,9 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 
 	The following section \ref{obstacle_scoring_guidelines} provides an overview of the scoring guidelines for each element.
 	The bottom row of each table shows the amount of points that will be awarded or deducted for each evaluation.
+
+	If the vehicle skips an element of the Obstacle Evasion Course by leaving the designated route, \HighlightNew{it will receive a neutral evaluation} for the respective element.
+	Each element will only be evaluated once per lap.
 
 	The final score of each team will be the sum of the base points and the points gained or lost during the event.
 	Only after a vehicle has completed at least one full lap will the attempt be valid and any points awarded.
@@ -366,6 +387,8 @@ Each activation of RC-mode is penalized. RC-mode is subject to the regulations i
 	\newpage
 
 	\subsection*{Additional Penalties}
+	\label{obstacle_additional_penalties}
+
 	\begin{table}[H]
 		\begin{tabular}{@{}lccc@{}}
 			\toprule
