@@ -13,6 +13,7 @@ Neither pedestrians nor static or dynamic obstacles will be present.
 The track might include areas where a speed limit is enforced (cf. Section \ref{speed_limit}).
 
 In this event, regulations announced by regular traffic signs and mandatory turning directions at intersections can be ignored.
+\HighlightNew{A designated route (cf. Section {\ref{designated_route}}) is not guaranteed to exist on the track.}
 
 \subsubsection{Landmarks}
 
@@ -23,56 +24,91 @@ The exact number of landmarks will not be announced before the event.
 
 The event can be divided into two parts, a mapping phase and a navigation phase.
 
-\subsubsection{Second Attempt}
-
-When an attempt is canceled any information about the track and the landmarks gathered during the first attempt may not be used in the second attempt and needs to be discarded.
-
 \subsubsection{Mapping Phase}
 
-The mapping phase will start when the start box gate is opened for the first time.
+The start and end of the mapping phase is signaled by the Start Scheduling System (cf. Section \ref{start_scheduling}).
 The vehicle will be given a \textbf{3 minute time limit} to freely drive around the track and map the environment.
-Landmarks will be placed at random locations on the track.
+Landmarks are placed at random locations on the track.
 Information gathered during the mapping phase can later be used in the navigation phase.
 
-The end of the mapping phase will be signaled by the start scheduling system (cf. Section \ref{start_scheduling}).
-\HighlightNew{The vehicle must be brought to an immediate and complete stop by switching to RC-mode}.
-After the mapping phase the vehicle must be placed back into the start box.
-A button on the vehicle may be used to change the mode from mapping to navigation, it follows the same regulations as the buttons for the dynamic events (cf. Section \ref{event_selection}).
+After the mapping phase has ended, the vehicle must be placed back into the start box.
+A button on the vehicle may be used to signal the end of the mapping phase.
+It follows the same regulations as the buttons for the dynamic events (cf. Section \ref{event_selection}).
 No further modifications or adjustments to the vehicle are allowed.
 
 \subsubsection{Navigation Phase}
 
-The navigation phase starts when the start box gate is opened for the second time during the event.
+The Start Scheduling System (cf. Section \ref{start_scheduling}) will once again signal the start of the navigation phase.
 The goal is to navigate between the landmarks in the correct order, covering the shortest distance possible.
 
-The order is given by the unique identifier in the QR codes of the landmarks (cf. Section \ref{landmarks}).
-Landmarks do not have to be visited strictly in this order (e.g. 0-1-2), but can be passed multiple times or in between (e.g. 2-0-1-1-0-2).
+The order is given by the unique identifier encoded in the QR code of each landmark (cf. Section \ref{landmarks}).
+Landmarks do not have to be visited strictly in this order (e.g. 0-1-2), but can be passed multiple times or in between (e.g. 2-0-2-1-2).
 However, a pass is only counted if the previously required landmarks have already been visited.
 
 A landmark is considered visited the moment the vehicle has fully passed both landmark signs.
-The vehicle is not required to stop at the landmark or signal its arrival.
+The vehicle is not required to stop at the landmark or to signal its arrival.
 The vehicle may pass the landmark from either direction.
 
 The navigation phase ends after the vehicle has visited all landmarks in the correct order.
 Each team will be given a \textbf{time limit of 3 minutes} to complete the navigation phase.
 
+\subsubsection{Second Attempt}
+
+\HighlightNew{An attempt may be canceled at the beginning of either the mapping or the navigation phase, as described in Section {\ref{attempts}}.}
+The second attempt will always start with a new mapping phase.
+
+Any information gathered about the track and landmarks during the first attempt may not be used in the second attempt and needs to be discarded.
+
 \subsection{RC-Mode}
 
-In case the vehicle is not able to continue following the track on its own, the team may activate RC-mode in order to get the vehicle back into normal behavior.
-If the vehicle does not return into the right driving lane on its own, RC-mode must be activated immediately.
-
-Bonuses cannot be earned by vehicle behavior shown in RC-mode.
 Passing a landmark in RC-mode will not be counted as a successful visit.
 RC-mode may not be used to influence the vehicle's navigation behavior in any way.
 Using RC-mode to correct the vehicle's path will result in a penalty (cf. Section \ref{navigation_scoring}).
 Each activation of RC-mode will be penalized.
 RC-mode is subject to the regulations in Section \ref{rc_mode}.
 
+\begin{highlight}
 \subsection{Scoring}
 \label{navigation_scoring}
 
-\HighlightFix{TODO: Scoring}
-
-There will be no scoring for the Navigation Course in 2025.
-
 The total distance covered by the vehicle during the navigation phase will be measured. A shorter distance is considered better.
+In case of vehicle misbehavior, penalties will be added to the total distance.
+If an active Wifi connection is used or an attempt is canceled, an additional multiplier will be modified to affect the overall score.
+
+A minimum distance will be defined by the commission based on the track layout and the positions of the landmarks.
+In conjunction with a predetermined number of base points, the final score will be calculated as follows:
+
+\begin{equation*}
+    % 
+    Total\ Score\ =\ Base\ Points\ \cdot\ Multiplier \cdot\frac{Min.\ Distance}{Distance\ +\ \sum Penalties}
+\end{equation*}
+
+\subsubsection{Penalties}
+\label{navigation_penalties}
+
+\begin{table}[H]
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Violation}                                & \textbf{Maximum Count} & \textbf{Penalty} \\ \midrule
+        Leaving the right lane                            & $\infty$               & 1m               \\
+        Activation of RC-mode                             & $\infty$               & 1m               \\
+        % Faulty activation of the brake light              & 3                      & 2.5m             \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{Multipliers}
+\label{navigation_multipliers}
+
+Each team starts this event with a multiplier of \textbf{1.0}.
+
+\begin{table}[H]
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Triggering Event}         & \textbf{Maximum Count} & \textbf{Multiplier Modification} \\ \midrule
+        Canceled attempt / second attempt & 1                      & -0.3                             \\
+        WiFi enabled during competition   & 1                      & -0.5                             \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\end{highlight}
