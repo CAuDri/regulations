@@ -70,7 +70,11 @@ RC-mode is subject to the regulations in Section \ref{rc_mode}.
     \subsection{Scoring}
     \label{navigation_scoring}
 
-    The total distance covered by the vehicle during the navigation phase will be measured. A shorter distance is considered better.
+    The primary evaluation criterion is to visit as many landmarks as possible in the specified order, without skipping any. If
+    additional landmarks are passed between two required ones, they do not affect the primary evaluation criterion. If two or more
+    teams visit the same number of specified landmarks, the total score will determine the ranking.
+
+    Therefore, the total distance covered by the vehicle during the navigation phase will be measured. A shorter distance is considered better.
     In case of vehicle misbehavior, penalties will be added to the total distance.
     If an active Wifi connection is used or an attempt is canceled, an additional multiplier will be modified to affect the overall score.
 
