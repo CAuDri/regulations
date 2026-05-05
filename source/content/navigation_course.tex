@@ -7,7 +7,8 @@ The "Navigation Course" is designed to test the ability of the vehicle to map an
 
 The track layout of the Navigation Course will not be announced before the event.
 
-All track elements of the Obstacle Course (cf. Section \ref{elements_obstacle_evasion}) can appear. In addition, landmarks (cf. Section \ref{landmarks}) will be placed on the track.
+All track elements of the Obstacle Course (cf. Section \ref{elements_obstacle_evasion}) can appear.
+In addition, landmarks (cf. Section \ref{landmarks}) will be placed on the track.
 Neither pedestrians nor static or dynamic obstacles will be present.
 The track might include areas where a speed limit is enforced (cf. Section \ref{speed_limit}).
 
@@ -16,47 +17,48 @@ In this event, regulations announced by regular traffic signs and mandatory turn
 
 \subsubsection{Landmarks}
 
-During the event the vehicle has to navigate to the landmarks in a given sequence (cf Section \ref{landmarks}).
-The exact number of landmarks will not be announced before the event.
+During the event, the vehicle has to navigate to the landmarks in a given sequence (cf. Section \ref{landmarks}).
+The sequence is defined by the unique numerical identifiers encoded in the QR codes of the landmarks.
+The exact number of landmarks will not be announced ahead of the event.
 
-\subsection{Event Excecution}
+\subsection{Event Execution}
 
-The event can be divided into two parts, a mapping phase and a navigation phase.
-\HighlightChange{The track and the landmark positioning will not change between the two phases.}
+The event is divided into two parts, a mapping phase and a navigation phase.
+\HighlightChange{The track layout and the positioning of the landmarks will not change between the two phases.}
 
 \subsubsection{Mapping Phase}
 
-The start and end of the mapping phase is signaled by the Start Scheduling System (cf. Section \ref{start_scheduling}).
+The start and end of the mapping phase are signaled by the Start Scheduling System (cf. Section \ref{start_scheduling}).
 The vehicle will be given a \textbf{3 minute time limit} to freely drive around the track and map the environment.
-Landmarks are placed at random locations on the track.
 Information gathered during the mapping phase can later be used in the navigation phase.
 
 After the mapping phase has ended, the vehicle must be placed back into the start box.
-A button on the vehicle may be used to signal the end of the mapping phase.
+An additional button on the vehicle may be used to signal the end of the mapping phase.
 It follows the same regulations as the buttons for the dynamic events (cf. Section \ref{event_selection}).
 No further modifications or adjustments to the vehicle are allowed.
 
 \subsubsection{Navigation Phase}
+\label{navigation_phase}
 
 The Start Scheduling System (cf. Section \ref{start_scheduling}) will once again signal the start of the navigation phase.
 The goal is to navigate between the landmarks in the correct sequence, covering the shortest distance possible.
 
-\HighlightChange{The correct sequence is given by the unique numerical identifier encoded in the QR code of each landmark} (cf. Section \ref{landmarks}).
-\HighlightChange{Landmarks must be passed sequentially. A landmark is considered successfully passed only when the vehicle has driven fully between both landmark signs and all preceding landmarks in the sequence have already been successfully validated.
+\HighlightChange{The sequence is given by the unique numerical identifiers encoded in the QR codes of the landmarks (cf. Section {\ref{landmarks}}).
+The landmarks must be visited in ascending order of their identifiers, starting at the landmark with identifier 0.}
 
-Vehicles are not required to follow a strict linear path (e.g., 0-1-2). They may pass landmarks multiple times or out of sequence (e.g., 2-0-2-1-2).
-However, a pass is only counted as valid when all previous landmarks in the sequence have been already passed successfully.}
+\HighlightChange{A landmark is considered \textit{successfully visited} once the vehicle has fully passed the corresponding landmark signs and all preceding landmarks in the sequence have been visited before.
+Passing a landmark out of sequence or multiple times is allowed, but does not count as a successful visit (i.e., passing landmarks in the following order 2-\textbf{0}-\textbf{1}-3-\textbf{2}-4 would count as successfully visiting landmarks 0, 1, and 2).}
 
 The vehicle is not required to stop at the landmark or to signal its arrival.
 The vehicle may pass the landmark from either direction.
 
-The navigation phase ends after the vehicle has visited all landmarks in the correct sequence.
+The navigation phase ends after all landmarks have been successfully visited in the correct sequence.
 Each team will be given a \textbf{time limit of 3 minutes} to complete the navigation phase.
 
 \subsubsection{Second Attempt}
 
 \HighlightNew{An attempt may be canceled at the beginning of either the mapping or the navigation phase, as described in Section {\ref{attempts}}.}
-The second attempt will always start with a new mapping phase.
+A second attempt will always start with the mapping phase.
 
 Any information gathered about the track and landmarks during the first attempt may not be used in the second attempt and needs to be discarded.
 
@@ -72,15 +74,16 @@ RC-mode is subject to the regulations in Section \ref{rc_mode}.
     \subsection{Scoring}
     \label{navigation_scoring}
 
-    \HighlightChange{The primary evaluation criterion is to successfully visit as many landmarks as possible in the specified sequence, without skipping any. 
-    If two or more teams successfully visit the same number of landmarks, the total score will determine the ranking.}
+    \HighlightChange{The primary ranking criterion for this event is the number of successfully visited landmarks (cf. Section {\ref{navigation_phase}}).
+    Two or more teams with the same number of successfully visited landmarks will be ranked based on their overall score.}
 
-    Therefore, the total distance covered by the vehicle during the navigation phase will be measured. A shorter distance is considered better.
+    The total distance covered by the vehicle during the navigation phase will be measured.
+    A shorter distance is considered better.
     In case of vehicle misbehavior, penalties will be added to the total distance.
-    If an active Wifi connection is used or an attempt is canceled, an additional multiplier will be modified to affect the overall score.
+    If an active WiFi connection is used or an attempt is canceled, an additional multiplier will be modified to affect the overall score.
 
     A minimum distance will be defined by the commission based on the track layout and the positions of the landmarks.
-    In conjunction with a predetermined number of base points, the final score will be calculated as follows:
+    In conjunction with a predetermined number of base points, the score will be calculated as follows:
 
     \begin{equation*}
         % 
