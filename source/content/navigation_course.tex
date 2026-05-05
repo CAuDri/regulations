@@ -16,12 +16,13 @@ In this event, regulations announced by regular traffic signs and mandatory turn
 
 \subsubsection{Landmarks}
 
-During the event the vehicle has to navigate to the landmarks in the given order (cf Section \ref{landmarks}).
+During the event the vehicle has to navigate to the landmarks in a given sequence (cf Section \ref{landmarks}).
 The exact number of landmarks will not be announced before the event.
 
 \subsection{Event Excecution}
 
 The event can be divided into two parts, a mapping phase and a navigation phase.
+\HighlightChange{The track and the landmark positioning will not change between the two phases.}
 
 \subsubsection{Mapping Phase}
 
@@ -38,17 +39,18 @@ No further modifications or adjustments to the vehicle are allowed.
 \subsubsection{Navigation Phase}
 
 The Start Scheduling System (cf. Section \ref{start_scheduling}) will once again signal the start of the navigation phase.
-The goal is to navigate between the landmarks in the correct order, covering the shortest distance possible.
+The goal is to navigate between the landmarks in the correct sequence, covering the shortest distance possible.
 
-The order is given by the unique identifier encoded in the QR code of each landmark (cf. Section \ref{landmarks}).
-Landmarks do not have to be visited strictly in this order (e.g. 0-1-2), but can be passed multiple times or in between (e.g. 2-0-2-1-2).
-However, a pass is only counted if the previously required landmarks have already been visited.
+\HighlightChange{The correct sequence is given by the unique numerical identifier encoded in the QR code of each landmark} (cf. Section \ref{landmarks}).
+\HighlightChange{Landmarks must be passed sequentially. A landmark is considered successfully passed only when the vehicle has driven fully between both landmark signs and all preceding landmarks in the sequence have already been successfully validated.
 
-A landmark is considered visited the moment the vehicle has fully passed both landmark signs.
+Vehicles are not required to follow a strict linear path (e.g., 0-1-2). They may pass landmarks multiple times or out of sequence (e.g., 2-0-2-1-2).
+However, a pass is only counted as valid when all previous landmarks in the sequence have been already passed successfully.}
+
 The vehicle is not required to stop at the landmark or to signal its arrival.
 The vehicle may pass the landmark from either direction.
 
-The navigation phase ends after the vehicle has visited all landmarks in the correct order.
+The navigation phase ends after the vehicle has visited all landmarks in the correct sequence.
 Each team will be given a \textbf{time limit of 3 minutes} to complete the navigation phase.
 
 \subsubsection{Second Attempt}
@@ -70,9 +72,8 @@ RC-mode is subject to the regulations in Section \ref{rc_mode}.
     \subsection{Scoring}
     \label{navigation_scoring}
 
-    The primary evaluation criterion is to visit as many landmarks as possible in the specified order, without skipping any. If
-    additional landmarks are passed between two required ones, they do not affect the primary evaluation criterion. If two or more
-    teams visit the same number of specified landmarks, the total score will determine the ranking.
+    \HighlightChange{The primary evaluation criterion is to successfully visit as many landmarks as possible in the specified sequence, without skipping any. 
+    If two or more teams successfully visit the same number of landmarks, the total score will determine the ranking.}
 
     Therefore, the total distance covered by the vehicle during the navigation phase will be measured. A shorter distance is considered better.
     In case of vehicle misbehavior, penalties will be added to the total distance.
